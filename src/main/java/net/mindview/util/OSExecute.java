@@ -14,7 +14,7 @@ public class OSExecute {
 			String s;
 			while ((s = results.readLine()) != null)
 				System.out.println(s);
-			BufferedReader errors = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+			BufferedReader errors = new BufferedReader(new InputStreamReader(process.getErrorStream(), "utf-8"));
 			// Report errors and return nonzero value
 			// to calling process if there are problems:
 			while ((s = errors.readLine()) != null) {
@@ -27,7 +27,8 @@ public class OSExecute {
 			if (!command.startsWith("CMD /C"))
 				command("CMD /C " + command);
 			else
-				throw new RuntimeException(e);
+				e.printStackTrace();
+				// throw new RuntimeException(e);
 		}
 		if (err)
 			throw new OSExecuteException("Errors executing " + command);

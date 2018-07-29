@@ -1,13 +1,21 @@
 //: io/Worm.java
 package io; /* Added by Eclipse.py */
 
-// Demonstrates object serialization.
+import static net.mindview.util.Print.print;
 
-import java.io.*;
-import java.util.*;
-import static net.mindview.util.Print.*;
+// Demonstrates object serialization.
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.util.Random;
 
 class Data implements Serializable {
+	private static final long serialVersionUID = -186220653674083351L;
 	private int n;
 
 	public Data(int n) {
@@ -20,8 +28,11 @@ class Data implements Serializable {
 }
 
 public class Worm implements Serializable {
+	private static final long serialVersionUID = -6606629677633624280L;
+
 	private static Random rand = new Random(47);
-	private Data[] d = { new Data(rand.nextInt(10)), new Data(rand.nextInt(10)), new Data(rand.nextInt(10)) };
+	private Data[] d = { new Data(rand.nextInt(10)), new Data(rand.nextInt(10)),
+			new Data(rand.nextInt(10)) };
 	private Worm next;
 	private char c;
 
@@ -56,10 +67,12 @@ public class Worm implements Serializable {
 		out.writeObject("Worm storage\n");
 		out.writeObject(w);
 		out.close(); // Also flushes output
+		@SuppressWarnings("resource")
 		ObjectInputStream in = new ObjectInputStream(new FileInputStream("worm.out"));
 		String s = (String) in.readObject();
 		Worm w2 = (Worm) in.readObject();
 		print(s + "w2 = " + w2);
+
 		ByteArrayOutputStream bout = new ByteArrayOutputStream();
 		ObjectOutputStream out2 = new ObjectOutputStream(bout);
 		out2.writeObject("Worm storage\n");
@@ -70,10 +83,11 @@ public class Worm implements Serializable {
 		Worm w3 = (Worm) in2.readObject();
 		print(s + "w3 = " + w3);
 	}
-} /*
-	 * Output: Worm constructor: 6 Worm constructor: 5 Worm constructor: 4 Worm
-	 * constructor: 3 Worm constructor: 2 Worm constructor: 1 w =
-	 * :a(853):b(119):c(802):d(788):e(199):f(881) Worm storage w2 =
-	 * :a(853):b(119):c(802):d(788):e(199):f(881) Worm storage w3 =
-	 * :a(853):b(119):c(802):d(788):e(199):f(881)
-	 */// :~
+}
+/*
+ * Output: Worm constructor: 6 Worm constructor: 5 Worm constructor: 4 Worm
+ * constructor: 3 Worm constructor: 2 Worm constructor: 1 w =
+ * :a(853):b(119):c(802):d(788):e(199):f(881) Worm storage w2 =
+ * :a(853):b(119):c(802):d(788):e(199):f(881) Worm storage w3 =
+ * :a(853):b(119):c(802):d(788):e(199):f(881)
+ */// :~

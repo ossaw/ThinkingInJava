@@ -5,7 +5,6 @@ package io; /* Added by Eclipse.py */
 
 import java.io.*;
 
-// 重定向输入输出流，操纵的是字节流
 public class Redirecting {
 	public static void main(String[] args) throws IOException {
 		PrintStream console = System.out;
@@ -20,8 +19,9 @@ public class Redirecting {
 		String s;
 		while ((s = br.readLine()) != null)
 			System.out.println(s);
+		System.out.println(1);
 		out.close(); // Remember this!
-		System.setOut(console);
+		// System.setOut(console);
 	}
-}
-/// :~
+} /// :~
+1
