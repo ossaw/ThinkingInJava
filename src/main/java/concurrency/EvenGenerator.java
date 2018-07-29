@@ -15,7 +15,8 @@ public class EvenGenerator extends IntGenerator {
 	public static void main(String[] args) {
 		EvenChecker.test(new EvenGenerator());
 	}
-} /*
-	 * Output: (Sample) Press Control-C to exit 89476993 not even! 89476993 not
-	 * even!
-	 */// :~
+}
+/*
+ * Output: (Sample) Press Control-C to exit 89476993 not even! 89476993 not
+ * even!
+ */// :~
