@@ -14,4 +14,5 @@ public abstract class IntGenerator {
 	public boolean isCanceled() {
 		return canceled;
 	}
-} /// :~
+}
+/// :~
