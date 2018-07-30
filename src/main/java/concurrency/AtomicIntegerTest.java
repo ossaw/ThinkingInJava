@@ -23,6 +23,7 @@ public class AtomicIntegerTest implements Runnable {
 
 	public static void main(String[] args) {
 		new Timer().schedule(new TimerTask() {
+			@Override
 			public void run() {
 				System.err.println("Aborting");
 				System.exit(0);

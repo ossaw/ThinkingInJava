@@ -20,7 +20,7 @@ public class AtomicityTest implements Runnable {
 			evenIncrement();
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		ExecutorService exec = Executors.newCachedThreadPool();
 		AtomicityTest at = new AtomicityTest();
 		exec.execute(at);
@@ -32,6 +32,7 @@ public class AtomicityTest implements Runnable {
 			}
 		}
 	}
-} /*
-	 * Output: (Sample) 191583767
-	 */// :~
+}
+/*
+ * Output: (Sample) 191583767
+ */// :~

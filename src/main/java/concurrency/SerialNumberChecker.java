@@ -42,11 +42,17 @@ public class SerialNumberChecker {
 	private static ExecutorService exec = Executors.newCachedThreadPool();
 
 	static class SerialChecker implements Runnable {
+		@Override
 		public void run() {
 			while (true) {
 				int serial = SerialNumberGenerator.nextSerialNumber();
 				if (serials.contains(serial)) {
 					System.out.println("Duplicate: " + serial);
+					/*try {
+						TimeUnit.MICROSECONDS.sleep(10);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}*/
 					System.exit(0);
 				}
 				serials.add(serial);
@@ -64,6 +70,7 @@ public class SerialNumberChecker {
 			System.exit(0);
 		}
 	}
-} /*
-	 * Output: (Sample) Duplicate: 8468656
-	 */// :~
+}
+/*
+ * Output: (Sample) Duplicate: 8468656
+ */// :~
