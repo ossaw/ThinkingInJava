@@ -41,6 +41,8 @@ class Pair { // Not thread-safe
 	}
 
 	public class PairValuesNotEqualException extends RuntimeException {
+		private static final long serialVersionUID = 2173219743785160787L;
+
 		public PairValuesNotEqualException() {
 			super("Pair values not equal: " + Pair.this);
 		}

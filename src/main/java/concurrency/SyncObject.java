@@ -35,6 +35,7 @@ public class SyncObject {
 		}.start();
 		ds.g();
 	}
-} /*
-	 * Output: (Sample) g() f() g() f() g() f() g() f() g() f()
-	 */// :~
+}
+/*
+ * Output: (Sample) g() f() g() f() g() f() g() f() g() f()
+ */// :~
