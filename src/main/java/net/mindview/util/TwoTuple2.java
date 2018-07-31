@@ -1,9 +1,5 @@
 package net.mindview.util;
 
-import org.junit.Test;
-
-import exceptions.MainException;
-
 public class TwoTuple2<K, V> {
 	private K k;
 	private V v;
