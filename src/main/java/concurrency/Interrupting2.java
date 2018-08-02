@@ -45,7 +45,8 @@ public class Interrupting2 {
 		System.out.println("Issuing t.interrupt()");
 		t.interrupt();
 	}
-} /*
-	 * Output: Waiting for f() in BlockedMutex Issuing t.interrupt() Interrupted
-	 * from lock acquisition in f() Broken out of blocked call
-	 */// :~
+}
+/*
+ * Output: Waiting for f() in BlockedMutex Issuing t.interrupt() Interrupted
+ * from lock acquisition in f() Broken out of blocked call
+ */// :~

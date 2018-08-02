@@ -19,6 +19,7 @@ public class CloseResource {
 		exec.execute(new IOBlocked(System.in));
 		TimeUnit.MILLISECONDS.sleep(100);
 		print("Shutting down all threads");
+		// 先关闭线程池，再关闭线程内部资源
 		exec.shutdownNow();
 		TimeUnit.SECONDS.sleep(1);
 		print("Closing " + socketInput.getClass().getName());

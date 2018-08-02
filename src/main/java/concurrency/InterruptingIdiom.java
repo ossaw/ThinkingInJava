@@ -23,6 +23,7 @@ class NeedsCleanup {
 class Blocked3 implements Runnable {
 	private volatile double d = 0.0;
 
+	@Override
 	public void run() {
 		try {
 			while (!Thread.interrupted()) {
@@ -67,8 +68,9 @@ public class InterruptingIdiom {
 		TimeUnit.MILLISECONDS.sleep(new Integer(args[0]));
 		t.interrupt();
 	}
-} /*
-	 * Output: (Sample) NeedsCleanup 1 Sleeping NeedsCleanup 2 Calculating
-	 * Finished time-consuming operation Cleaning up 2 Cleaning up 1
-	 * NeedsCleanup 1 Sleeping Cleaning up 1 Exiting via InterruptedException
-	 */// :~
+}
+/*
+ * Output: (Sample) NeedsCleanup 1 Sleeping NeedsCleanup 2 Calculating Finished
+ * time-consuming operation Cleaning up 2 Cleaning up 1 NeedsCleanup 1 Sleeping
+ * Cleaning up 1 Exiting via InterruptedException
+ */// :~
