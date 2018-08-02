@@ -82,10 +82,11 @@ public class WaxOMatic {
 		TimeUnit.SECONDS.sleep(5); // Run for a while...
 		exec.shutdownNow(); // Interrupt all tasks
 	}
-} /*
-	 * Output: (95% match) Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off!
-	 * Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax
-	 * On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On!
-	 * Wax Off! Wax On! Exiting via interrupt Ending Wax On task Exiting via
-	 * interrupt Ending Wax Off task
-	 */// :~
+}
+/*
+ * Output: (95% match) Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax
+ * On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax
+ * Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax
+ * On! Exiting via interrupt Ending Wax On task Exiting via interrupt Ending Wax
+ * Off task
+ */// :~
