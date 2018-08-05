@@ -1,6 +1,8 @@
 //: arrays/ParameterizedArrayType.java
 package arrays; /* Added by Eclipse.py */
 
+import java.util.Arrays;
+
 class ClassParameter<T> {
 	public T[] f(T[] arg) {
 		return arg;
@@ -19,7 +21,12 @@ public class ParameterizedArrayType {
 		Double[] doubles = { 1.1, 2.2, 3.3, 4.4, 5.5 };
 		Integer[] ints2 = new ClassParameter<Integer>().f(ints);
 		Double[] doubles2 = new ClassParameter<Double>().f(doubles);
+		System.out.println(Arrays.toString(ints2));
+		System.out.println(Arrays.toString(doubles2));
 		ints2 = MethodParameter.f(ints);
 		doubles2 = MethodParameter.f(doubles);
+		System.out.println(Arrays.toString(ints2));
+		System.out.println(Arrays.toString(doubles2));
 	}
-} /// :~
+} 
+/// :~

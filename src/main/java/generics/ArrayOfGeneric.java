@@ -17,6 +17,7 @@ public class ArrayOfGeneric {
 		// Discovers type mismatch at compile time:
 		// ! gia[2] = new Generic<Double>();
 	}
-} /*
-	 * Output: Generic[]
-	 */// :~
+}
+/*
+ * Output: Generic[]
+ */// :~

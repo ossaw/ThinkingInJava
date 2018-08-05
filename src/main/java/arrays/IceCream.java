@@ -30,10 +30,11 @@ public class IceCream {
 		for (int i = 0; i < 7; i++)
 			System.out.println(Arrays.toString(flavorSet(3)));
 	}
-} /*
-	 * Output: [Rum Raisin, Mint Chip, Mocha Almond Fudge] [Chocolate,
-	 * Strawberry, Mocha Almond Fudge] [Strawberry, Mint Chip, Mocha Almond
-	 * Fudge] [Rum Raisin, Vanilla Fudge Swirl, Mud Pie] [Vanilla Fudge Swirl,
-	 * Chocolate, Mocha Almond Fudge] [Praline Cream, Strawberry, Mocha Almond
-	 * Fudge] [Mocha Almond Fudge, Strawberry, Mint Chip]
-	 */// :~
+}
+/*
+ * Output: [Rum Raisin, Mint Chip, Mocha Almond Fudge] [Chocolate, Strawberry,
+ * Mocha Almond Fudge] [Strawberry, Mint Chip, Mocha Almond Fudge] [Rum Raisin,
+ * Vanilla Fudge Swirl, Mud Pie] [Vanilla Fudge Swirl, Chocolate, Mocha Almond
+ * Fudge] [Praline Cream, Strawberry, Mocha Almond Fudge] [Mocha Almond Fudge,
+ * Strawberry, Mint Chip]
+ */// :~

@@ -20,10 +20,11 @@ public class Pool<T> {
 		// Load pool with objects that can be checked out:
 		for (int i = 0; i < size; ++i)
 			try {
-				// Assumes a default constructor:
 				items.add(classObject.newInstance());
-			} catch (Exception e) {
-				throw new RuntimeException(e);
+			} catch (InstantiationException e) {
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				e.printStackTrace();
 			}
 	}
 

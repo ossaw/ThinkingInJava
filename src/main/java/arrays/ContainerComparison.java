@@ -36,8 +36,9 @@ public class ContainerComparison {
 		print(intList);
 		print(intList.get(4));
 	}
-} /*
-	 * Output: [Sphere 0, Sphere 1, Sphere 2, Sphere 3, Sphere 4, null, null,
-	 * null, null, null] Sphere 4 [Sphere 5, Sphere 6, Sphere 7, Sphere 8,
-	 * Sphere 9] Sphere 9 [0, 1, 2, 3, 4, 5] 4 [0, 1, 2, 3, 4, 5, 97] 4
-	 */// :~
+}
+/*
+ * Output: [Sphere 0, Sphere 1, Sphere 2, Sphere 3, Sphere 4, null, null, null,
+ * null, null] Sphere 4 [Sphere 5, Sphere 6, Sphere 7, Sphere 8, Sphere 9]
+ * Sphere 9 [0, 1, 2, 3, 4, 5] 4 [0, 1, 2, 3, 4, 5, 97] 4
+ */// :~

@@ -17,6 +17,7 @@ class CheckoutTask<T> implements Runnable {
 		this.pool = pool;
 	}
 
+	@Override
 	public void run() {
 		try {
 			T item = pool.checkOut();
@@ -29,6 +30,7 @@ class CheckoutTask<T> implements Runnable {
 		}
 	}
 
+	@Override
 	public String toString() {
 		return "CheckoutTask " + id + " ";
 	}
@@ -51,6 +53,7 @@ public class SemaphoreDemo {
 			list.add(f);
 		}
 		Future<?> blocked = exec.submit(new Runnable() {
+			@Override
 			public void run() {
 				try {
 					// Semaphore prevents additional checkout,
@@ -66,8 +69,12 @@ public class SemaphoreDemo {
 		print("Checking in objects in " + list);
 		for (Fat f : list)
 			pool.checkIn(f);
-		for (Fat f : list)
+		for (Fat f : list) {
+			System.out.println("before block");
 			pool.checkIn(f); // Second checkIn ignored
+			System.out.println("after block");
+		}
 		exec.shutdown();
 	}
-} /* (Execute to see output) */// :~
+}
+/* (Execute to see output) */// :~

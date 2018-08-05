@@ -26,10 +26,13 @@ class Customer {
 
 // Teach the customer line to display itself:
 class CustomerLine extends ArrayBlockingQueue<Customer> {
+	private static final long serialVersionUID = -9178813400470993907L;
+
 	public CustomerLine(int maxLineSize) {
 		super(maxLineSize);
 	}
 
+	@Override
 	public String toString() {
 		if (this.size() == 0)
 			return "[Empty]";
@@ -49,6 +52,7 @@ class CustomerGenerator implements Runnable {
 		customers = cq;
 	}
 
+	@Override
 	public void run() {
 		try {
 			while (!Thread.interrupted()) {
@@ -74,6 +78,7 @@ class Teller implements Runnable, Comparable<Teller> {
 		customers = cq;
 	}
 
+	@Override
 	public void run() {
 		try {
 			while (!Thread.interrupted()) {
@@ -102,6 +107,7 @@ class Teller implements Runnable, Comparable<Teller> {
 		notifyAll();
 	}
 
+	@Override
 	public String toString() {
 		return "Teller " + id + " ";
 	}
@@ -111,8 +117,10 @@ class Teller implements Runnable, Comparable<Teller> {
 	}
 
 	// Used by priority queue:
+	@Override
 	public synchronized int compareTo(Teller other) {
-		return customersServed < other.customersServed ? -1 : (customersServed == other.customersServed ? 0 : 1);
+		return customersServed < other.customersServed ? -1
+				: (customersServed == other.customersServed ? 0 : 1);
 	}
 }
 
@@ -122,7 +130,7 @@ class TellerManager implements Runnable {
 	private PriorityQueue<Teller> workingTellers = new PriorityQueue<Teller>();
 	private Queue<Teller> tellersDoingOtherThings = new LinkedList<Teller>();
 	private int adjustmentPeriod;
-	private static Random rand = new Random(47);
+	// private static Random rand = new Random(47);
 
 	public TellerManager(ExecutorService e, CustomerLine customers, int adjustmentPeriod) {
 		exec = e;
@@ -170,6 +178,7 @@ class TellerManager implements Runnable {
 		tellersDoingOtherThings.offer(teller);
 	}
 
+	@Override
 	public void run() {
 		try {
 			while (!Thread.interrupted()) {
@@ -210,12 +219,13 @@ public class BankTellerSimulation {
 		}
 		exec.shutdownNow();
 	}
-} /*
-	 * Output: (Sample) [429][200][207] { T0 T1 } [861][258][140][322] { T0 T1 }
-	 * [575][342][804][826][896][984] { T0 T1 T2 }
-	 * [984][810][141][12][689][992][976][368][395][354] { T0 T1 T2 T3 } Teller
-	 * 2 interrupted Teller 2 terminating Teller 1 interrupted Teller 1
-	 * terminating TellerManager interrupted TellerManager terminating Teller 3
-	 * interrupted Teller 3 terminating Teller 0 interrupted Teller 0
-	 * terminating CustomerGenerator interrupted CustomerGenerator terminating
-	 */// :~
+}
+/*
+ * Output: (Sample) [429][200][207] { T0 T1 } [861][258][140][322] { T0 T1 }
+ * [575][342][804][826][896][984] { T0 T1 T2 }
+ * [984][810][141][12][689][992][976][368][395][354] { T0 T1 T2 T3 } Teller 2
+ * interrupted Teller 2 terminating Teller 1 interrupted Teller 1 terminating
+ * TellerManager interrupted TellerManager terminating Teller 3 interrupted
+ * Teller 3 terminating Teller 0 interrupted Teller 0 terminating
+ * CustomerGenerator interrupted CustomerGenerator terminating
+ */// :~

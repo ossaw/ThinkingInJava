@@ -45,6 +45,7 @@ class WaitingTask implements Runnable {
 		this.latch = latch;
 	}
 
+	@Override
 	public void run() {
 		try {
 			latch.await();
@@ -54,6 +55,7 @@ class WaitingTask implements Runnable {
 		}
 	}
 
+	@Override
 	public String toString() {
 		return String.format("WaitingTask %1$-3d ", id);
 	}
@@ -73,4 +75,5 @@ public class CountDownLatchDemo {
 		print("Launched all tasks");
 		exec.shutdown(); // Quit when all tasks complete
 	}
-} /* (Execute to see output) */// :~
+}
+/* (Execute to see output) */// :~
