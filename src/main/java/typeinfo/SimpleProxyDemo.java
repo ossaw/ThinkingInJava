@@ -19,6 +19,27 @@ class RealObject implements Interface {
 	}
 }
 
+class ProxyObject2 implements Interface2 {
+	private Interface2 interface2;
+	
+	public ProxyObject2(Interface2 interface2) {
+		this.interface2 = interface2;
+	}
+	
+	@Override
+	public void doSomeThing() {
+		System.out.println("before do some thing ...");
+		interface2.doSomeThing();
+	}
+	
+	@Override
+	public void doSomeThingElse(String arg) {
+		System.out.println("before do some thing ...");
+		interface2.doSomeThingElse(arg);
+	}
+	
+}
+
 class SimpleProxy implements Interface {
 	private Interface proxied;
 
@@ -47,7 +68,8 @@ class SimpleProxyDemo {
 		consumer(new RealObject());
 		consumer(new SimpleProxy(new RealObject()));
 	}
-} /*
-	 * Output: doSomething somethingElse bonobo SimpleProxy doSomething
-	 * doSomething SimpleProxy somethingElse bonobo somethingElse bonobo
-	 */// :~
+}
+/*
+ * Output: doSomething somethingElse bonobo SimpleProxy doSomething doSomething
+ * SimpleProxy somethingElse bonobo somethingElse bonobo
+ */// :~

@@ -24,11 +24,12 @@ public class ShowMethods {
 		try {
 			Class<?> c = Class.forName(args[0]);
 			Method[] methods = c.getMethods();
-			Constructor[] ctors = c.getConstructors();
+			Constructor<?>[] ctors = c.getConstructors();
 			if (args.length == 1) {
 				for (Method method : methods)
 					print(p.matcher(method.toString()).replaceAll(""));
-				for (Constructor ctor : ctors)
+				print();
+				for (Constructor<?> ctor : ctors)
 					print(p.matcher(ctor.toString()).replaceAll(""));
 				lines = methods.length + ctors.length;
 			} else {
@@ -37,7 +38,7 @@ public class ShowMethods {
 						print(p.matcher(method.toString()).replaceAll(""));
 						lines++;
 					}
-				for (Constructor ctor : ctors)
+				for (Constructor<?> ctor : ctors)
 					if (ctor.toString().indexOf(args[1]) != -1) {
 						print(p.matcher(ctor.toString()).replaceAll(""));
 						lines++;
@@ -46,13 +47,14 @@ public class ShowMethods {
 		} catch (ClassNotFoundException e) {
 			print("No such class: " + e);
 		}
+		print(lines);
 	}
-} /*
-	 * Output: public static void main(String[]) public native int hashCode()
-	 * public final native Class getClass() public final void wait(long,int)
-	 * throws InterruptedException public final void wait() throws
-	 * InterruptedException public final native void wait(long) throws
-	 * InterruptedException public boolean equals(Object) public String
-	 * toString() public final native void notify() public final native void
-	 * notifyAll() public ShowMethods()
-	 */// :~
+}
+/*
+ * Output: public static void main(String[]) public native int hashCode() public
+ * final native Class getClass() public final void wait(long,int) throws
+ * InterruptedException public final void wait() throws InterruptedException
+ * public final native void wait(long) throws InterruptedException public
+ * boolean equals(Object) public String toString() public final native void
+ * notify() public final native void notifyAll() public ShowMethods()
+ */// :~

@@ -9,6 +9,8 @@ import static net.mindview.util.Print.*;
 
 public class PetCount {
 	static class PetCounter extends HashMap<String, Integer> {
+		private static final long serialVersionUID = 7089367994602161176L;
+
 		public void count(String type) {
 			Integer quantity = get(type);
 			if (quantity == null)
@@ -56,9 +58,10 @@ public class PetCount {
 	public static void main(String[] args) {
 		countPets(new ForNameCreator());
 	}
-} /*
-	 * Output: Rat Manx Cymric Mutt Pug Cymric Pug Manx Cymric Rat EgyptianMau
-	 * Hamster EgyptianMau Mutt Mutt Cymric Mouse Pug Mouse Cymric {Pug=3,
-	 * Cat=9, Hamster=1, Cymric=7, Mouse=2, Mutt=3, Rodent=5, Pet=20, Manx=7,
-	 * EgyptianMau=7, Dog=6, Rat=2}
-	 */// :~
+}
+/*
+ * Output: Rat Manx Cymric Mutt Pug Cymric Pug Manx Cymric Rat EgyptianMau
+ * Hamster EgyptianMau Mutt Mutt Cymric Mouse Pug Mouse Cymric {Pug=3, Cat=9,
+ * Hamster=1, Cymric=7, Mouse=2, Mutt=3, Rodent=5, Pet=20, Manx=7,
+ * EgyptianMau=7, Dog=6, Rat=2}
+ */// :~

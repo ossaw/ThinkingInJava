@@ -6,10 +6,12 @@ package typeinfo; /* Added by Eclipse.py */
 import typeinfo.interfacea.*;
 
 class B implements A {
+	@Override
 	public void f() {
 	}
 
 	public void g() {
+		System.out.println("g()");
 	}
 }
 
@@ -24,6 +26,7 @@ public class InterfaceViolation {
 			b.g();
 		}
 	}
-} /*
-	 * Output: B
-	 */// :~
+}
+/*
+ * Output: B
+ */// :~
