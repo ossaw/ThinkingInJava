@@ -5,6 +5,7 @@ class Building {
 }
 
 class House extends Building {
+
 }
 
 public class ClassCasts {
