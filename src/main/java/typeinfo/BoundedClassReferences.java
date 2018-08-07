@@ -8,4 +8,5 @@ public class BoundedClassReferences {
 		bounded = Number.class;
 		// Or anything else derived from Number.
 	}
-} /// :~
+}
+/// :~

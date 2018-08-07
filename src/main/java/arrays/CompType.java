@@ -32,6 +32,7 @@ public class CompType implements Comparable<CompType> {
 
 	public static Generator<CompType> generator() {
 		return new Generator<CompType>() {
+			@Override
 			public CompType next() {
 				return new CompType(r.nextInt(100), r.nextInt(100));
 			}

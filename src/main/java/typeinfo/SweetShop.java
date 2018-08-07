@@ -37,7 +37,8 @@ public class SweetShop {
 		new Cookie();
 		print("After creating Cookie");
 	}
-} /*
-	 * Output: inside main Loading Candy After creating Candy Loading Gum After
-	 * Class.forName("Gum") Loading Cookie After creating Cookie
-	 */// :~
+}
+/*
+ * Output: inside main Loading Candy After creating Candy Loading Gum After
+ * Class.forName("Gum") Loading Cookie After creating Cookie
+ */// :~
