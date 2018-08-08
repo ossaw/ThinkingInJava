@@ -46,16 +46,16 @@ public class TableCreator {
 						columnName = field.getName().toUpperCase();
 					else
 						columnName = sString.name();
-					columnDefs.add(
-							columnName + " VARCHAR(" + sString.value() + ")" + getConstraints(sString.constraints()));
+					columnDefs.add(columnName + " VARCHAR(" + sString.value() + ")"
+							+ getConstraints(sString.constraints()));
 				}
-				StringBuilder createCommand = new StringBuilder("CREATE TABLE " + tableName + "(");
-				for (String columnDef : columnDefs)
-					createCommand.append("\n    " + columnDef + ",");
-				// Remove trailing comma
-				String tableCreate = createCommand.substring(0, createCommand.length() - 1) + ");";
-				System.out.println("Table Creation SQL for " + className + " is :\n" + tableCreate);
 			}
+			StringBuilder createCommand = new StringBuilder("CREATE TABLE " + tableName + "(");
+			for (String columnDef : columnDefs)
+				createCommand.append("\n    " + columnDef + ",");
+			// Remove trailing comma
+			String tableCreate = createCommand.substring(0, createCommand.length() - 1) + ");";
+			System.out.println("Table Creation SQL for " + className + " is :\n" + tableCreate);
 		}
 	}
 
@@ -69,14 +69,14 @@ public class TableCreator {
 			constraints += " UNIQUE";
 		return constraints;
 	}
-} /*
-	 * Output: Table Creation SQL for annotations.database.Member is : CREATE
-	 * TABLE MEMBER( FIRSTNAME VARCHAR(30)); Table Creation SQL for
-	 * annotations.database.Member is : CREATE TABLE MEMBER( FIRSTNAME
-	 * VARCHAR(30), LASTNAME VARCHAR(50)); Table Creation SQL for
-	 * annotations.database.Member is : CREATE TABLE MEMBER( FIRSTNAME
-	 * VARCHAR(30), LASTNAME VARCHAR(50), AGE INT); Table Creation SQL for
-	 * annotations.database.Member is : CREATE TABLE MEMBER( FIRSTNAME
-	 * VARCHAR(30), LASTNAME VARCHAR(50), AGE INT, HANDLE VARCHAR(30) PRIMARY
-	 * KEY);
-	 */// :~
+}
+/*
+ * Output: Table Creation SQL for annotations.database.Member is : CREATE TABLE
+ * MEMBER( FIRSTNAME VARCHAR(30)); Table Creation SQL for
+ * annotations.database.Member is : CREATE TABLE MEMBER( FIRSTNAME VARCHAR(30),
+ * LASTNAME VARCHAR(50)); Table Creation SQL for annotations.database.Member is
+ * : CREATE TABLE MEMBER( FIRSTNAME VARCHAR(30), LASTNAME VARCHAR(50), AGE INT);
+ * Table Creation SQL for annotations.database.Member is : CREATE TABLE MEMBER(
+ * FIRSTNAME VARCHAR(30), LASTNAME VARCHAR(50), AGE INT, HANDLE VARCHAR(30)
+ * PRIMARY KEY);
+ */// :~

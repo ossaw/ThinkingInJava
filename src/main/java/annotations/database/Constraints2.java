@@ -1,4 +1,4 @@
-package annotations;
+package annotations.database;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -7,13 +7,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Documented
-@Target(ElementType.METHOD)
+@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface UseCase2 {
+public @interface Constraints2 {
+	boolean allowNull() default true;
 
-	// 注解方法不支持包装类型
-	public int id();
+	boolean primaryKey() default false;
 
-	public String desc() default "no desc";
-
+	boolean unique() default false;
 }
