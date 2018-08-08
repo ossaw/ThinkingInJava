@@ -8,6 +8,7 @@ class Cake {
 		Pie x = new Pie();
 		x.f();
 	}
-} /*
-	 * Output: Pie.f()
-	 */// :~
+}
+/*
+ * Output: Pie.f()
+ */// :~

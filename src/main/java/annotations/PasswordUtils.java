@@ -18,4 +18,5 @@ public class PasswordUtils {
 	public boolean checkForNewPassword(List<String> prevPasswords, String password) {
 		return !prevPasswords.contains(password);
 	}
-} /// :~
+}
+/// :~

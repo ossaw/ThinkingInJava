@@ -33,9 +33,10 @@ public class ModifyingPrivateFields {
 		f.set(pf, "No, you're not!");
 		System.out.println(pf);
 	}
-} /*
-	 * Output: i = 1, I'm totally safe, Am I safe? f.getInt(pf): 1 i = 47, I'm
-	 * totally safe, Am I safe? f.get(pf): I'm totally safe i = 47, I'm totally
-	 * safe, Am I safe? f.get(pf): Am I safe? i = 47, I'm totally safe, No,
-	 * you're not!
-	 */// :~
+}
+/*
+ * Output: i = 1, I'm totally safe, Am I safe? f.getInt(pf): 1 i = 47, I'm
+ * totally safe, Am I safe? f.get(pf): I'm totally safe i = 47, I'm totally
+ * safe, Am I safe? f.get(pf): Am I safe? i = 47, I'm totally safe, No, you're
+ * not!
+ */// :~

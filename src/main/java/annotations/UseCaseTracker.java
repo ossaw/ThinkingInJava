@@ -23,8 +23,9 @@ public class UseCaseTracker {
 		Collections.addAll(useCases, 47, 48, 49, 50);
 		trackUseCases(useCases, PasswordUtils.class);
 	}
-} /*
-	 * Output: Found Use Case:47 Passwords must contain at least one numeric
-	 * Found Use Case:48 no description Found Use Case:49 New passwords can't
-	 * equal previously used ones Warning: Missing use case-50
-	 */// :~
+}
+/*
+ * Output: Found Use Case:47 Passwords must contain at least one numeric Found
+ * Use Case:48 no description Found Use Case:49 New passwords can't equal
+ * previously used ones Warning: Missing use case-50
+ */// :~

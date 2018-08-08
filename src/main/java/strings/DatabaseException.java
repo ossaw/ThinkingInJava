@@ -2,6 +2,8 @@
 package strings; /* Added by Eclipse.py */
 
 public class DatabaseException extends Exception {
+	private static final long serialVersionUID = 5018617410542847630L;
+
 	public DatabaseException(int transactionID, int queryID, String message) {
 		super(String.format("(t%d, q%d) %s", transactionID, queryID, message));
 	}
@@ -13,6 +15,7 @@ public class DatabaseException extends Exception {
 			System.out.println(e);
 		}
 	}
-} /*
-	 * Output: DatabaseException: (t3, q7) Write failed
-	 */// :~
+}
+/*
+ * Output: DatabaseException: (t3, q7) Write failed
+ */// :~

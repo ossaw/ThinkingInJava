@@ -12,15 +12,19 @@ public class Splitting {
 	}
 
 	public static void main(String[] args) {
-		split(" "); // Doesn't have to contain regex chars
-		split("\\W+"); // Non-word characters
-		split("n\\W+"); // 'n' followed by non-word characters
+		// Doesn't have to contain regex chars
+		split(" "); 
+		// Non-word characters
+		split("\\W+"); 
+		// 'n' followed by non-word characters
+		split("n\\W+"); 
 	}
-} /*
-	 * Output: [Then,, when, you, have, found, the, shrubbery,, you, must, cut,
-	 * down, the, mightiest, tree, in, the, forest..., with..., a, herring!]
-	 * [Then, when, you, have, found, the, shrubbery, you, must, cut, down, the,
-	 * mightiest, tree, in, the, forest, with, a, herring] [The, whe, you have
-	 * found the shrubbery, you must cut dow, the mightiest tree i, the
-	 * forest... with... a herring!]
-	 */// :~
+}
+/*
+ * Output: [Then,, when, you, have, found, the, shrubbery,, you, must, cut,
+ * down, the, mightiest, tree, in, the, forest..., with..., a, herring!] [Then,
+ * when, you, have, found, the, shrubbery, you, must, cut, down, the, mightiest,
+ * tree, in, the, forest, with, a, herring] [The, whe, you have found the
+ * shrubbery, you must cut dow, the mightiest tree i, the forest... with... a
+ * herring!]
+ */// :~
