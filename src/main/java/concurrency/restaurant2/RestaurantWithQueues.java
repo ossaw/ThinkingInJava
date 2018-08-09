@@ -34,7 +34,8 @@ class Order { // (A data-transfer object)
 	}
 
 	public String toString() {
-		return "Order: " + id + " item: " + food + " for: " + customer + " served by: " + waitPerson;
+		return "Order: " + id + " item: " + food + " for: " + customer + " served by: "
+				+ waitPerson;
 	}
 }
 
@@ -78,6 +79,7 @@ class Customer implements Runnable {
 		placeSetting.put(p);
 	}
 
+	@Override
 	public void run() {
 		for (Course course : Course.values()) {
 			Food food = course.randomSelection();
@@ -118,12 +120,14 @@ class WaitPerson implements Runnable {
 		}
 	}
 
+	@Override
 	public void run() {
 		try {
 			while (!Thread.interrupted()) {
 				// Blocks until a course is ready
 				Plate plate = filledOrders.take();
-				print(this + "received " + plate + " delivering to " + plate.getOrder().getCustomer());
+				print(this + "received " + plate + " delivering to "
+						+ plate.getOrder().getCustomer());
 				plate.getOrder().getCustomer().deliver(plate);
 			}
 		} catch (InterruptedException e) {
@@ -190,6 +194,7 @@ class Restaurant implements Runnable {
 		}
 	}
 
+	@Override
 	public void run() {
 		try {
 			while (!Thread.interrupted()) {
@@ -219,14 +224,14 @@ public class RestaurantWithQueues {
 		}
 		exec.shutdownNow();
 	}
-} /*
-	 * Output: (Sample) WaitPerson 0 received SPRING_ROLLS delivering to
-	 * Customer 1 Customer 1 eating SPRING_ROLLS WaitPerson 3 received
-	 * SPRING_ROLLS delivering to Customer 0 Customer 0 eating SPRING_ROLLS
-	 * WaitPerson 0 received BURRITO delivering to Customer 1 Customer 1 eating
-	 * BURRITO WaitPerson 3 received SPRING_ROLLS delivering to Customer 2
-	 * Customer 2 eating SPRING_ROLLS WaitPerson 1 received SOUP delivering to
-	 * Customer 3 Customer 3 eating SOUP WaitPerson 3 received VINDALOO
-	 * delivering to Customer 0 Customer 0 eating VINDALOO WaitPerson 0 received
-	 * FRUIT delivering to Customer 1 ...
-	 */// :~
+}
+/*
+ * Output: (Sample) WaitPerson 0 received SPRING_ROLLS delivering to Customer 1
+ * Customer 1 eating SPRING_ROLLS WaitPerson 3 received SPRING_ROLLS delivering
+ * to Customer 0 Customer 0 eating SPRING_ROLLS WaitPerson 0 received BURRITO
+ * delivering to Customer 1 Customer 1 eating BURRITO WaitPerson 3 received
+ * SPRING_ROLLS delivering to Customer 2 Customer 2 eating SPRING_ROLLS
+ * WaitPerson 1 received SOUP delivering to Customer 3 Customer 3 eating SOUP
+ * WaitPerson 3 received VINDALOO delivering to Customer 0 Customer 0 eating
+ * VINDALOO WaitPerson 0 received FRUIT delivering to Customer 1 ...
+ */// :~
