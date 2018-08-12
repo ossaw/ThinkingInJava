@@ -26,6 +26,7 @@ public class LostInformation {
 		System.out.println(Arrays.toString(quark.getClass().getTypeParameters()));
 		System.out.println(Arrays.toString(p.getClass().getTypeParameters()));
 	}
-} /*
-	 * Output: [E] [K, V] [Q] [POSITION, MOMENTUM]
-	 */// :~
+}
+/*
+ * Output: [E] [K, V] [Q] [POSITION, MOMENTUM]
+ */// :~

@@ -6,7 +6,7 @@ package net.mindview.util;
 public class BasicGenerator<T> implements Generator<T> {
 	private Class<T> type;
 
-	public BasicGenerator(Class<T> type) {
+	private BasicGenerator(Class<T> type) {
 		this.type = type;
 	}
 

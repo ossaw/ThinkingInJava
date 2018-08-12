@@ -19,7 +19,8 @@ public class GenericVarargs {
 		ls = makeList("ABCDEFFHIJKLMNOPQRSTUVWXYZ".split(""));
 		System.out.println(ls);
 	}
-} /*
-	 * Output: [A] [A, B, C] [, A, B, C, D, E, F, F, H, I, J, K, L, M, N, O, P,
-	 * Q, R, S, T, U, V, W, X, Y, Z]
-	 */// :~
+}
+/*
+ * Output: [A] [A, B, C] [, A, B, C, D, E, F, F, H, I, J, K, L, M, N, O, P, Q,
+ * R, S, T, U, V, W, X, Y, Z]
+ */// :~

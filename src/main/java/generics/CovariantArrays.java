@@ -32,7 +32,8 @@ public class CovariantArrays {
 			System.out.println(e);
 		}
 	}
-} /*
-	 * Output: java.lang.ArrayStoreException: Fruit
-	 * java.lang.ArrayStoreException: Orange
-	 */// :~
+}
+/*
+ * Output: java.lang.ArrayStoreException: Fruit java.lang.ArrayStoreException:
+ * Orange
+ */// :~

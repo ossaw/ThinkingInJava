@@ -19,4 +19,5 @@ public class Manipulation {
 		Manipulator<HasF> manipulator = new Manipulator<HasF>(hf);
 		// manipulator.manipulate();
 	}
-} /// :~
+}
+/// :~

@@ -60,11 +60,12 @@ public class BankTeller {
 		for (Customer c : line)
 			serve(tellers.get(rand.nextInt(tellers.size())), c);
 	}
-} /*
-	 * Output: Teller 3 serves Customer 1 Teller 2 serves Customer 2 Teller 3
-	 * serves Customer 3 Teller 1 serves Customer 4 Teller 1 serves Customer 5
-	 * Teller 3 serves Customer 6 Teller 1 serves Customer 7 Teller 2 serves
-	 * Customer 8 Teller 3 serves Customer 9 Teller 3 serves Customer 10 Teller
-	 * 2 serves Customer 11 Teller 4 serves Customer 12 Teller 2 serves Customer
-	 * 13 Teller 1 serves Customer 14 Teller 1 serves Customer 15
-	 */// :~
+}
+/*
+ * Output: Teller 3 serves Customer 1 Teller 2 serves Customer 2 Teller 3 serves
+ * Customer 3 Teller 1 serves Customer 4 Teller 1 serves Customer 5 Teller 3
+ * serves Customer 6 Teller 1 serves Customer 7 Teller 2 serves Customer 8
+ * Teller 3 serves Customer 9 Teller 3 serves Customer 10 Teller 2 serves
+ * Customer 11 Teller 4 serves Customer 12 Teller 2 serves Customer 13 Teller 1
+ * serves Customer 14 Teller 1 serves Customer 15
+ */// :~

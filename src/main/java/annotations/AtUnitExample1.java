@@ -43,11 +43,12 @@ public class AtUnitExample1 {
 	public static void main(String[] args) throws Exception {
 		OSExecute.command("java net.mindview.atunit.AtUnit AtUnitExample1");
 	}
-} /*
-	 * Output: annotations.AtUnitExample1 . methodOneTest . m2 This is methodTwo
-	 * 
-	 * . m3 . failureTest (failed) . anotherDisappointment (failed) (5 tests)
-	 * 
-	 * >>> 2 FAILURES <<< annotations.AtUnitExample1: failureTest
-	 * annotations.AtUnitExample1: anotherDisappointment
-	 */// :~
+}
+/*
+ * Output: annotations.AtUnitExample1 . methodOneTest . m2 This is methodTwo
+ * 
+ * . m3 . failureTest (failed) . anotherDisappointment (failed) (5 tests)
+ * 
+ * >>> 2 FAILURES <<< annotations.AtUnitExample1: failureTest
+ * annotations.AtUnitExample1: anotherDisappointment
+ */// :~

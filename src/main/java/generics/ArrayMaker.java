@@ -21,6 +21,7 @@ public class ArrayMaker<T> {
 		String[] stringArray = stringMaker.create(9);
 		System.out.println(Arrays.toString(stringArray));
 	}
-} /*
-	 * Output: [null, null, null, null, null, null, null, null, null]
-	 */// :~
+}
+/*
+ * Output: [null, null, null, null, null, null, null, null, null]
+ */// :~

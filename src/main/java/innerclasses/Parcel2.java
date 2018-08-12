@@ -46,6 +46,7 @@ public class Parcel2 {
 		Parcel2.Contents c = q.contents();
 		Parcel2.Destination d = q.to("Borneo");
 	}
-} /*
-	 * Output: Tasmania
-	 */// :~
+}
+/*
+ * Output: Tasmania
+ */// :~

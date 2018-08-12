@@ -36,6 +36,7 @@ public class Parcel1 {
 		Parcel1 p = new Parcel1();
 		p.ship("Tasmania");
 	}
-} /*
-	 * Output: Tasmania
-	 */// :~
+}
+/*
+ * Output: Tasmania
+ */// :~

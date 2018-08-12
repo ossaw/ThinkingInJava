@@ -14,5 +14,7 @@ public class GenericsAndCovariance {
 		flist.add(null); // Legal but uninteresting
 		// We know that it returns at least Fruit:
 		Fruit f = flist.get(0);
+		System.out.println(f);
 	}
-} /// :~
+}
+/// :~
