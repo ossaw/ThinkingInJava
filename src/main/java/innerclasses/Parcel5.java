@@ -12,6 +12,7 @@ public class Parcel5 {
 				label = whereTo;
 			}
 
+			@Override
 			public String readLabel() {
 				return label;
 			}
@@ -23,4 +24,5 @@ public class Parcel5 {
 		Parcel5 p = new Parcel5();
 		Destination d = p.destination("Tasmania");
 	}
-} /// :~
+}
+/// :~

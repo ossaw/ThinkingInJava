@@ -24,6 +24,7 @@ public class DotThis {
 		DotThis.Inner dti = dt.inner();
 		dti.outer().f();
 	}
-} /*
-	 * Output: DotThis.f()
-	 */// :~
+}
+/*
+ * Output: DotThis.f()
+ */// :~

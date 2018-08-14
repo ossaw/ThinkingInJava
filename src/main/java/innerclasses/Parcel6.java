@@ -19,6 +19,7 @@ public class Parcel6 {
 			}
 			TrackingSlip ts = new TrackingSlip("slip");
 			String s = ts.getSlip();
+			System.out.println(s);
 		}
 		// Can't use it here! Out of scope:
 		// ! TrackingSlip ts = new TrackingSlip("x");
