@@ -1,11 +1,17 @@
 //: concurrency/BankTellerSimulation.java
 package concurrency; /* Added by Eclipse.py */
 
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Random;
+
 // Using queues and multithreading.
 // {Args: 5}
-
-import java.util.concurrent.*;
-import java.util.*;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 // Read-only objects don't require synchronization:
 class Customer {
