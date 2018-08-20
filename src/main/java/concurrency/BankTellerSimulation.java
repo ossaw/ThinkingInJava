@@ -128,6 +128,7 @@ class Teller implements Runnable, Comparable<Teller> {
 		return customersServed < other.customersServed ? -1
 				: (customersServed == other.customersServed ? 0 : 1);
 	}
+
 }
 
 class TellerManager implements Runnable {
@@ -190,10 +191,10 @@ class TellerManager implements Runnable {
 			while (!Thread.interrupted()) {
 				TimeUnit.MILLISECONDS.sleep(adjustmentPeriod);
 				adjustTellerNumber();
-				System.out.print(customers + " { ");
+				System.out.print(customers + " " + customers.size() + " { ");
 				for (Teller teller : workingTellers)
 					System.out.print(teller.shortString() + " ");
-				System.out.println("}");
+				System.out.println("}" + " " + workingTellers.size());
 			}
 		} catch (InterruptedException e) {
 			System.out.println(this + "interrupted");
@@ -201,6 +202,7 @@ class TellerManager implements Runnable {
 		System.out.println(this + "terminating");
 	}
 
+	@Override
 	public String toString() {
 		return "TellerManager ";
 	}
