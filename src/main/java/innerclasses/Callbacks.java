@@ -76,6 +76,7 @@ public class Callbacks {
 		caller2.go();
 		caller2.go();
 	}
-} /*
-	 * Output: Other operation 1 1 2 Other operation 2 Other operation 3
-	 */// :~
+}
+/*
+ * Output: Other operation 1 1 2 Other operation 2 Other operation 3
+ */// :~

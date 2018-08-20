@@ -1,11 +1,17 @@
 //: concurrency/BankTellerSimulation.java
 package concurrency; /* Added by Eclipse.py */
 
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Random;
+
 // Using queues and multithreading.
 // {Args: 5}
-
-import java.util.concurrent.*;
-import java.util.*;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 // Read-only objects don't require synchronization:
 class Customer {
@@ -122,6 +128,7 @@ class Teller implements Runnable, Comparable<Teller> {
 		return customersServed < other.customersServed ? -1
 				: (customersServed == other.customersServed ? 0 : 1);
 	}
+
 }
 
 class TellerManager implements Runnable {
@@ -184,10 +191,10 @@ class TellerManager implements Runnable {
 			while (!Thread.interrupted()) {
 				TimeUnit.MILLISECONDS.sleep(adjustmentPeriod);
 				adjustTellerNumber();
-				System.out.print(customers + " { ");
+				System.out.print(customers + " " + customers.size() + " { ");
 				for (Teller teller : workingTellers)
 					System.out.print(teller.shortString() + " ");
-				System.out.println("}");
+				System.out.println("}" + " " + workingTellers.size());
 			}
 		} catch (InterruptedException e) {
 			System.out.println(this + "interrupted");
@@ -195,6 +202,7 @@ class TellerManager implements Runnable {
 		System.out.println(this + "terminating");
 	}
 
+	@Override
 	public String toString() {
 		return "TellerManager ";
 	}

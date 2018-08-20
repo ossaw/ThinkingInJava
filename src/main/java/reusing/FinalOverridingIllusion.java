@@ -53,6 +53,7 @@ public class FinalOverridingIllusion {
 		// ! wf.f();
 		// ! wf.g();
 	}
-} /*
-	 * Output: OverridingPrivate2.f() OverridingPrivate2.g()
-	 */// :~
+}
+/*
+ * Output: OverridingPrivate2.f() OverridingPrivate2.g()
+ */// :~

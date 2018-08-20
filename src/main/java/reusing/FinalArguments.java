@@ -14,7 +14,8 @@ public class FinalArguments {
 	}
 
 	void without(Gizmo g) {
-		g = new Gizmo(); // OK -- g not final
+		// OK -- g not final
+		g = new Gizmo(); 
 		g.spin();
 	}
 
@@ -29,4 +30,5 @@ public class FinalArguments {
 		bf.without(null);
 		bf.with(null);
 	}
-} /// :~
+}
+/// :~

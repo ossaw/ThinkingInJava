@@ -56,7 +56,8 @@ public class FinalData {
 		print(fd1);
 		print(fd2);
 	}
-} /*
-	 * Output: fd1: i4 = 15, INT_5 = 18 Creating new FinalData fd1: i4 = 15,
-	 * INT_5 = 18 fd2: i4 = 13, INT_5 = 18
-	 */// :~
+}
+/*
+ * Output: fd1: i4 = 15, INT_5 = 18 Creating new FinalData fd1: i4 = 15, INT_5 =
+ * 18 fd2: i4 = 13, INT_5 = 18
+ */// :~
