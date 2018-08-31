@@ -1,4 +1,4 @@
-/tatget/
+/tatget
 
 .classpath
 .project
@@ -35,3 +35,5 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+/target/
+/bin/
