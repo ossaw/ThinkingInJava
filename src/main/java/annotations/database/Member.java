@@ -1,4 +1,4 @@
-//: annotations/database/Member.java
+// : annotations/database/Member.java
 package annotations.database;
 
 @DBTable(name = "MEMBER")

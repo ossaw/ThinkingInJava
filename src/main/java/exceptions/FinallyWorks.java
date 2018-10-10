@@ -1,10 +1,9 @@
-//: exceptions/FinallyWorks.java
+// : exceptions/FinallyWorks.java
 package exceptions; /* Added by Eclipse.py */
 
 // The finally clause is always executed.
 
-class ThreeException extends Exception {
-}
+class ThreeException extends Exception {}
 
 public class FinallyWorks {
 	static int count = 0;

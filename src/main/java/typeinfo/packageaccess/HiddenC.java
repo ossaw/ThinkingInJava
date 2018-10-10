@@ -1,4 +1,4 @@
-//: typeinfo/packageaccess/HiddenC.java
+// : typeinfo/packageaccess/HiddenC.java
 package typeinfo.packageaccess;
 
 import typeinfo.interfacea.*;

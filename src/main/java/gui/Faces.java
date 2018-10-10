@@ -1,4 +1,4 @@
-//: gui/Faces.java
+// : gui/Faces.java
 package gui; /* Added by Eclipse.py */
 
 // Icon behavior in JButtons.
@@ -15,7 +15,8 @@ public class Faces extends JFrame {
 
 	public Faces() {
 		faces = new Icon[] { new ImageIcon(getClass().getResource("Face0.gif")),
-				new ImageIcon(getClass().getResource("Face1.gif")), new ImageIcon(getClass().getResource("Face2.gif")),
+				new ImageIcon(getClass().getResource("Face1.gif")),
+				new ImageIcon(getClass().getResource("Face2.gif")),
 				new ImageIcon(getClass().getResource("Face3.gif")),
 				new ImageIcon(getClass().getResource("Face4.gif")), };
 		jb = new JButton("JButton", faces[3]);

@@ -1,4 +1,4 @@
-//: reusing/Chess.java
+// : reusing/Chess.java
 package reusing; /* Added by Eclipse.py */
 
 // Inheritance, constructors and arguments.

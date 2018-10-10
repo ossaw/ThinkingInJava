@@ -1,4 +1,4 @@
-//: generics/Manipulation.java
+// : generics/Manipulation.java
 package generics; /* Added by Eclipse.py */
 
 // {CompileTimeError} (Won't compile)

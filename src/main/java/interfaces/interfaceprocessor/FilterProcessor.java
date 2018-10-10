@@ -1,4 +1,4 @@
-//: interfaces/interfaceprocessor/FilterProcessor.java
+// : interfaces/interfaceprocessor/FilterProcessor.java
 package interfaces.interfaceprocessor;
 
 import interfaces.filters.*;

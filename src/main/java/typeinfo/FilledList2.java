@@ -19,7 +19,7 @@ public class FilledList2<T> {
 	public FilledList2(Class<T> type) {
 		this.type = type;
 	}
-	
+
 	public List<T> create(int n) {
 		List<T> result = new ArrayList<>();
 		for (int i = 0; i < n; i++)
@@ -30,9 +30,10 @@ public class FilledList2<T> {
 			}
 		return result;
 	}
-	
+
 	public static void main(String[] args) {
-		FilledList2<CountedInteger2> filledList2 = new FilledList2<>(CountedInteger2.class);
+		FilledList2<CountedInteger2> filledList2 = new FilledList2<>(
+				CountedInteger2.class);
 		System.out.println(filledList2.create(10));
 	}
 

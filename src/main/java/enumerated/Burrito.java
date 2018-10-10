@@ -1,4 +1,4 @@
-//: enumerated/Burrito.java
+// : enumerated/Burrito.java
 package enumerated;
 
 import static enumerated.Spiciness.*;

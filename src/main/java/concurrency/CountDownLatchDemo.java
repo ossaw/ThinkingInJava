@@ -1,4 +1,4 @@
-//: concurrency/CountDownLatchDemo.java
+// : concurrency/CountDownLatchDemo.java
 package concurrency; /* Added by Eclipse.py */
 
 import java.util.concurrent.*;

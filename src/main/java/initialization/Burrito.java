@@ -1,4 +1,4 @@
-//: initialization/Burrito.java
+// : initialization/Burrito.java
 package initialization; /* Added by Eclipse.py */
 
 public class Burrito {
@@ -11,23 +11,23 @@ public class Burrito {
 	public void describe() {
 		System.out.print("This burrito is ");
 		switch (degree) {
-		case NOT:
-			System.out.println("not spicy at all.");
-			break;
-		case MILD:
-		case MEDIUM:
-			System.out.println("a little hot.");
-			break;
-		case HOT:
-		case FLAMING:
-		default:
-			System.out.println("maybe too hot.");
+			case NOT:
+				System.out.println("not spicy at all.");
+				break;
+			case MILD:
+			case MEDIUM:
+				System.out.println("a little hot.");
+				break;
+			case HOT:
+			case FLAMING:
+			default:
+				System.out.println("maybe too hot.");
 		}
 	}
 
 	public static void main(String[] args) {
-		Burrito plain = new Burrito(Spiciness.NOT), greenChile = new Burrito(Spiciness.MEDIUM),
-				jalapeno = new Burrito(Spiciness.HOT);
+		Burrito plain = new Burrito(Spiciness.NOT), greenChile = new Burrito(
+				Spiciness.MEDIUM), jalapeno = new Burrito(Spiciness.HOT);
 		plain.describe();
 		greenChile.describe();
 		jalapeno.describe();

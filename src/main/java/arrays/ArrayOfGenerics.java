@@ -1,4 +1,4 @@
-//: arrays/ArrayOfGenerics.java
+// : arrays/ArrayOfGenerics.java
 package arrays; /* Added by Eclipse.py */
 
 // It is possible to create arrays of generics.

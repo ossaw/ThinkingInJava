@@ -1,4 +1,4 @@
-//: gui/TicTacToe.java
+// : gui/TicTacToe.java
 package gui; /* Added by Eclipse.py */
 
 // Dialog boxes and creating your own components.
@@ -36,7 +36,8 @@ public class TicTacToe extends JFrame {
 
 			public void paintComponent(Graphics g) {
 				super.paintComponent(g);
-				int x1 = 0, y1 = 0, x2 = getSize().width - 1, y2 = getSize().height - 1;
+				int x1 = 0, y1 = 0, x2 = getSize().width - 1,
+						y2 = getSize().height - 1;
 				g.drawRect(x1, y1, x2, y2);
 				x1 = x2 / 4;
 				y1 = y2 / 4;
@@ -64,7 +65,8 @@ public class TicTacToe extends JFrame {
 
 	class BL implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			JDialog d = new ToeDialog(new Integer(rows.getText()), new Integer(cols.getText()));
+			JDialog d = new ToeDialog(new Integer(rows.getText()), new Integer(
+					cols.getText()));
 			d.setVisible(true);
 		}
 	}

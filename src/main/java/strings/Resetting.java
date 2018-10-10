@@ -1,11 +1,12 @@
-//: strings/Resetting.java
+// : strings/Resetting.java
 package strings; /* Added by Eclipse.py */
 
 import java.util.regex.*;
 
 public class Resetting {
 	public static void main(String[] args) throws Exception {
-		Matcher m = Pattern.compile("[frb][aiu][gx]").matcher("fix the rug with bags");
+		Matcher m = Pattern.compile("[frb][aiu][gx]").matcher(
+				"fix the rug with bags");
 		while (m.find())
 			System.out.print(m.group() + " ");
 		System.out.println();

@@ -1,8 +1,7 @@
-//: typeinfo/ClassCasts.java
+// : typeinfo/ClassCasts.java
 package typeinfo; /* Added by Eclipse.py */
 
-class Building {
-}
+class Building {}
 
 class House extends Building {
 

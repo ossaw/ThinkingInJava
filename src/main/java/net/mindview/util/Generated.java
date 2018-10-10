@@ -1,4 +1,4 @@
-//: net/mindview/util/Generated.java
+// : net/mindview/util/Generated.java
 package net.mindview.util;
 
 public class Generated {

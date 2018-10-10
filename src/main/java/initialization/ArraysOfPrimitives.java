@@ -1,4 +1,4 @@
-//: initialization/ArraysOfPrimitives.java
+// : initialization/ArraysOfPrimitives.java
 package initialization; /* Added by Eclipse.py */
 
 import static net.mindview.util.Print.*;

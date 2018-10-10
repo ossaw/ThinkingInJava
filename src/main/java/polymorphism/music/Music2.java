@@ -1,4 +1,4 @@
-//: polymorphism/music/Music2.java
+// : polymorphism/music/Music2.java
 // Overloading instead of upcasting.
 package polymorphism.music;
 

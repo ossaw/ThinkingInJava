@@ -1,4 +1,4 @@
-//: interfaces/nesting/NestingInterfaces.java
+// : interfaces/nesting/NestingInterfaces.java
 package interfaces.nesting;
 
 class A {
@@ -7,13 +7,11 @@ class A {
 	}
 
 	public class BImp implements B {
-		public void f() {
-		}
+		public void f() {}
 	}
 
 	private class BImp2 implements B {
-		public void f() {
-		}
+		public void f() {}
 	}
 
 	public interface C {
@@ -21,13 +19,11 @@ class A {
 	}
 
 	class CImp implements C {
-		public void f() {
-		}
+		public void f() {}
 	}
 
 	private class CImp2 implements C {
-		public void f() {
-		}
+		public void f() {}
 	}
 
 	private interface D {
@@ -35,13 +31,11 @@ class A {
 	}
 
 	private class DImp implements D {
-		public void f() {
-		}
+		public void f() {}
 	}
 
 	public class DImp2 implements D {
-		public void f() {
-		}
+		public void f() {}
 	}
 
 	public D getD() {
@@ -73,13 +67,11 @@ interface E {
 
 public class NestingInterfaces {
 	public class BImp implements A.B {
-		public void f() {
-		}
+		public void f() {}
 	}
 
 	class CImp implements A.C {
-		public void f() {
-		}
+		public void f() {}
 	}
 
 	// Cannot implement a private interface except
@@ -88,22 +80,18 @@ public class NestingInterfaces {
 	// ! public void f() {}
 	// ! }
 	class EImp implements E {
-		public void g() {
-		}
+		public void g() {}
 	}
 
 	class EGImp implements E.G {
-		public void f() {
-		}
+		public void f() {}
 	}
 
 	class EImp2 implements E {
-		public void g() {
-		}
+		public void g() {}
 
 		class EG implements E.G {
-			public void f() {
-			}
+			public void f() {}
 		}
 	}
 

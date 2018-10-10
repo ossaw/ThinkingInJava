@@ -1,4 +1,4 @@
-//: containers/MapEntry.java
+// : containers/MapEntry.java
 package containers; /* Added by Eclipse.py */
 
 // A simple Map.Entry for sample Map implementations.
@@ -29,7 +29,8 @@ public class MapEntry<K, V> implements Map.Entry<K, V> {
 	}
 
 	public int hashCode() {
-		return (key == null ? 0 : key.hashCode()) ^ (value == null ? 0 : value.hashCode());
+		return (key == null ? 0 : key.hashCode()) ^ (value == null ? 0
+				: value.hashCode());
 	}
 
 	public boolean equals(Object o) {
@@ -37,7 +38,8 @@ public class MapEntry<K, V> implements Map.Entry<K, V> {
 			return false;
 		MapEntry me = (MapEntry) o;
 		return (key == null ? me.getKey() == null : key.equals(me.getKey()))
-				&& (value == null ? me.getValue() == null : value.equals(me.getValue()));
+				&& (value == null ? me.getValue() == null
+						: value.equals(me.getValue()));
 	}
 
 	public String toString() {

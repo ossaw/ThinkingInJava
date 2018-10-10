@@ -1,4 +1,4 @@
-//: arrays/ArraySearching.java
+// : arrays/ArraySearching.java
 package arrays; /* Added by Eclipse.py */
 
 // Using Arrays.binarySearch().
@@ -17,8 +17,8 @@ public class ArraySearching {
 			int r = gen.next();
 			int location = Arrays.binarySearch(a, r);
 			if (location >= 0) {
-				print("Location of " + r + " is " + location + ", a[" + location + "] = "
-						+ a[location]);
+				print("Location of " + r + " is " + location + ", a[" + location
+						+ "] = " + a[location]);
 				break; // Out of while loop
 			}
 		}

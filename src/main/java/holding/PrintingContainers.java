@@ -1,4 +1,4 @@
-//: holding/PrintingContainers.java
+// : holding/PrintingContainers.java
 package holding; /* Added by Eclipse.py */
 
 // Containers print themselves automatically.

@@ -1,4 +1,4 @@
-//: net/mindview/util/TaskItem.java
+// : net/mindview/util/TaskItem.java
 // A Future and the Callable that produced it.
 package net.mindview.util;
 

@@ -1,4 +1,4 @@
-//: annotations/PasswordUtils.java
+// : annotations/PasswordUtils.java
 package annotations; /* Added by Eclipse.py */
 
 import java.util.*;
@@ -15,7 +15,8 @@ public class PasswordUtils {
 	}
 
 	@UseCase(id = 49, description = "New passwords can't equal previously used ones")
-	public boolean checkForNewPassword(List<String> prevPasswords, String password) {
+	public boolean checkForNewPassword(List<String> prevPasswords,
+			String password) {
 		return !prevPasswords.contains(password);
 	}
 }

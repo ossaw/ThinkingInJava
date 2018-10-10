@@ -1,4 +1,4 @@
-//: concurrency/SerialNumberChecker.java
+// : concurrency/SerialNumberChecker.java
 package concurrency; /* Added by Eclipse.py */
 
 // Operations that may seem safe are not,
@@ -48,11 +48,13 @@ public class SerialNumberChecker {
 				int serial = SerialNumberGenerator.nextSerialNumber();
 				if (serials.contains(serial)) {
 					System.out.println("Duplicate: " + serial);
-					/*try {
-						TimeUnit.MICROSECONDS.sleep(10);
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}*/
+					/*
+					 * try {
+					 * TimeUnit.MICROSECONDS.sleep(10);
+					 * } catch (InterruptedException e) {
+					 * e.printStackTrace();
+					 * }
+					 */
 					System.exit(0);
 				}
 				serials.add(serial);

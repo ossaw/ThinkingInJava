@@ -1,4 +1,4 @@
-//: interfaces/AdaptedRandomDoubles.java
+// : interfaces/AdaptedRandomDoubles.java
 package interfaces; /* Added by Eclipse.py */
 
 // Creating an adapter with inheritance.

@@ -1,4 +1,4 @@
-//: typeinfo/pets/Pets.java
+// : typeinfo/pets/Pets.java
 // Facade to produce a default PetCreator.
 package typeinfo.pets;
 

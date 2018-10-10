@@ -1,4 +1,4 @@
-//: innerclasses/TestParcel.java
+// : innerclasses/TestParcel.java
 package innerclasses; /* Added by Eclipse.py */
 
 class Parcel4 {

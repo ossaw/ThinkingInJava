@@ -1,4 +1,4 @@
-//: net/mindview/util/ProcessFiles.java
+// : net/mindview/util/ProcessFiles.java
 package net.mindview.util;
 
 import java.io.*;

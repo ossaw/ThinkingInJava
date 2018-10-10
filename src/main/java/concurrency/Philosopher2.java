@@ -9,14 +9,15 @@ public class Philosopher2 implements Runnable {
 	private Chopstick2 left;
 	private Chopstick2 right;
 	private Random rand = new Random(47);
-	
-	public Philosopher2(Chopstick2 left, Chopstick2 right, int id, int ponderFactor) {
+
+	public Philosopher2(Chopstick2 left, Chopstick2 right, int id,
+			int ponderFactor) {
 		this.id = id;
 		this.ponderFactor = ponderFactor;
 		this.left = left;
 		this.right = right;
 	}
-	
+
 	@Override
 	public void run() {
 		while (!Thread.interrupted()) {
@@ -42,7 +43,7 @@ public class Philosopher2 implements Runnable {
 			right.drop();
 		}
 	}
-	
+
 	public void pause() {
 		if (ponderFactor == 0)
 			return;
@@ -53,7 +54,7 @@ public class Philosopher2 implements Runnable {
 			e.printStackTrace();
 		}
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Philsopher2 " + id;

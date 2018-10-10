@@ -1,4 +1,4 @@
-//: concurrency/Tester.java
+// : concurrency/Tester.java
 package concurrency; /* Added by Eclipse.py */
 
 // Framework to test performance of concurrency containers.
@@ -30,7 +30,8 @@ public abstract class Tester<C> {
 		this.testId = testId + " " + nReaders + "r " + nWriters + "w";
 		this.nReaders = nReaders;
 		this.nWriters = nWriters;
-		writeData = Generated.array(Integer.class, new RandomGenerator.Integer(), containerSize);
+		writeData = Generated.array(Integer.class,
+				new RandomGenerator.Integer(), containerSize);
 		for (int i = 0; i < testReps; i++) {
 			runTest();
 			readTime = 0;
@@ -49,7 +50,8 @@ public abstract class Tester<C> {
 		}
 		System.out.printf("%-27s %14d %14d\n", testId, readTime, writeTime);
 		if (readTime != 0 && writeTime != 0)
-			System.out.printf("%-27s %14d\n", "readTime + writeTime =", readTime + writeTime);
+			System.out.printf("%-27s %14d\n", "readTime + writeTime =", readTime
+					+ writeTime);
 	}
 
 	abstract class TestTask implements Runnable {
@@ -77,6 +79,7 @@ public abstract class Tester<C> {
 			testCycles = new Integer(args[1]);
 		if (args.length > 2)
 			containerSize = new Integer(args[2]);
-		System.out.printf("%-27s %14s %14s\n", "Type", "Read time", "Write time");
+		System.out.printf("%-27s %14s %14s\n", "Type", "Read time",
+				"Write time");
 	}
 } /// :~

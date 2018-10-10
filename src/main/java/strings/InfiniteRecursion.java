@@ -1,4 +1,4 @@
-//: strings/InfiniteRecursion.java
+// : strings/InfiniteRecursion.java
 package strings; /* Added by Eclipse.py */
 
 // Accidental recursion.

@@ -1,4 +1,4 @@
-//: gui/FlowLayout1.java
+// : gui/FlowLayout1.java
 package gui; /* Added by Eclipse.py */
 
 // Demonstrates FlowLayout.

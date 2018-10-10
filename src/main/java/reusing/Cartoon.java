@@ -1,4 +1,4 @@
-//: reusing/Cartoon.java
+// : reusing/Cartoon.java
 package reusing; /* Added by Eclipse.py */
 
 // Constructor calls during inheritance.

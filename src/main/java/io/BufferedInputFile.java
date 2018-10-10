@@ -1,4 +1,4 @@
-//: io/BufferedInputFile.java
+// : io/BufferedInputFile.java
 package io; /* Added by Eclipse.py */
 
 import java.io.*;
@@ -17,7 +17,8 @@ public class BufferedInputFile {
 	}
 
 	public static void main(String[] args) throws IOException {
-		System.out.print(read("D:\\Workspaces\\Eclipse\\thinking-In-Java-master\\src\\main\\java\\io\\BufferedInputFile.java"));
+		System.out.print(read(
+				"D:\\Workspaces\\Eclipse\\thinking-In-Java-master\\src\\main\\java\\io\\BufferedInputFile.java"));
 	}
 }
 /* (Execute to see output) */// :~

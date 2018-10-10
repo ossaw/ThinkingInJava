@@ -28,7 +28,7 @@ public class BufferedInputFile2 {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(
-				read("D:\\Workspaces\\Eclipse\\thinking-In-Java-master\\src\\main\\java\\io\\BufferedInputFile2.java"));
+		System.out.println(read(
+				"D:\\Workspaces\\Eclipse\\thinking-In-Java-master\\src\\main\\java\\io\\BufferedInputFile2.java"));
 	}
 }

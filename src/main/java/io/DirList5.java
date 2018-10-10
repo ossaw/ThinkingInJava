@@ -6,9 +6,10 @@ import java.util.Arrays;
 import java.util.regex.Pattern;
 
 public class DirList5 {
-	private static FilenameFilter filter(String regex) {
+	private static FilenameFilter filter(final String regex) {
 		return new FilenameFilter() {
 			private Pattern pattern = Pattern.compile(regex);
+
 			@Override
 			public boolean accept(File dir, String name) {
 				return pattern.matcher(name).matches();

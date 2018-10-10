@@ -1,4 +1,4 @@
-//: polymorphism/music/Note.java
+// : polymorphism/music/Note.java
 // Notes to play on musical instruments.
 package polymorphism.music;
 

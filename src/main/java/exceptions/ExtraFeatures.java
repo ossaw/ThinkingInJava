@@ -1,4 +1,4 @@
-//: exceptions/ExtraFeatures.java
+// : exceptions/ExtraFeatures.java
 package exceptions; /* Added by Eclipse.py */
 
 // Further embellishment of exception classes.
@@ -8,8 +8,7 @@ import static net.mindview.util.Print.*;
 class MyException2 extends Exception {
 	private int x;
 
-	public MyException2() {
-	}
+	public MyException2() {}
 
 	public MyException2(String msg) {
 		super(msg);

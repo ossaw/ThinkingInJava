@@ -1,4 +1,4 @@
-//: net/mindview/atunit/AtUnit.java
+// : net/mindview/atunit/AtUnit.java
 // An annotation-based unit-test framework.
 // {RunByHand}
 package net.mindview.atunit;
@@ -23,7 +23,8 @@ public class AtUnit implements ProcessFiles.Strategy {
 			print("OK (" + testsRun + " tests)");
 		else {
 			print("(" + testsRun + " tests)");
-			print("\n>>> " + failures + " FAILURE" + (failures > 1 ? "S" : "") + " <<<");
+			print("\n>>> " + failures + " FAILURE" + (failures > 1 ? "S" : "")
+					+ " <<<");
 			for (String failed : failedTests)
 				print("  " + failed);
 		}
@@ -51,8 +52,10 @@ public class AtUnit implements ProcessFiles.Strategy {
 		if (testMethods.size() > 0) {
 			if (creator == null)
 				try {
-					if (!Modifier.isPublic(testClass.getDeclaredConstructor().getModifiers())) {
-						print("Error: " + testClass + " default constructor must be public");
+					if (!Modifier.isPublic(testClass.getDeclaredConstructor()
+							.getModifiers())) {
+						print("Error: " + testClass
+								+ " default constructor must be public");
 						System.exit(1);
 					}
 				} catch (NoSuchMethodException e) {
@@ -94,8 +97,10 @@ public class AtUnit implements ProcessFiles.Strategy {
 		void addIfTestMethod(Method m) {
 			if (m.getAnnotation(Test.class) == null)
 				return;
-			if (!(m.getReturnType().equals(boolean.class) || m.getReturnType().equals(void.class)))
-				throw new RuntimeException("@Test method" + " must return boolean or void");
+			if (!(m.getReturnType().equals(boolean.class) || m.getReturnType()
+					.equals(void.class)))
+				throw new RuntimeException("@Test method"
+						+ " must return boolean or void");
 			m.setAccessible(true); // In case it's private, etc.
 			add(m);
 		}
@@ -105,9 +110,11 @@ public class AtUnit implements ProcessFiles.Strategy {
 		if (m.getAnnotation(TestObjectCreate.class) == null)
 			return null;
 		if (!m.getReturnType().equals(testClass))
-			throw new RuntimeException("@TestObjectCreate " + "must return instance of Class to be tested");
+			throw new RuntimeException("@TestObjectCreate "
+					+ "must return instance of Class to be tested");
 		if ((m.getModifiers() & java.lang.reflect.Modifier.STATIC) < 1)
-			throw new RuntimeException("@TestObjectCreate " + "must be static.");
+			throw new RuntimeException("@TestObjectCreate "
+					+ "must be static.");
 		m.setAccessible(true);
 		return m;
 	}
@@ -116,11 +123,15 @@ public class AtUnit implements ProcessFiles.Strategy {
 		if (m.getAnnotation(TestObjectCleanup.class) == null)
 			return null;
 		if (!m.getReturnType().equals(void.class))
-			throw new RuntimeException("@TestObjectCleanup " + "must return void");
+			throw new RuntimeException("@TestObjectCleanup "
+					+ "must return void");
 		if ((m.getModifiers() & java.lang.reflect.Modifier.STATIC) < 1)
-			throw new RuntimeException("@TestObjectCleanup " + "must be static.");
-		if (m.getParameterTypes().length == 0 || m.getParameterTypes()[0] != testClass)
-			throw new RuntimeException("@TestObjectCleanup " + "must take an argument of the tested type.");
+			throw new RuntimeException("@TestObjectCleanup "
+					+ "must be static.");
+		if (m.getParameterTypes().length == 0 || m
+				.getParameterTypes()[0] != testClass)
+			throw new RuntimeException("@TestObjectCleanup "
+					+ "must take an argument of the tested type.");
 		m.setAccessible(true);
 		return m;
 	}
@@ -130,13 +141,15 @@ public class AtUnit implements ProcessFiles.Strategy {
 			try {
 				return creator.invoke(testClass);
 			} catch (Exception e) {
-				throw new RuntimeException("Couldn't run " + "@TestObject (creator) method.");
+				throw new RuntimeException("Couldn't run "
+						+ "@TestObject (creator) method.");
 			}
 		} else { // Use the default constructor:
 			try {
 				return testClass.newInstance();
 			} catch (Exception e) {
-				throw new RuntimeException("Couldn't create a " + "test object. Try using a @TestObject method.");
+				throw new RuntimeException("Couldn't create a "
+						+ "test object. Try using a @TestObject method.");
 			}
 		}
 	}

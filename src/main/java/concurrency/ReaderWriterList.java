@@ -1,4 +1,4 @@
-//: concurrency/ReaderWriterList.java
+// : concurrency/ReaderWriterList.java
 package concurrency; /* Added by Eclipse.py */
 
 import java.util.concurrent.*;
@@ -48,7 +48,8 @@ class ReaderWriterListTest {
 	ExecutorService exec = Executors.newCachedThreadPool();
 	private final static int SIZE = 100;
 	private static Random rand = new Random(47);
-	private ReaderWriterList<Integer> list = new ReaderWriterList<Integer>(SIZE, 0);
+	private ReaderWriterList<Integer> list = new ReaderWriterList<Integer>(SIZE,
+			0);
 
 	private class Writer implements Runnable {
 		public void run() {

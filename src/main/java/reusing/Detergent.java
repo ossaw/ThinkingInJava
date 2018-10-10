@@ -1,4 +1,4 @@
-//: reusing/Detergent.java
+// : reusing/Detergent.java
 package reusing; /* Added by Eclipse.py */
 
 // Inheritance syntax & properties.

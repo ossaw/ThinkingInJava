@@ -7,6 +7,7 @@ public class Parcel20 {
 	public Destination destination(String s) {
 		class PDestination implements Destination {
 			private String string;
+
 			private PDestination(String arg) {
 				string = arg;
 			}
@@ -18,7 +19,7 @@ public class Parcel20 {
 		}
 		return new PDestination(s);
 	}
-	
+
 	public static void main(String[] args) {
 		Parcel20 p20 = new Parcel20();
 		Destination destination = p20.destination("test");

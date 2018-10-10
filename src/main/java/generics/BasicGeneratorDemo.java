@@ -1,11 +1,12 @@
-//: generics/BasicGeneratorDemo.java
+// : generics/BasicGeneratorDemo.java
 package generics; /* Added by Eclipse.py */
 
 import net.mindview.util.*;
 
 public class BasicGeneratorDemo {
 	public static void main(String[] args) {
-		Generator<CountedObject> gen = BasicGenerator.create(CountedObject.class);
+		Generator<CountedObject> gen = BasicGenerator.create(
+				CountedObject.class);
 		for (int i = 0; i < 5; i++)
 			System.out.println(gen.next());
 	}

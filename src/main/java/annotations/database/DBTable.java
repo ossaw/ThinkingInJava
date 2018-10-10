@@ -1,4 +1,4 @@
-//: annotations/database/DBTable.java
+// : annotations/database/DBTable.java
 package annotations.database;
 
 import java.lang.annotation.*;

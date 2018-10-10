@@ -1,4 +1,4 @@
-//: typeinfo/SimpleProxyDemo.java
+// : typeinfo/SimpleProxyDemo.java
 package typeinfo; /* Added by Eclipse.py */
 
 import static net.mindview.util.Print.*;
@@ -21,23 +21,23 @@ class RealObject implements Interface {
 
 class ProxyObject2 implements Interface2 {
 	private Interface2 interface2;
-	
+
 	public ProxyObject2(Interface2 interface2) {
 		this.interface2 = interface2;
 	}
-	
+
 	@Override
 	public void doSomeThing() {
 		System.out.println("before do some thing ...");
 		interface2.doSomeThing();
 	}
-	
+
 	@Override
 	public void doSomeThingElse(String arg) {
 		System.out.println("before do some thing ...");
 		interface2.doSomeThingElse(arg);
 	}
-	
+
 }
 
 class SimpleProxy implements Interface {

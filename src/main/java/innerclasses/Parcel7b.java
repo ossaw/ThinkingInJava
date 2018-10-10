@@ -1,4 +1,4 @@
-//: innerclasses/Parcel7b.java
+// : innerclasses/Parcel7b.java
 package innerclasses; /* Added by Eclipse.py */
 
 // Expanded version of Parcel7.java

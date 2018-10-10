@@ -1,4 +1,4 @@
-//: generics/SimplerPets.java
+// : generics/SimplerPets.java
 package generics; /* Added by Eclipse.py */
 
 import typeinfo.pets.*;

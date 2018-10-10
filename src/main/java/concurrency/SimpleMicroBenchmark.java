@@ -1,4 +1,4 @@
-//: concurrency/SimpleMicroBenchmark.java
+// : concurrency/SimpleMicroBenchmark.java
 package concurrency; /* Added by Eclipse.py */
 
 // The dangers of microbenchmarking.
@@ -43,9 +43,11 @@ public class SimpleMicroBenchmark {
 		long lockTime = test(new LockingTest());
 		System.out.printf("synchronized: %1$10d\n", synchTime);
 		System.out.printf("Lock:         %1$10d\n", lockTime);
-		System.out.printf("Lock/synchronized = %1$.3f", (double) lockTime / (double) synchTime);
+		System.out.printf("Lock/synchronized = %1$.3f", (double) lockTime
+				/ (double) synchTime);
 	}
-} /*
-	 * Output: (75% match) synchronized: 244919117 Lock: 939098964
-	 * Lock/synchronized = 3.834
-	 */// :~
+}
+/*
+ * Output: (75% match) synchronized: 244919117 Lock: 939098964
+ * Lock/synchronized = 3.834
+ */// :~

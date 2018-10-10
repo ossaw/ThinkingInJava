@@ -1,4 +1,4 @@
-//: reusing/BlankFinal.java
+// : reusing/BlankFinal.java
 package reusing; /* Added by Eclipse.py */
 
 // "Blank" final fields.

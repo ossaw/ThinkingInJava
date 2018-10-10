@@ -1,4 +1,4 @@
-//: generics/ErasureAndInheritance.java
+// : generics/ErasureAndInheritance.java
 package generics; /* Added by Eclipse.py */
 
 class GenericBase<T> {
@@ -13,11 +13,9 @@ class GenericBase<T> {
 	}
 }
 
-class Derived1<T> extends GenericBase<T> {
-}
+class Derived1<T> extends GenericBase<T> {}
 
-class Derived2 extends GenericBase {
-} // No warning
+class Derived2 extends GenericBase {} // No warning
 
 // class Derived3 extends GenericBase<?> {}
 // Strange error:

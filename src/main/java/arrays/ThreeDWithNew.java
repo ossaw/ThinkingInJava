@@ -1,4 +1,4 @@
-//: arrays/ThreeDWithNew.java
+// : arrays/ThreeDWithNew.java
 package arrays; /* Added by Eclipse.py */
 
 import java.util.*;

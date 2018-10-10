@@ -123,7 +123,8 @@ class TellerManager2 implements Runnable {
 	private int adjustmentPeriod;
 	private Queue<Teller2> doOtherThingQueue = new LinkedList<>();
 
-	public TellerManager2(int adjustmentPeriod, ExecutorService exec, CustomerLine2 customerLine2) {
+	public TellerManager2(int adjustmentPeriod, ExecutorService exec,
+			CustomerLine2 customerLine2) {
 		this.adjustmentPeriod = adjustmentPeriod;
 		this.customerLine2 = customerLine2;
 		this.exec = exec;
@@ -171,7 +172,8 @@ class TellerManager2 implements Runnable {
 			return;
 		}
 		// If line is short enough, remove a teller:
-		if (workingTellers.size() > 1 && customerLine2.size() / workingTellers.size() < 2)
+		if (workingTellers.size() > 1 && customerLine2.size() / workingTellers
+				.size() < 2)
 			reassignOneTeller();
 		// If there is no line, we only need one teller:
 		if (customerLine2.size() == 0)
@@ -195,12 +197,14 @@ class TellerManager2 implements Runnable {
 public class BankTellerSimulation2 {
 	static final int ADJUSTMENT_PERIOD = 100;
 	static final int QUEUE_SIZE = 10;
+
 	public static void main(String[] args) throws InterruptedException {
-		CustomerLine2 customerLine2  = new CustomerLine2(QUEUE_SIZE);
+		CustomerLine2 customerLine2 = new CustomerLine2(QUEUE_SIZE);
 		ExecutorService exec = Executors.newCachedThreadPool();
 		exec.execute(new CustomerLineGenerator2(customerLine2));
-		exec.execute(new TellerManager2(ADJUSTMENT_PERIOD, exec, customerLine2));
-		
+		exec.execute(new TellerManager2(ADJUSTMENT_PERIOD, exec,
+				customerLine2));
+
 		TimeUnit.SECONDS.sleep(4);
 		exec.shutdownNow();
 	}

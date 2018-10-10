@@ -1,4 +1,4 @@
-//: net/mindview/util/Generator.java
+// : net/mindview/util/Generator.java
 // A generic interface.
 package net.mindview.util;
 

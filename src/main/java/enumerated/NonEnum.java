@@ -1,4 +1,4 @@
-//: enumerated/NonEnum.java
+// : enumerated/NonEnum.java
 package enumerated; /* Added by Eclipse.py */
 
 public class NonEnum {

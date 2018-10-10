@@ -1,4 +1,4 @@
-//: io/LockingMappedFiles.java
+// : io/LockingMappedFiles.java
 package io; /* Added by Eclipse.py */
 
 // Locking portions of a mapped file.
@@ -14,7 +14,8 @@ public class LockingMappedFiles {
 
 	public static void main(String[] args) throws Exception {
 		fc = new RandomAccessFile("test.dat", "rw").getChannel();
-		MappedByteBuffer out = fc.map(FileChannel.MapMode.READ_WRITE, 0, LENGTH);
+		MappedByteBuffer out = fc.map(FileChannel.MapMode.READ_WRITE, 0,
+				LENGTH);
 		for (int i = 0; i < LENGTH; i++)
 			out.put((byte) 'x');
 		new LockAndModify(out, 0, 0 + LENGTH / 3);

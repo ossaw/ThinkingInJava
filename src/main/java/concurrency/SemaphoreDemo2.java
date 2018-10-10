@@ -11,11 +11,11 @@ class CheckoutTask2<T> implements Runnable {
 	private static int count = 0;
 	private final int id = count++;
 	private Pool2<T> pool2;
-	
+
 	public CheckoutTask2(Pool2<T> pool2) {
 		this.pool2 = pool2;
 	}
-	
+
 	@Override
 	public void run() {
 		T t = pool2.checkOut();
@@ -28,12 +28,12 @@ class CheckoutTask2<T> implements Runnable {
 		pool2.checkIn(t);
 		System.out.println(this + " is check in ...");
 	}
-	
+
 	@Override
 	public String toString() {
 		return "CheckoutTask2 " + id;
 	}
-	
+
 }
 
 public class SemaphoreDemo2 {
@@ -41,7 +41,7 @@ public class SemaphoreDemo2 {
 
 	public static void main(String[] args) {
 		ExecutorService exec = Executors.newCachedThreadPool();
-		Pool2<Fat> pool2 = new Pool2<>(Fat.class, SIZE);
+		final Pool2<Fat> pool2 = new Pool2<>(Fat.class, SIZE);
 
 		for (int i = 0; i < SIZE; i++)
 			exec.submit(new CheckoutTask2<Fat>(pool2));
@@ -56,7 +56,8 @@ public class SemaphoreDemo2 {
 			public void run() {
 				System.out.println("thread blocked ...");
 				Fat fat = pool2.checkOut();
-				System.out.println("thread is through ..." + fat.getClass().getName());
+				System.out.println("thread is through ..." + fat.getClass()
+						.getName());
 			}
 		});
 		for (Fat fat : fats) {
@@ -68,7 +69,7 @@ public class SemaphoreDemo2 {
 			pool2.checkIn(fat);
 			System.out.println("after block ...");
 		}
-		
+
 		exec.shutdown();
 	}
 

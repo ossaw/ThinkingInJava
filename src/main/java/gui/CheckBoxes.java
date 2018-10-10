@@ -1,4 +1,4 @@
-//: gui/CheckBoxes.java
+// : gui/CheckBoxes.java
 package gui; /* Added by Eclipse.py */
 
 // Using JCheckBoxes.
@@ -10,8 +10,8 @@ import static net.mindview.util.SwingConsole.*;
 
 public class CheckBoxes extends JFrame {
 	private JTextArea t = new JTextArea(6, 15);
-	private JCheckBox cb1 = new JCheckBox("Check Box 1"), cb2 = new JCheckBox("Check Box 2"),
-			cb3 = new JCheckBox("Check Box 3");
+	private JCheckBox cb1 = new JCheckBox("Check Box 1"), cb2 = new JCheckBox(
+			"Check Box 2"), cb3 = new JCheckBox("Check Box 3");
 
 	public CheckBoxes() {
 		cb1.addActionListener(new ActionListener() {

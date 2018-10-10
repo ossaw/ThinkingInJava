@@ -1,4 +1,4 @@
-//: generics/LatentReflection.java
+// : generics/LatentReflection.java
 package generics; /* Added by Eclipse.py */
 
 // Using Reflection to produce latent typing.
@@ -8,15 +8,13 @@ import static net.mindview.util.Print.*;
 
 // Does not implement Performs:
 class Mime {
-	public void walkAgainstTheWind() {
-	}
+	public void walkAgainstTheWind() {}
 
 	public void sit() {
 		print("Pretending to sit");
 	}
 
-	public void pushInvisibleWalls() {
-	}
+	public void pushInvisibleWalls() {}
 
 	public String toString() {
 		return "Mime";
@@ -33,8 +31,7 @@ class SmartDog {
 		print("Sitting");
 	}
 
-	public void reproduce() {
-	}
+	public void reproduce() {}
 }
 
 class CommunicateReflectively {

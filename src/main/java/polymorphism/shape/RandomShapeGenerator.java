@@ -1,4 +1,4 @@
-//: polymorphism/shape/RandomShapeGenerator.java
+// : polymorphism/shape/RandomShapeGenerator.java
 // A "factory" that randomly creates shapes.
 package polymorphism.shape;
 
@@ -9,13 +9,13 @@ public class RandomShapeGenerator {
 
 	public Shape next() {
 		switch (rand.nextInt(3)) {
-		default:
-		case 0:
-			return new Circle();
-		case 1:
-			return new Square();
-		case 2:
-			return new Triangle();
+			default:
+			case 0:
+				return new Circle();
+			case 1:
+				return new Square();
+			case 2:
+				return new Triangle();
 		}
 	}
 } /// :~

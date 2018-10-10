@@ -1,4 +1,4 @@
-//: exceptions/ExceptionSilencer.java
+// : exceptions/ExceptionSilencer.java
 package exceptions; /* Added by Eclipse.py */
 
 public class ExceptionSilencer {

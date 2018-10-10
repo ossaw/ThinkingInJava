@@ -1,4 +1,4 @@
-//: arrays/Reverse.java
+// : arrays/Reverse.java
 package arrays; /* Added by Eclipse.py */
 
 // The Collections.reverseOrder() Comparator

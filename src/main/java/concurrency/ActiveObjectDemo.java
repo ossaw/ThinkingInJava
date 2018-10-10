@@ -1,4 +1,4 @@
-//: concurrency/ActiveObjectDemo.java
+// : concurrency/ActiveObjectDemo.java
 package concurrency; /* Added by Eclipse.py */
 
 // Can only pass constants, immutables, "disconnected

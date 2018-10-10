@@ -1,4 +1,4 @@
-//: exceptions/ExceptionMethods.java
+// : exceptions/ExceptionMethods.java
 package exceptions; /* Added by Eclipse.py */
 
 // Demonstrating the Exception Methods.

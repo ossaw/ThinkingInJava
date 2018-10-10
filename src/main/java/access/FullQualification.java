@@ -1,4 +1,4 @@
-//: access/FullQualification.java
+// : access/FullQualification.java
 package access; /* Added by Eclipse.py */
 
 public class FullQualification {

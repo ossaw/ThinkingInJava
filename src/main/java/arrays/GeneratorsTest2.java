@@ -4,7 +4,7 @@ import net.mindview.util.CountingGenerator2;
 import net.mindview.util.Generator;
 
 public class GeneratorsTest2 {
-	
+
 	private static void test(Class<?> argClass) {
 		for (Class<?> type : argClass.getClasses()) {
 			try {
@@ -18,14 +18,14 @@ public class GeneratorsTest2 {
 			} catch (IllegalAccessException e) {
 				e.printStackTrace();
 			}
-			
+
 		}
-		
+
 	}
-	
+
 	public static void main(String[] args) {
 		test(CountingGenerator2.class);
-		
+
 	}
 
 }

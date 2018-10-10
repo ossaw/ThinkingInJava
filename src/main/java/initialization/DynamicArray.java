@@ -1,4 +1,4 @@
-//: initialization/DynamicArray.java
+// : initialization/DynamicArray.java
 package initialization; /* Added by Eclipse.py */
 
 // Array initialization.

@@ -1,4 +1,4 @@
-//: concurrency/BankTellerSimulation.java
+// : concurrency/BankTellerSimulation.java
 package concurrency; /* Added by Eclipse.py */
 
 import java.util.LinkedList;
@@ -139,7 +139,8 @@ class TellerManager implements Runnable {
 	private int adjustmentPeriod;
 	// private static Random rand = new Random(47);
 
-	public TellerManager(ExecutorService e, CustomerLine customers, int adjustmentPeriod) {
+	public TellerManager(ExecutorService e, CustomerLine customers,
+			int adjustmentPeriod) {
 		exec = e;
 		this.customers = customers;
 		this.adjustmentPeriod = adjustmentPeriod;
@@ -170,7 +171,8 @@ class TellerManager implements Runnable {
 			return;
 		}
 		// If line is short enough, remove a teller:
-		if (workingTellers.size() > 1 && customers.size() / workingTellers.size() < 2)
+		if (workingTellers.size() > 1 && customers.size() / workingTellers
+				.size() < 2)
 			reassignOneTeller();
 		// If there is no line, we only need one teller:
 		if (customers.size() == 0)

@@ -1,4 +1,4 @@
-//: access/PrintTest.java
+// : access/PrintTest.java
 package access; /* Added by Eclipse.py */
 
 // Uses the static printing methods in Print.java.

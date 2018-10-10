@@ -1,4 +1,4 @@
-//: generics/HasF.java
+// : generics/HasF.java
 package generics; /* Added by Eclipse.py */
 
 public class HasF {

@@ -1,4 +1,4 @@
-//: polymorphism/Shapes.java
+// : polymorphism/Shapes.java
 package polymorphism; /* Added by Eclipse.py */
 
 // Polymorphism in Java.

@@ -1,4 +1,4 @@
-//: concurrency/FastSimulation.java
+// : concurrency/FastSimulation.java
 package concurrency; /* Added by Eclipse.py */
 
 import java.util.concurrent.*;
@@ -27,7 +27,8 @@ public class FastSimulation {
 						next = 0;
 					int oldvalue = GRID[element][i].get();
 					// Perform some kind of modeling calculation:
-					int newvalue = oldvalue + GRID[previous][i].get() + GRID[next][i].get();
+					int newvalue = oldvalue + GRID[previous][i].get()
+							+ GRID[next][i].get();
 					newvalue /= 3; // Average the three values
 					if (!GRID[element][i].compareAndSet(oldvalue, newvalue)) {
 						// Policy here to deal with failure. Here, we

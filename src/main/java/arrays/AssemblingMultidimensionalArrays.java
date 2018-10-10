@@ -1,4 +1,4 @@
-//: arrays/AssemblingMultidimensionalArrays.java
+// : arrays/AssemblingMultidimensionalArrays.java
 package arrays; /* Added by Eclipse.py */
 
 // Creating multidimensional arrays.

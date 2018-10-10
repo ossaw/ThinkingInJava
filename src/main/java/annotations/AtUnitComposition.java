@@ -1,4 +1,4 @@
-//: annotations/AtUnitComposition.java
+// : annotations/AtUnitComposition.java
 // Creating non-embedded tests.
 package annotations;
 
@@ -24,6 +24,5 @@ public class AtUnitComposition {
 } /*
 	 * Output: annotations.AtUnitComposition . _methodOne . _methodTwo This is
 	 * methodTwo
-	 * 
 	 * OK (2 tests)
 	 */// :~

@@ -1,4 +1,4 @@
-//: initialization/OrderOfInitialization.java
+// : initialization/OrderOfInitialization.java
 package initialization; /* Added by Eclipse.py */
 
 // Demonstrates initialization order.

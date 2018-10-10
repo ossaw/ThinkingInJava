@@ -1,4 +1,4 @@
-//: concurrency/Philosopher.java
+// : concurrency/Philosopher.java
 package concurrency; /* Added by Eclipse.py */
 
 // A dining philosopher

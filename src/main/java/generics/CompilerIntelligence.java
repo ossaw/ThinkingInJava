@@ -1,4 +1,4 @@
-//: generics/CompilerIntelligence.java
+// : generics/CompilerIntelligence.java
 package generics; /* Added by Eclipse.py */
 
 import java.util.*;

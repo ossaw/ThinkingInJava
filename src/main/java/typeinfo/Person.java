@@ -1,4 +1,4 @@
-//: typeinfo/Person.java
+// : typeinfo/Person.java
 package typeinfo; /* Added by Eclipse.py */
 
 // A class with a Null Object.

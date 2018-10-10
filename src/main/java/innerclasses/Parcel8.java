@@ -1,4 +1,4 @@
-//: innerclasses/Parcel8.java
+// : innerclasses/Parcel8.java
 package innerclasses; /* Added by Eclipse.py */
 
 // Calling the base-class constructor.

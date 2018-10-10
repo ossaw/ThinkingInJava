@@ -1,4 +1,4 @@
-//: polymorphism/music/Instrument.java
+// : polymorphism/music/Instrument.java
 package polymorphism.music;
 
 import static net.mindview.util.Print.*;

@@ -1,4 +1,4 @@
-//: containers/Lists.java
+// : containers/Lists.java
 package containers; /* Added by Eclipse.py */
 
 // Things you can do with Lists.

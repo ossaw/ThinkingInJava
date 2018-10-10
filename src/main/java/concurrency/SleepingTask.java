@@ -1,4 +1,4 @@
-//: concurrency/SleepingTask.java
+// : concurrency/SleepingTask.java
 package concurrency; /* Added by Eclipse.py */
 
 // Calling sleep() to pause for a while.
@@ -20,13 +20,14 @@ public class SleepingTask extends LiftOff {
 			System.err.println("Interrupted");
 		}
 	}
+
 	@Override
 	public String status() {
-		return "*" + id + "(" + (countDown > 0 ? countDown : "sleeping task!") + "), ";
+		return "*" + id + "(" + (countDown > 0 ? countDown : "sleeping task!")
+				+ "), ";
 	}
 
-	public SleepingTask() {
-	}
+	public SleepingTask() {}
 
 	public SleepingTask(int countDown) {
 		this.countDown = countDown;

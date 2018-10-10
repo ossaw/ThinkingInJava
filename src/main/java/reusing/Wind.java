@@ -1,11 +1,10 @@
-//: reusing/Wind.java
+// : reusing/Wind.java
 package reusing; /* Added by Eclipse.py */
 
 // Inheritance & upcasting.
 
 class Instrument {
-	public void play() {
-	}
+	public void play() {}
 
 	static void tune(Instrument i) {
 		// ...

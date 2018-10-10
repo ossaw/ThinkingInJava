@@ -1,4 +1,4 @@
-//: typeinfo/pets/Rodent.java
+// : typeinfo/pets/Rodent.java
 package typeinfo.pets;
 
 public class Rodent extends Pet {

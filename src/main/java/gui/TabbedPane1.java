@@ -1,4 +1,4 @@
-//: gui/TabbedPane1.java
+// : gui/TabbedPane1.java
 package gui; /* Added by Eclipse.py */
 
 // Demonstrates the Tabbed Pane.
@@ -9,7 +9,8 @@ import java.awt.*;
 import static net.mindview.util.SwingConsole.*;
 
 public class TabbedPane1 extends JFrame {
-	private String[] flavors = { "Chocolate", "Strawberry", "Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
+	private String[] flavors = { "Chocolate", "Strawberry",
+			"Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
 			"Rum Raisin", "Praline Cream", "Mud Pie" };
 	private JTabbedPane tabs = new JTabbedPane();
 	private JTextField txt = new JTextField(20);

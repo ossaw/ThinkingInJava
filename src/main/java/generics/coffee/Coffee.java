@@ -1,4 +1,4 @@
-//: generics/coffee/Coffee.java
+// : generics/coffee/Coffee.java
 package generics.coffee;
 
 public class Coffee {

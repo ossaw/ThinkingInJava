@@ -1,4 +1,4 @@
-//: interfaces/Adventure.java
+// : interfaces/Adventure.java
 package interfaces; /* Added by Eclipse.py */
 
 // Multiple interfaces.
@@ -16,16 +16,13 @@ interface CanFly {
 }
 
 class ActionCharacter {
-	public void fight() {
-	}
+	public void fight() {}
 }
 
 class Hero extends ActionCharacter implements CanFight, CanSwim, CanFly {
-	public void swim() {
-	}
+	public void swim() {}
 
-	public void fly() {
-	}
+	public void fly() {}
 }
 
 public class Adventure {

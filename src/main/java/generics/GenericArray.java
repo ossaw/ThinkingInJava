@@ -1,4 +1,4 @@
-//: generics/GenericArray.java
+// : generics/GenericArray.java
 package generics; /* Added by Eclipse.py */
 
 public class GenericArray<T> {

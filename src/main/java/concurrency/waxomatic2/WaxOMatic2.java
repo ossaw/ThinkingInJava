@@ -1,4 +1,4 @@
-//: concurrency/waxomatic2/WaxOMatic2.java
+// : concurrency/waxomatic2/WaxOMatic2.java
 // Using Lock and Condition objects.
 package concurrency.waxomatic2;
 

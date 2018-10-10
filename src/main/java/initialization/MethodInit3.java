@@ -1,4 +1,4 @@
-//: initialization/MethodInit3.java
+// : initialization/MethodInit3.java
 package initialization; /* Added by Eclipse.py */
 
 public class MethodInit3 {

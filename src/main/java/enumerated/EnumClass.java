@@ -1,4 +1,4 @@
-//: enumerated/EnumClass.java
+// : enumerated/EnumClass.java
 package enumerated; /* Added by Eclipse.py */
 
 // Capabilities of the Enum class

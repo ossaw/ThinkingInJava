@@ -1,4 +1,4 @@
-//: enumerated/EnumSets.java
+// : enumerated/EnumSets.java
 // Operations on EnumSets
 package enumerated;
 

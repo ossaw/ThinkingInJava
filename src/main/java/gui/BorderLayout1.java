@@ -1,4 +1,4 @@
-//: gui/BorderLayout1.java
+// : gui/BorderLayout1.java
 package gui; /* Added by Eclipse.py */
 
 // Demonstrates BorderLayout.

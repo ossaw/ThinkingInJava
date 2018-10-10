@@ -1,11 +1,10 @@
-//: reusing/FinalArguments.java
+// : reusing/FinalArguments.java
 package reusing; /* Added by Eclipse.py */
 
 // Using "final" with method arguments.
 
 class Gizmo {
-	public void spin() {
-	}
+	public void spin() {}
 }
 
 public class FinalArguments {
@@ -15,7 +14,7 @@ public class FinalArguments {
 
 	void without(Gizmo g) {
 		// OK -- g not final
-		g = new Gizmo(); 
+		g = new Gizmo();
 		g.spin();
 	}
 

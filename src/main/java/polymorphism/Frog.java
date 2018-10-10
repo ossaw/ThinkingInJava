@@ -1,4 +1,4 @@
-//: polymorphism/Frog.java
+// : polymorphism/Frog.java
 // Cleanup and inheritance.
 package polymorphism;
 

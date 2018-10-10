@@ -1,4 +1,4 @@
-//: initialization/ArrayInit.java
+// : initialization/ArrayInit.java
 package initialization; /* Added by Eclipse.py */
 
 // Array initialization.

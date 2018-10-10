@@ -1,4 +1,4 @@
-//: concurrency/SingleThreadExecutor.java
+// : concurrency/SingleThreadExecutor.java
 package concurrency; /* Added by Eclipse.py */
 
 import java.util.concurrent.*;

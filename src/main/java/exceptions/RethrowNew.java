@@ -1,4 +1,4 @@
-//: exceptions/RethrowNew.java
+// : exceptions/RethrowNew.java
 package exceptions; /* Added by Eclipse.py */
 
 // Rethrow a different object from the one that was caught.

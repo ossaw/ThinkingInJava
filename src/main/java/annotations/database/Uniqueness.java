@@ -1,4 +1,4 @@
-//: annotations/database/Uniqueness.java
+// : annotations/database/Uniqueness.java
 // Sample of nested annotations
 package annotations.database;
 

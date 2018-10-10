@@ -1,4 +1,4 @@
-//: net/mindview/util/PPrint.java
+// : net/mindview/util/PPrint.java
 // Pretty-printer for collections
 package net.mindview.util;
 

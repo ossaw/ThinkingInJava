@@ -1,4 +1,4 @@
-//: polymorphism/CovariantReturn.java
+// : polymorphism/CovariantReturn.java
 package polymorphism; /* Added by Eclipse.py */
 
 class Grain {

@@ -1,4 +1,4 @@
-//: polymorphism/Transmogrify.java
+// : polymorphism/Transmogrify.java
 package polymorphism; /* Added by Eclipse.py */
 
 // Dynamically changing the behavior of an object
@@ -7,8 +7,7 @@ package polymorphism; /* Added by Eclipse.py */
 import static net.mindview.util.Print.*;
 
 class Actor {
-	public void act() {
-	}
+	public void act() {}
 }
 
 class HappyActor extends Actor {

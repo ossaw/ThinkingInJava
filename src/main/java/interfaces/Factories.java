@@ -1,4 +1,4 @@
-//: interfaces/Factories.java
+// : interfaces/Factories.java
 package interfaces; /* Added by Eclipse.py */
 
 import static net.mindview.util.Print.*;
@@ -14,8 +14,7 @@ interface ServiceFactory {
 }
 
 class Implementation1 implements Service {
-	Implementation1() {
-	} // Package access
+	Implementation1() {} // Package access
 
 	public void method1() {
 		print("Implementation1 method1");
@@ -33,8 +32,7 @@ class Implementation1Factory implements ServiceFactory {
 }
 
 class Implementation2 implements Service {
-	Implementation2() {
-	} // Package access
+	Implementation2() {} // Package access
 
 	public void method1() {
 		print("Implementation2 method1");

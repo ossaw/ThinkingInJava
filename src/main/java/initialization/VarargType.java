@@ -1,4 +1,4 @@
-//: initialization/VarargType.java
+// : initialization/VarargType.java
 package initialization; /* Added by Eclipse.py */
 
 public class VarargType {

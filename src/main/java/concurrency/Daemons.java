@@ -1,4 +1,4 @@
-//: concurrency/Daemons.java
+// : concurrency/Daemons.java
 package concurrency; /* Added by Eclipse.py */
 
 // Daemon threads spawn other daemon threads.

@@ -1,4 +1,4 @@
-//: operators/BitManipulation.java
+// : operators/BitManipulation.java
 package operators; /* Added by Eclipse.py */
 
 // Using the bitwise operators.

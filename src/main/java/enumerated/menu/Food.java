@@ -1,4 +1,4 @@
-//: enumerated/menu/Food.java
+// : enumerated/menu/Food.java
 // Subcategorization of enums within interfaces.
 package enumerated.menu;
 

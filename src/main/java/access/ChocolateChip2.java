@@ -1,4 +1,4 @@
-//: access/ChocolateChip2.java
+// : access/ChocolateChip2.java
 package access; /* Added by Eclipse.py */
 
 import access.cookie2.*;

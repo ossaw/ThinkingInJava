@@ -1,4 +1,4 @@
-//: annotations/AtUnitExample5.java
+// : annotations/AtUnitExample5.java
 package annotations;
 
 import java.io.*;

@@ -1,4 +1,4 @@
-//: generics/ListOfInt.java
+// : generics/ListOfInt.java
 package generics; /* Added by Eclipse.py */
 
 // Autoboxing compensates for the inability to use

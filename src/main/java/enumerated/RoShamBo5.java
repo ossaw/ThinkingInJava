@@ -1,4 +1,4 @@
-//: enumerated/RoShamBo5.java
+// : enumerated/RoShamBo5.java
 // Multiple dispatching using an EnumMap of EnumMaps.
 package enumerated;
 
@@ -17,7 +17,8 @@ enum RoShamBo5 implements Competitor<RoShamBo5> {
 		initRow(ROCK, LOSE, WIN, DRAW);
 	}
 
-	static void initRow(RoShamBo5 it, Outcome vPAPER, Outcome vSCISSORS, Outcome vROCK) {
+	static void initRow(RoShamBo5 it, Outcome vPAPER, Outcome vSCISSORS,
+			Outcome vROCK) {
 		EnumMap<RoShamBo5, Outcome> row = RoShamBo5.table.get(it);
 		row.put(RoShamBo5.PAPER, vPAPER);
 		row.put(RoShamBo5.SCISSORS, vSCISSORS);

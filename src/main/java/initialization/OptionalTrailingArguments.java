@@ -1,4 +1,4 @@
-//: initialization/OptionalTrailingArguments.java
+// : initialization/OptionalTrailingArguments.java
 package initialization; /* Added by Eclipse.py */
 
 public class OptionalTrailingArguments {

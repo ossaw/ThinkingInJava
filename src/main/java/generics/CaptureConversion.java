@@ -1,4 +1,4 @@
-//: generics/CaptureConversion.java
+// : generics/CaptureConversion.java
 package generics; /* Added by Eclipse.py */
 
 public class CaptureConversion {

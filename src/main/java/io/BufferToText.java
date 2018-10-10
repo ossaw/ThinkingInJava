@@ -1,4 +1,4 @@
-//: io/BufferToText.java
+// : io/BufferToText.java
 package io; /* Added by Eclipse.py */
 
 // Converting text to and from ByteBuffers
@@ -24,7 +24,8 @@ public class BufferToText {
 		// Decode using this system's default Charset:
 		buff.rewind();
 		String encoding = System.getProperty("file.encoding");
-		System.out.println("Decoded using " + encoding + ": " + Charset.forName(encoding).decode(buff));
+		System.out.println("Decoded using " + encoding + ": " + Charset.forName(
+				encoding).decode(buff));
 		// Or, we could encode with something that will print:
 		fc = new FileOutputStream("data2.txt").getChannel();
 		fc.write(ByteBuffer.wrap("Some text".getBytes("UTF-16BE")));

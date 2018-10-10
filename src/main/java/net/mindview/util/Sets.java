@@ -1,4 +1,4 @@
-//: net/mindview/util/Sets.java
+// : net/mindview/util/Sets.java
 package net.mindview.util;
 
 import java.util.*;

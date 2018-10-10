@@ -1,4 +1,4 @@
-//: strings/SimpleFormat.java
+// : strings/SimpleFormat.java
 package strings; /* Added by Eclipse.py */
 
 public class SimpleFormat {

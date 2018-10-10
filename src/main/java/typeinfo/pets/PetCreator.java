@@ -1,4 +1,4 @@
-//: typeinfo/pets/PetCreator.java
+// : typeinfo/pets/PetCreator.java
 // Creates random sequences of Pets.
 package typeinfo.pets;
 

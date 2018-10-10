@@ -1,4 +1,4 @@
-//: object/ShowProperties.java
+// : object/ShowProperties.java
 package object; /* Added by Eclipse.py */
 
 public class ShowProperties {

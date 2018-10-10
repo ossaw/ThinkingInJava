@@ -1,4 +1,4 @@
-//: innerclasses/TestBed.java
+// : innerclasses/TestBed.java
 package innerclasses; /* Added by Eclipse.py */
 
 // Putting test code in a nested class.

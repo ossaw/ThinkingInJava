@@ -1,4 +1,4 @@
-//: containers/SortedSetDemo.java
+// : containers/SortedSetDemo.java
 package containers; /* Added by Eclipse.py */
 
 // What you can do with a TreeSet.
@@ -9,7 +9,8 @@ import static net.mindview.util.Print.*;
 public class SortedSetDemo {
 	public static void main(String[] args) {
 		SortedSet<String> sortedSet = new TreeSet<String>();
-		Collections.addAll(sortedSet, "one two three four five six seven eight".split(" "));
+		Collections.addAll(sortedSet, "one two three four five six seven eight"
+				.split(" "));
 		print(sortedSet);
 		String low = sortedSet.first();
 		String high = sortedSet.last();

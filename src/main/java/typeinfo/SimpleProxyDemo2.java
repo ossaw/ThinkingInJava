@@ -4,6 +4,7 @@ import com.sun.xml.internal.ws.db.glassfish.BridgeWrapper;
 
 interface Interface2 {
 	void doSomeThing();
+
 	void doSomeThingElse(String arg);
 }
 
@@ -24,7 +25,7 @@ public class SimpleProxyDemo2 {
 		interface2.doSomeThing();
 		interface2.doSomeThingElse(" args ");
 	}
-	
+
 	public static void main(String[] args) {
 		consumer(new RealObject2());
 		consumer(new ProxyObject2(new RealObject2()));

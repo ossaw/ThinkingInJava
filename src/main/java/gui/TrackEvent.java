@@ -1,4 +1,4 @@
-//: gui/TrackEvent.java
+// : gui/TrackEvent.java
 package gui; /* Added by Eclipse.py */
 
 // Show events as they happen.
@@ -11,9 +11,12 @@ import static net.mindview.util.SwingConsole.*;
 
 public class TrackEvent extends JFrame {
 	private HashMap<String, JTextField> h = new HashMap<String, JTextField>();
-	private String[] event = { "focusGained", "focusLost", "keyPressed", "keyReleased", "keyTyped", "mouseClicked",
-			"mouseEntered", "mouseExited", "mousePressed", "mouseReleased", "mouseDragged", "mouseMoved" };
-	private MyButton b1 = new MyButton(Color.BLUE, "test1"), b2 = new MyButton(Color.RED, "test2");
+	private String[] event = { "focusGained", "focusLost", "keyPressed",
+			"keyReleased", "keyTyped", "mouseClicked", "mouseEntered",
+			"mouseExited", "mousePressed", "mouseReleased", "mouseDragged",
+			"mouseMoved" };
+	private MyButton b1 = new MyButton(Color.BLUE, "test1"), b2 = new MyButton(
+			Color.RED, "test2");
 
 	class MyButton extends JButton {
 		void report(String field, String msg) {

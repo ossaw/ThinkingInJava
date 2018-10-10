@@ -1,4 +1,4 @@
-//: net/mindview/util/Range.java
+// : net/mindview/util/Range.java
 // Array creation methods that can be used without
 // qualifiers, using Java SE5 static imports:
 package net.mindview.util;

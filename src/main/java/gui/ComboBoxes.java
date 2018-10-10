@@ -1,4 +1,4 @@
-//: gui/ComboBoxes.java
+// : gui/ComboBoxes.java
 package gui; /* Added by Eclipse.py */
 
 // Using drop-down lists.
@@ -9,8 +9,8 @@ import java.awt.event.*;
 import static net.mindview.util.SwingConsole.*;
 
 public class ComboBoxes extends JFrame {
-	private String[] description = { "Ebullient", "Obtuse", "Recalcitrant", "Brilliant", "Somnescent", "Timorous",
-			"Florid", "Putrescent" };
+	private String[] description = { "Ebullient", "Obtuse", "Recalcitrant",
+			"Brilliant", "Somnescent", "Timorous", "Florid", "Putrescent" };
 	private JTextField t = new JTextField(15);
 	private JComboBox c = new JComboBox();
 	private JButton b = new JButton("Add items");
@@ -28,7 +28,8 @@ public class ComboBoxes extends JFrame {
 		});
 		c.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				t.setText("index: " + c.getSelectedIndex() + "   " + ((JComboBox) e.getSource()).getSelectedItem());
+				t.setText("index: " + c.getSelectedIndex() + "   "
+						+ ((JComboBox) e.getSource()).getSelectedItem());
 			}
 		});
 		setLayout(new FlowLayout());

@@ -1,4 +1,4 @@
-//: enumerated/Spiciness.java
+// : enumerated/Spiciness.java
 package enumerated;
 
 public enum Spiciness {

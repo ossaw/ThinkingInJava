@@ -1,4 +1,4 @@
-//: generics/GenericCast.java
+// : generics/GenericCast.java
 package generics; /* Added by Eclipse.py */
 
 class FixedSizeStack<T> {

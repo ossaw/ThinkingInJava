@@ -1,4 +1,4 @@
-//: enumerated/SpaceShip.java
+// : enumerated/SpaceShip.java
 package enumerated; /* Added by Eclipse.py */
 
 public enum SpaceShip {

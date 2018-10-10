@@ -1,4 +1,4 @@
-//: annotations/ExtractInterface.java
+// : annotations/ExtractInterface.java
 // APT-based annotation processing.
 package annotations;
 

@@ -1,4 +1,4 @@
-//: io/Logon.java
+// : io/Logon.java
 package io; /* Added by Eclipse.py */
 
 // Demonstrates the "transient" keyword.
@@ -19,18 +19,21 @@ public class Logon implements Serializable {
 	}
 
 	public String toString() {
-		return "logon info: \n   username: " + username + "\n   date: " + date + "\n   password: " + password;
+		return "logon info: \n   username: " + username + "\n   date: " + date
+				+ "\n   password: " + password;
 	}
 
 	public static void main(String[] args) throws Exception {
 		Logon a = new Logon("Hulk", "myLittlePony");
 		print("logon a = " + a);
-		ObjectOutputStream o = new ObjectOutputStream(new FileOutputStream("Logon.out"));
+		ObjectOutputStream o = new ObjectOutputStream(new FileOutputStream(
+				"Logon.out"));
 		o.writeObject(a);
 		o.close();
 		TimeUnit.SECONDS.sleep(1); // Delay
 		// Now get them back:
-		ObjectInputStream in = new ObjectInputStream(new FileInputStream("Logon.out"));
+		ObjectInputStream in = new ObjectInputStream(new FileInputStream(
+				"Logon.out"));
 		print("Recovering object at " + new Date());
 		a = (Logon) in.readObject();
 		print("logon a = " + a);

@@ -1,4 +1,4 @@
-//: arrays/CopyingArrays.java
+// : arrays/CopyingArrays.java
 package arrays; /* Added by Eclipse.py */
 
 // Using System.arraycopy()

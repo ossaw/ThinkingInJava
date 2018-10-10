@@ -1,4 +1,4 @@
-//: generics/SelfBoundingMethods.java
+// : generics/SelfBoundingMethods.java
 package generics; /* Added by Eclipse.py */
 
 public class SelfBoundingMethods {

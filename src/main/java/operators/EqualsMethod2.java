@@ -1,4 +1,4 @@
-//: operators/EqualsMethod2.java
+// : operators/EqualsMethod2.java
 package operators; /* Added by Eclipse.py */
 
 // Default equals() does not compare contents.

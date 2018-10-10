@@ -1,4 +1,4 @@
-//: concurrency/GreenhouseScheduler.java
+// : concurrency/GreenhouseScheduler.java
 package concurrency; /* Added by Eclipse.py */
 
 // Rewriting innerclasses/GreenhouseController.java
@@ -28,7 +28,8 @@ public class GreenhouseScheduler {
 	}
 
 	public void repeat(Runnable event, long initialDelay, long period) {
-		scheduler.scheduleAtFixedRate(event, initialDelay, period, TimeUnit.MILLISECONDS);
+		scheduler.scheduleAtFixedRate(event, initialDelay, period,
+				TimeUnit.MILLISECONDS);
 	}
 
 	class LightOn implements Runnable {
@@ -115,7 +116,9 @@ public class GreenhouseScheduler {
 		}
 
 		public String toString() {
-			return time.getTime() + String.format(" temperature: %1$.1f humidity: %2$.2f", temperature, humidity);
+			return time.getTime() + String.format(
+					" temperature: %1$.1f humidity: %2$.2f", temperature,
+					humidity);
 		}
 	}
 
@@ -129,14 +132,16 @@ public class GreenhouseScheduler {
 	private float lastHumidity = 50.0f;
 	private int humidityDirection = +1;
 	private Random rand = new Random(47);
-	List<DataPoint> data = Collections.synchronizedList(new ArrayList<DataPoint>());
+	List<DataPoint> data = Collections.synchronizedList(
+			new ArrayList<DataPoint>());
 
 	class CollectData implements Runnable {
 		public void run() {
 			System.out.println("Collecting data");
 			synchronized (GreenhouseScheduler.this) {
 				// Pretend the interval is longer than it is:
-				lastTime.set(Calendar.MINUTE, lastTime.get(Calendar.MINUTE) + 30);
+				lastTime.set(Calendar.MINUTE, lastTime.get(Calendar.MINUTE)
+						+ 30);
 				// One in 5 chances of reversing the direction:
 				if (rand.nextInt(5) == 4)
 					tempDirection = -tempDirection;
@@ -144,11 +149,13 @@ public class GreenhouseScheduler {
 				lastTemp = lastTemp + tempDirection * (1.0f + rand.nextFloat());
 				if (rand.nextInt(5) == 4)
 					humidityDirection = -humidityDirection;
-				lastHumidity = lastHumidity + humidityDirection * rand.nextFloat();
+				lastHumidity = lastHumidity + humidityDirection * rand
+						.nextFloat();
 				// Calendar must be cloned, otherwise all
 				// DataPoints hold references to the same lastTime.
 				// For a basic object like Calendar, clone() is OK.
-				data.add(new DataPoint((Calendar) lastTime.clone(), lastTemp, lastHumidity));
+				data.add(new DataPoint((Calendar) lastTime.clone(), lastTemp,
+						lastHumidity));
 			}
 		}
 	}

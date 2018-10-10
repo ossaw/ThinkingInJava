@@ -1,4 +1,4 @@
-//: gui/List.java
+// : gui/List.java
 package gui; /* Added by Eclipse.py */
 
 import javax.swing.*;
@@ -9,7 +9,8 @@ import java.awt.event.*;
 import static net.mindview.util.SwingConsole.*;
 
 public class List extends JFrame {
-	private String[] flavors = { "Chocolate", "Strawberry", "Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
+	private String[] flavors = { "Chocolate", "Strawberry",
+			"Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
 			"Rum Raisin", "Praline Cream", "Mud Pie" };
 	private DefaultListModel lItems = new DefaultListModel();
 	private JList lst = new JList(lItems);

@@ -1,4 +1,4 @@
-//: control/ListCharacters.java
+// : control/ListCharacters.java
 package control; /* Added by Eclipse.py */
 
 // Demonstrates "for" loop by listing

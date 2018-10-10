@@ -1,4 +1,4 @@
-//: io/DirList3.java
+// : io/DirList3.java
 package io; /* Added by Eclipse.py */
 
 // Building the anonymous inner class "in-place."

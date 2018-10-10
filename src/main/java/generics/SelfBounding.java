@@ -1,4 +1,4 @@
-//: generics/SelfBounding.java
+// : generics/SelfBounding.java
 package generics; /* Added by Eclipse.py */
 
 class SelfBounded<T extends SelfBounded<T>> {
@@ -14,11 +14,9 @@ class SelfBounded<T extends SelfBounded<T>> {
 	}
 }
 
-class A extends SelfBounded<A> {
-}
+class A extends SelfBounded<A> {}
 
-class B extends SelfBounded<A> {
-} // Also OK
+class B extends SelfBounded<A> {} // Also OK
 
 class C extends SelfBounded<C> {
 	C setAndGet(C arg) {
@@ -27,15 +25,13 @@ class C extends SelfBounded<C> {
 	}
 }
 
-class D {
-}
+class D {}
 // Can't do this:
 // class E extends SelfBounded<D> {}
 // Compile error: Type parameter D is not within its bound
 
 // Alas, you can do this, so you can't force the idiom:
-class F extends SelfBounded {
-}
+class F extends SelfBounded {}
 
 public class SelfBounding {
 	public static void main(String[] args) {

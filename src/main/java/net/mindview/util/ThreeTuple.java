@@ -1,4 +1,4 @@
-//: net/mindview/util/ThreeTuple.java
+// : net/mindview/util/ThreeTuple.java
 package net.mindview.util;
 
 public class ThreeTuple<A, B, C> extends TwoTuple<A, B> {

@@ -1,32 +1,25 @@
-//: polymorphism/RTTI.java
+// : polymorphism/RTTI.java
 package polymorphism; /* Added by Eclipse.py */
 
 // Downcasting & Runtime type information (RTTI).
 // {ThrowsException}
 
 class Useful {
-	public void f() {
-	}
+	public void f() {}
 
-	public void g() {
-	}
+	public void g() {}
 }
 
 class MoreUseful extends Useful {
-	public void f() {
-	}
+	public void f() {}
 
-	public void g() {
-	}
+	public void g() {}
 
-	public void u() {
-	}
+	public void u() {}
 
-	public void v() {
-	}
+	public void v() {}
 
-	public void w() {
-	}
+	public void w() {}
 }
 
 public class RTTI {

@@ -1,4 +1,4 @@
-//: gui/ButtonGroups.java
+// : gui/ButtonGroups.java
 package gui; /* Added by Eclipse.py */
 
 // Uses reflection to create groups
@@ -11,9 +11,11 @@ import java.lang.reflect.*;
 import static net.mindview.util.SwingConsole.*;
 
 public class ButtonGroups extends JFrame {
-	private static String[] ids = { "June", "Ward", "Beaver", "Wally", "Eddie", "Lumpy" };
+	private static String[] ids = { "June", "Ward", "Beaver", "Wally", "Eddie",
+			"Lumpy" };
 
-	static JPanel makeBPanel(Class<? extends AbstractButton> kind, String[] ids) {
+	static JPanel makeBPanel(Class<? extends AbstractButton> kind,
+			String[] ids) {
 		ButtonGroup bg = new ButtonGroup();
 		JPanel jp = new JPanel();
 		String title = kind.getName();

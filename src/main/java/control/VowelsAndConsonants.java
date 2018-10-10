@@ -1,4 +1,4 @@
-//: control/VowelsAndConsonants.java
+// : control/VowelsAndConsonants.java
 package control; /* Added by Eclipse.py */
 
 // Demonstrates the switch statement.
@@ -13,19 +13,19 @@ public class VowelsAndConsonants {
 			int c = rand.nextInt(26) + 'a';
 			printnb((char) c + ", " + c + ": ");
 			switch (c) {
-			case 'a':
-			case 'e':
-			case 'i':
-			case 'o':
-			case 'u':
-				print("vowel");
-				break;
-			case 'y':
-			case 'w':
-				print("Sometimes a vowel");
-				break;
-			default:
-				print("consonant");
+				case 'a':
+				case 'e':
+				case 'i':
+				case 'o':
+				case 'u':
+					print("vowel");
+					break;
+				case 'y':
+				case 'w':
+					print("Sometimes a vowel");
+					break;
+				default:
+					print("consonant");
 			}
 		}
 	}

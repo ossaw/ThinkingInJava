@@ -1,4 +1,4 @@
-//: gui/Button1.java
+// : gui/Button1.java
 package gui; /* Added by Eclipse.py */
 
 // Putting buttons on a Swing application.

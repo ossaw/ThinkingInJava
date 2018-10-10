@@ -1,4 +1,4 @@
-//: enumerated/TrafficLight.java
+// : enumerated/TrafficLight.java
 package enumerated; /* Added by Eclipse.py */
 
 // Enums in switch statements.
@@ -15,17 +15,17 @@ public class TrafficLight {
 
 	public void change() {
 		switch (color) {
-		// Note that you don't have to say Signal.RED
-		// in the case statement:
-		case RED:
-			color = Signal.GREEN;
-			break;
-		case GREEN:
-			color = Signal.YELLOW;
-			break;
-		case YELLOW:
-			color = Signal.RED;
-			break;
+			// Note that you don't have to say Signal.RED
+			// in the case statement:
+			case RED:
+				color = Signal.GREEN;
+				break;
+			case GREEN:
+				color = Signal.YELLOW;
+				break;
+			case YELLOW:
+				color = Signal.RED;
+				break;
 		}
 	}
 

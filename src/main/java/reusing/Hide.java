@@ -1,4 +1,4 @@
-//: reusing/Hide.java
+// : reusing/Hide.java
 package reusing; /* Added by Eclipse.py */
 
 // Overloading a base-class method name in a derived
@@ -18,8 +18,7 @@ class Homer {
 	}
 }
 
-class Milhouse {
-}
+class Milhouse {}
 
 class Bart extends Homer {
 	void doh(Milhouse m) {

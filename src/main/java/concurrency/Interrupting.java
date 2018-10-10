@@ -1,4 +1,4 @@
-//: concurrency/Interrupting.java
+// : concurrency/Interrupting.java
 package concurrency; /* Added by Eclipse.py */
 
 // Interrupting a blocked thread.

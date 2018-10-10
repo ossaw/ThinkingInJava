@@ -1,4 +1,4 @@
-//: concurrency/CaptureUncaughtException.java
+// : concurrency/CaptureUncaughtException.java
 package concurrency; /* Added by Eclipse.py */
 
 import java.util.concurrent.*;
@@ -31,7 +31,8 @@ class HandlerThreadFactory implements ThreadFactory {
 
 public class CaptureUncaughtException {
 	public static void main(String[] args) {
-		ExecutorService exec = Executors.newCachedThreadPool(new HandlerThreadFactory());
+		ExecutorService exec = Executors.newCachedThreadPool(
+				new HandlerThreadFactory());
 		exec.execute(new ExceptionThread2());
 	}
 } /*

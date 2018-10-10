@@ -1,4 +1,4 @@
-//: strings/ScannerDelimiter.java
+// : strings/ScannerDelimiter.java
 package strings; /* Added by Eclipse.py */
 
 import java.util.*;

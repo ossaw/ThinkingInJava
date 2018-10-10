@@ -1,4 +1,4 @@
-//: concurrency/NaiveExceptionHandling.java
+// : concurrency/NaiveExceptionHandling.java
 package concurrency; /* Added by Eclipse.py */
 
 // {ThrowsException}

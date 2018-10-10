@@ -1,4 +1,4 @@
-//: generics/GenericHolder.java
+// : generics/GenericHolder.java
 package generics; /* Added by Eclipse.py */
 
 public class GenericHolder<T> {

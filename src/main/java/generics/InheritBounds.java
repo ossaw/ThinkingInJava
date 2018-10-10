@@ -1,4 +1,4 @@
-//: generics/InheritBounds.java
+// : generics/InheritBounds.java
 package generics; /* Added by Eclipse.py */
 
 class HoldItem<T> {
@@ -41,7 +41,8 @@ class ColoredDimension2<T extends Dimension & HasColor> extends Colored2<T> {
 	}
 }
 
-class Solid2<T extends Dimension & HasColor & Weight> extends ColoredDimension2<T> {
+class Solid2<T extends Dimension & HasColor & Weight> extends
+		ColoredDimension2<T> {
 	Solid2(T item) {
 		super(item);
 	}

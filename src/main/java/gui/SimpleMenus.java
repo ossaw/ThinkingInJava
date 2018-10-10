@@ -1,4 +1,4 @@
-//: gui/SimpleMenus.java
+// : gui/SimpleMenus.java
 package gui; /* Added by Eclipse.py */
 
 import javax.swing.*;
@@ -13,9 +13,11 @@ public class SimpleMenus extends JFrame {
 			t.setText(((JMenuItem) e.getSource()).getText());
 		}
 	};
-	private JMenu[] menus = { new JMenu("Winken"), new JMenu("Blinken"), new JMenu("Nod") };
-	private JMenuItem[] items = { new JMenuItem("Fee"), new JMenuItem("Fi"), new JMenuItem("Fo"), new JMenuItem("Zip"),
-			new JMenuItem("Zap"), new JMenuItem("Zot"), new JMenuItem("Olly"), new JMenuItem("Oxen"),
+	private JMenu[] menus = { new JMenu("Winken"), new JMenu("Blinken"),
+			new JMenu("Nod") };
+	private JMenuItem[] items = { new JMenuItem("Fee"), new JMenuItem("Fi"),
+			new JMenuItem("Fo"), new JMenuItem("Zip"), new JMenuItem("Zap"),
+			new JMenuItem("Zot"), new JMenuItem("Olly"), new JMenuItem("Oxen"),
 			new JMenuItem("Free") };
 
 	public SimpleMenus() {

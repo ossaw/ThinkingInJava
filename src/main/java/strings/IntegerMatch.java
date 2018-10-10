@@ -1,4 +1,4 @@
-//: strings/IntegerMatch.java
+// : strings/IntegerMatch.java
 package strings; /* Added by Eclipse.py */
 
 public class IntegerMatch {

@@ -1,4 +1,4 @@
-//: containers/Stacks.java
+// : containers/Stacks.java
 package containers; /* Added by Eclipse.py */
 
 // Demonstration of Stack Class.
@@ -7,7 +7,8 @@ import java.util.*;
 import static net.mindview.util.Print.*;
 
 enum Month {
-	JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER
+	JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER,
+	OCTOBER, NOVEMBER
 }
 
 public class Stacks {

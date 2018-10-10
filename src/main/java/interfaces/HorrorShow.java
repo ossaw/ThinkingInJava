@@ -1,4 +1,4 @@
-//: interfaces/HorrorShow.java
+// : interfaces/HorrorShow.java
 package interfaces; /* Added by Eclipse.py */
 
 // Extending an interface with inheritance.
@@ -16,11 +16,9 @@ interface Lethal {
 }
 
 class DragonZilla implements DangerousMonster {
-	public void menace() {
-	}
+	public void menace() {}
 
-	public void destroy() {
-	}
+	public void destroy() {}
 }
 
 interface Vampire extends DangerousMonster, Lethal {
@@ -28,17 +26,13 @@ interface Vampire extends DangerousMonster, Lethal {
 }
 
 class VeryBadVampire implements Vampire {
-	public void menace() {
-	}
+	public void menace() {}
 
-	public void destroy() {
-	}
+	public void destroy() {}
 
-	public void kill() {
-	}
+	public void kill() {}
 
-	public void drinkBlood() {
-	}
+	public void drinkBlood() {}
 }
 
 public class HorrorShow {

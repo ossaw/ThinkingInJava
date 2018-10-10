@@ -1,4 +1,4 @@
-//: holding/ListIteration.java
+// : holding/ListIteration.java
 package holding; /* Added by Eclipse.py */
 
 import typeinfo.pets.*;
@@ -9,7 +9,8 @@ public class ListIteration {
 		List<Pet> pets = Pets.arrayList(8);
 		ListIterator<Pet> it = pets.listIterator();
 		while (it.hasNext())
-			System.out.print(it.next() + ", " + it.nextIndex() + ", " + it.previousIndex() + "; ");
+			System.out.print(it.next() + ", " + it.nextIndex() + ", " + it
+					.previousIndex() + "; ");
 		System.out.println();
 		// Backwards:
 		while (it.hasPrevious())

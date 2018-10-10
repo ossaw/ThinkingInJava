@@ -1,4 +1,4 @@
-//: arrays/ArrayOfGenericType.java
+// : arrays/ArrayOfGenericType.java
 package arrays; /* Added by Eclipse.py */
 
 // Arrays of generic types won't compile.

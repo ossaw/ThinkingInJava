@@ -1,4 +1,4 @@
-//: generics/PrimitiveGenericTest.java
+// : generics/PrimitiveGenericTest.java
 package generics; /* Added by Eclipse.py */
 
 import net.mindview.util.*;
@@ -14,10 +14,12 @@ class FArray {
 
 public class PrimitiveGenericTest {
 	public static void main(String[] args) {
-		String[] strings = FArray.fill(new String[7], new RandomGenerator.String(10));
+		String[] strings = FArray.fill(new String[7],
+				new RandomGenerator.String(10));
 		for (String s : strings)
 			System.out.println(s);
-		Integer[] integers = FArray.fill(new Integer[7], new RandomGenerator.Integer());
+		Integer[] integers = FArray.fill(new Integer[7],
+				new RandomGenerator.Integer());
 		for (int i : integers)
 			System.out.println(i);
 		// Autoboxing won't save you here. This won't compile:

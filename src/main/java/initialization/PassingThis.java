@@ -1,4 +1,4 @@
-//: initialization/PassingThis.java
+// : initialization/PassingThis.java
 package initialization; /* Added by Eclipse.py */
 
 class Person {

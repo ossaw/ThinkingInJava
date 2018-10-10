@@ -1,4 +1,4 @@
-//: concurrency/FixedDiningPhilosophers.java
+// : concurrency/FixedDiningPhilosophers.java
 package concurrency; /* Added by Eclipse.py */
 
 // Dining philosophers without deadlock.
@@ -20,7 +20,8 @@ public class FixedDiningPhilosophers {
 			sticks[i] = new Chopstick();
 		for (int i = 0; i < size; i++)
 			if (i < (size - 1))
-				exec.execute(new Philosopher(sticks[i], sticks[i + 1], i, ponder));
+				exec.execute(new Philosopher(sticks[i], sticks[i + 1], i,
+						ponder));
 			else
 				exec.execute(new Philosopher(sticks[0], sticks[i], i, ponder));
 		if (args.length == 3 && args[2].equals("timeout"))

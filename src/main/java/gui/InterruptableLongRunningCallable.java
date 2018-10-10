@@ -1,4 +1,4 @@
-//: gui/InterruptableLongRunningCallable.java
+// : gui/InterruptableLongRunningCallable.java
 package gui; /* Added by Eclipse.py */
 
 // Using Callables for long-running tasks.
@@ -18,8 +18,9 @@ class CallableTask extends Task implements Callable<String> {
 }
 
 public class InterruptableLongRunningCallable extends JFrame {
-	private JButton b1 = new JButton("Start Long Running Task"), b2 = new JButton("End Long Running Task"),
-			b3 = new JButton("Get results");
+	private JButton b1 = new JButton("Start Long Running Task"),
+			b2 = new JButton("End Long Running Task"), b3 = new JButton(
+					"Get results");
 	private TaskManager<String, CallableTask> manager = new TaskManager<String, CallableTask>();
 
 	public InterruptableLongRunningCallable() {

@@ -1,4 +1,4 @@
-//: net/mindview/util/MapData.java
+// : net/mindview/util/MapData.java
 // A Map filled with data using a generator object.
 package net.mindview.util;
 
@@ -42,19 +42,23 @@ public class MapData<K, V> extends LinkedHashMap<K, V> {
 	}
 
 	// Generic convenience methods:
-	public static <K, V> MapData<K, V> map(Generator<Pair<K, V>> gen, int quantity) {
+	public static <K, V> MapData<K, V> map(Generator<Pair<K, V>> gen,
+			int quantity) {
 		return new MapData<K, V>(gen, quantity);
 	}
 
-	public static <K, V> MapData<K, V> map(Generator<K> genK, Generator<V> genV, int quantity) {
+	public static <K, V> MapData<K, V> map(Generator<K> genK, Generator<V> genV,
+			int quantity) {
 		return new MapData<K, V>(genK, genV, quantity);
 	}
 
-	public static <K, V> MapData<K, V> map(Generator<K> genK, V value, int quantity) {
+	public static <K, V> MapData<K, V> map(Generator<K> genK, V value,
+			int quantity) {
 		return new MapData<K, V>(genK, value, quantity);
 	}
 
-	public static <K, V> MapData<K, V> map(Iterable<K> genK, Generator<V> genV) {
+	public static <K, V> MapData<K, V> map(Iterable<K> genK,
+			Generator<V> genV) {
 		return new MapData<K, V>(genK, genV);
 	}
 

@@ -1,12 +1,11 @@
-//: access/Lunch.java
+// : access/Lunch.java
 package access; /* Added by Eclipse.py */
 
 // Demonstrates class access specifiers. Make a class
 // effectively private with private constructors:
 
 class Soup1 {
-	private Soup1() {
-	}
+	private Soup1() {}
 
 	// (1) Allow creation via static method:
 	public static Soup1 makeSoup() {
@@ -15,8 +14,7 @@ class Soup1 {
 }
 
 class Soup2 {
-	private Soup2() {
-	}
+	private Soup2() {}
 
 	// (2) Create a static object and return a reference
 	// upon request.(The "Singleton" pattern):
@@ -26,8 +24,7 @@ class Soup2 {
 		return ps1;
 	}
 
-	public void f() {
-	}
+	public void f() {}
 }
 
 // Only one public class allowed per file:

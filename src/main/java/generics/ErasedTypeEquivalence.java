@@ -1,4 +1,4 @@
-//: generics/ErasedTypeEquivalence.java
+// : generics/ErasedTypeEquivalence.java
 package generics; /* Added by Eclipse.py */
 
 import java.util.*;

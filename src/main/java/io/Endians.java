@@ -1,4 +1,4 @@
-//: io/Endians.java
+// : io/Endians.java
 package io; /* Added by Eclipse.py */
 
 // Endian differences and data storage.

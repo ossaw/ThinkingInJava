@@ -1,4 +1,4 @@
-//: net/mindview/util/CountingGenerator.java
+// : net/mindview/util/CountingGenerator.java
 // Simple generator implementations.
 package net.mindview.util;
 
@@ -20,8 +20,8 @@ public class CountingGenerator {
 		}
 	}
 
-	static char[] chars = ("abcdefghijklmnopqrstuvwxyz" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-			.toCharArray();
+	static char[] chars = ("abcdefghijklmnopqrstuvwxyz"
+			+ "ABCDEFGHIJKLMNOPQRSTUVWXYZ").toCharArray();
 
 	public static class Character implements Generator<java.lang.Character> {
 		int index = -1;
@@ -36,8 +36,7 @@ public class CountingGenerator {
 		private int length = 7;
 		Generator<java.lang.Character> cg = new Character();
 
-		public String() {
-		}
+		public String() {}
 
 		public String(int length) {
 			this.length = length;

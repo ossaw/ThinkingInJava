@@ -1,4 +1,4 @@
-//: io/StoreCADState.java
+// : io/StoreCADState.java
 package io; /* Added by Eclipse.py */
 
 // Saving the state of a pretend CAD system.
@@ -23,7 +23,8 @@ abstract class Shape implements Serializable {
 	}
 
 	public String toString() {
-		return getClass() + "color[" + getColor() + "] xPos[" + xPos + "] yPos[" + yPos + "] dim[" + dimension + "]\n";
+		return getClass() + "color[" + getColor() + "] xPos[" + xPos + "] yPos["
+				+ yPos + "] dim[" + dimension + "]\n";
 	}
 
 	public static Shape randomFactory() {
@@ -31,13 +32,13 @@ abstract class Shape implements Serializable {
 		int yVal = rand.nextInt(100);
 		int dim = rand.nextInt(100);
 		switch (counter++ % 3) {
-		default:
-		case 0:
-			return new Circle(xVal, yVal, dim);
-		case 1:
-			return new Square(xVal, yVal, dim);
-		case 2:
-			return new Line(xVal, yVal, dim);
+			default:
+			case 0:
+				return new Circle(xVal, yVal, dim);
+			case 1:
+				return new Square(xVal, yVal, dim);
+			case 2:
+				return new Line(xVal, yVal, dim);
 		}
 	}
 }
@@ -78,11 +79,13 @@ class Square extends Shape {
 class Line extends Shape {
 	private static int color = RED;
 
-	public static void serializeStaticState(ObjectOutputStream os) throws IOException {
+	public static void serializeStaticState(ObjectOutputStream os)
+			throws IOException {
 		os.writeInt(color);
 	}
 
-	public static void deserializeStaticState(ObjectInputStream os) throws IOException {
+	public static void deserializeStaticState(ObjectInputStream os)
+			throws IOException {
 		color = os.readInt();
 	}
 
@@ -114,7 +117,8 @@ public class StoreCADState {
 		for (int i = 0; i < 10; i++)
 			((Shape) shapes.get(i)).setColor(Shape.GREEN);
 		// Save the state vector:
-		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("CADState.out"));
+		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(
+				"CADState.out"));
 		out.writeObject(shapeTypes);
 		Line.serializeStaticState(out);
 		out.writeObject(shapes);

@@ -1,4 +1,4 @@
-//: containers/CollectionDataTest.java
+// : containers/CollectionDataTest.java
 package containers; /* Added by Eclipse.py */
 
 import java.util.*;
@@ -7,8 +7,9 @@ import jdk.nashorn.internal.runtime.ListAdapter;
 import net.mindview.util.*;
 
 class Government implements Generator<String> {
-	String[] foundation = ("strange women lying in ponds " + "distributing swords is no basis for a system of "
-			+ "government").split(" ");
+	String[] foundation = ("strange women lying in ponds "
+			+ "distributing swords is no basis for a system of " + "government")
+					.split(" ");
 	private int index;
 
 	public String next() {
@@ -18,8 +19,10 @@ class Government implements Generator<String> {
 
 public class CollectionDataTest {
 	public static void main(String[] args) {
-		Set<String> set = new LinkedHashSet<String>(new CollectionData<String>(new Government(), 15));
-		List<String> list = new ArrayList<String>(new CollectionData<String>(new Government(), 15));
+		Set<String> set = new LinkedHashSet<String>(new CollectionData<String>(
+				new Government(), 15));
+		List<String> list = new ArrayList<String>(new CollectionData<String>(
+				new Government(), 15));
 		System.out.println(list);
 		System.out.println(set);
 		// Using the convenience method:

@@ -1,4 +1,4 @@
-//: operators/Bool.java
+// : operators/Bool.java
 package operators; /* Added by Eclipse.py */
 
 // Relational and logical operators.

@@ -1,4 +1,4 @@
-//: initialization/Leaf.java
+// : initialization/Leaf.java
 package initialization; /* Added by Eclipse.py */
 
 // Simple use of the "this" keyword.

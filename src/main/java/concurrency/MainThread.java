@@ -1,4 +1,4 @@
-//: concurrency/MainThread.java
+// : concurrency/MainThread.java
 package concurrency; /* Added by Eclipse.py */
 
 public class MainThread {

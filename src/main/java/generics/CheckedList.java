@@ -1,4 +1,4 @@
-//: generics/CheckedList.java
+// : generics/CheckedList.java
 package generics; /* Added by Eclipse.py */
 
 // Using Collection.checkedList().
@@ -15,14 +15,16 @@ public class CheckedList {
 	public static void main(String[] args) {
 		List<Dog> dogs1 = new ArrayList<Dog>();
 		oldStyleMethod(dogs1); // Quietly accepts a Cat
-		List<Dog> dogs2 = Collections.checkedList(new ArrayList<Dog>(), Dog.class);
+		List<Dog> dogs2 = Collections.checkedList(new ArrayList<Dog>(),
+				Dog.class);
 		try {
 			oldStyleMethod(dogs2); // Throws an exception
 		} catch (Exception e) {
 			System.out.println(e);
 		}
 		// Derived types work fine:
-		List<Pet> pets = Collections.checkedList(new ArrayList<Pet>(), Pet.class);
+		List<Pet> pets = Collections.checkedList(new ArrayList<Pet>(),
+				Pet.class);
 		pets.add(new Dog());
 		pets.add(new Cat());
 	}

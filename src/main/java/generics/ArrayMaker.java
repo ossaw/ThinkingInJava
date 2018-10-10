@@ -1,4 +1,4 @@
-//: generics/ArrayMaker.java
+// : generics/ArrayMaker.java
 package generics; /* Added by Eclipse.py */
 
 import java.lang.reflect.*;

@@ -1,4 +1,4 @@
-//: containers/SimpleHashMap.java
+// : containers/SimpleHashMap.java
 package containers; /* Added by Eclipse.py */
 
 // A demonstration hashed Map.

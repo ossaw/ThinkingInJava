@@ -1,4 +1,4 @@
-//: operators/URShift.java
+// : operators/URShift.java
 package operators; /* Added by Eclipse.py */
 
 // Test of unsigned right shift.

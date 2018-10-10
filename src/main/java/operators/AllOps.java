@@ -1,4 +1,4 @@
-//: operators/AllOps.java
+// : operators/AllOps.java
 package operators; /* Added by Eclipse.py */
 
 // Tests all the operators on all the primitive data types
@@ -6,8 +6,7 @@ package operators; /* Added by Eclipse.py */
 
 public class AllOps {
 	// To accept the results of a boolean test:
-	void f(boolean b) {
-	}
+	void f(boolean b) {}
 
 	void boolTest(boolean x, boolean y) {
 		// Arithmetic operators:

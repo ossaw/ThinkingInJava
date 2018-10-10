@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class AtomicIntegerTest2 implements Runnable {
 	// 使用此类时注意初始化，否则会空指针异常
 	private AtomicInteger val = new AtomicInteger(0);
-	
+
 	public int getVal() {
 		return val.get();
 	}
@@ -17,13 +17,13 @@ public class AtomicIntegerTest2 implements Runnable {
 	public void evenIncreament() {
 		val.addAndGet(2);
 	}
-	
+
 	@Override
 	public void run() {
 		while (true)
 			evenIncreament();
 	}
-	
+
 	public static void main(String[] args) throws InterruptedException {
 		new Timer().schedule(new TimerTask() {
 			@Override
@@ -40,7 +40,7 @@ public class AtomicIntegerTest2 implements Runnable {
 			if (res % 2 != 0) {
 				System.err.println(res + " is not even!");
 				System.exit(0);
-			}	
+			}
 		}
 	}
 }

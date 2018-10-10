@@ -1,4 +1,4 @@
-//: enumerated/cartoons/EnumImplementation.java
+// : enumerated/cartoons/EnumImplementation.java
 // An enum can implement an interface
 package enumerated.cartoons;
 

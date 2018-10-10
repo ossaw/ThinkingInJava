@@ -1,4 +1,4 @@
-//: arrays/StringSorting.java
+// : arrays/StringSorting.java
 package arrays; /* Added by Eclipse.py */
 
 // Sorting an array of Strings.
@@ -9,7 +9,8 @@ import static net.mindview.util.Print.*;
 
 public class StringSorting {
 	public static void main(String[] args) {
-		String[] sa = Generated.array(new String[20], new RandomGenerator.String(5));
+		String[] sa = Generated.array(new String[20],
+				new RandomGenerator.String(5));
 		print("Before sort: " + Arrays.toString(sa));
 		Arrays.sort(sa);
 		print("After sort: " + Arrays.toString(sa));

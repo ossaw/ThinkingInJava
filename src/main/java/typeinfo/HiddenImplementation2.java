@@ -7,8 +7,9 @@ import typeinfo.interfacea.A2;
 import typeinfo.packageaccess.HiddenC2;
 
 public class HiddenImplementation2 {
-	public static void main(String[] args) throws NoSuchMethodException, SecurityException,
-			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	public static void main(String[] args) throws NoSuchMethodException,
+			SecurityException, IllegalAccessException, IllegalArgumentException,
+			InvocationTargetException {
 		A2 a2 = HiddenC2.makeA2();
 		a2.f();
 		System.out.println(a2.getClass().getName());
@@ -20,8 +21,9 @@ public class HiddenImplementation2 {
 	}
 
 	static void callHiddenMethod(Object o, String methodName)
-			throws NoSuchMethodException, SecurityException, IllegalAccessException,
-			IllegalArgumentException, InvocationTargetException {
+			throws NoSuchMethodException, SecurityException,
+			IllegalAccessException, IllegalArgumentException,
+			InvocationTargetException {
 		Method method = o.getClass().getDeclaredMethod(methodName);
 		method.setAccessible(true);
 		method.invoke(o);

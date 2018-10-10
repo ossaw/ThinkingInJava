@@ -1,4 +1,4 @@
-//: concurrency/InterruptingIdiom.java
+// : concurrency/InterruptingIdiom.java
 package concurrency; /* Added by Eclipse.py */
 
 // General idiom for interrupting a task.

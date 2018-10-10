@@ -1,10 +1,8 @@
 package typeinfo;
 
-class Building2 {
-}
+class Building2 {}
 
-class House2 extends Building2 {
-}
+class House2 extends Building2 {}
 
 public class ClassCasts2 {
 	public static void main(String[] args) {

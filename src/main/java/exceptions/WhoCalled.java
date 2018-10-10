@@ -1,4 +1,4 @@
-//: exceptions/WhoCalled.java
+// : exceptions/WhoCalled.java
 package exceptions; /* Added by Eclipse.py */
 
 // Programmatic access to stack trace information.

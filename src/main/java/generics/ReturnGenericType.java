@@ -1,4 +1,4 @@
-//: generics/ReturnGenericType.java
+// : generics/ReturnGenericType.java
 package generics; /* Added by Eclipse.py */
 
 class ReturnGenericType<T extends HasF> {

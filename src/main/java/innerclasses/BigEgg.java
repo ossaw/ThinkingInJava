@@ -1,4 +1,4 @@
-//: innerclasses/BigEgg.java
+// : innerclasses/BigEgg.java
 package innerclasses; /* Added by Eclipse.py */
 
 // An inner class cannot be overriden like a method.

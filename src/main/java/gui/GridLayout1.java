@@ -1,4 +1,4 @@
-//: gui/GridLayout1.java
+// : gui/GridLayout1.java
 package gui; /* Added by Eclipse.py */
 
 // Demonstrates GridLayout.

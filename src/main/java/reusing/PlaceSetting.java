@@ -1,4 +1,4 @@
-//: reusing/PlaceSetting.java
+// : reusing/PlaceSetting.java
 package reusing; /* Added by Eclipse.py */
 
 // Combining composition & inheritance.

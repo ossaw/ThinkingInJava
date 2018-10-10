@@ -1,11 +1,10 @@
-//: innerclasses/InheritInner.java
+// : innerclasses/InheritInner.java
 package innerclasses; /* Added by Eclipse.py */
 
 // Inheriting an inner class.
 
 class WithInner {
-	class Inner {
-	}
+	class Inner {}
 }
 
 public class InheritInner extends WithInner.Inner {

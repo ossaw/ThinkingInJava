@@ -1,4 +1,4 @@
-//: typeinfo/InterfaceViolation.java
+// : typeinfo/InterfaceViolation.java
 package typeinfo; /* Added by Eclipse.py */
 
 // Sneaking around an interface.
@@ -7,8 +7,7 @@ import typeinfo.interfacea.*;
 
 class B implements A {
 	@Override
-	public void f() {
-	}
+	public void f() {}
 
 	public void g() {
 		System.out.println("g()");

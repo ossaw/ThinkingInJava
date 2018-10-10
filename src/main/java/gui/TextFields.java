@@ -1,4 +1,4 @@
-//: gui/TextFields.java
+// : gui/TextFields.java
 package gui; /* Added by Eclipse.py */
 
 // Text fields and Java events.
@@ -12,7 +12,8 @@ import static net.mindview.util.SwingConsole.*;
 
 public class TextFields extends JFrame {
 	private JButton b1 = new JButton("Get Text"), b2 = new JButton("Set Text");
-	private JTextField t1 = new JTextField(30), t2 = new JTextField(30), t3 = new JTextField(30);
+	private JTextField t1 = new JTextField(30), t2 = new JTextField(30),
+			t3 = new JTextField(30);
 	private String s = "";
 	private UpperCaseDocument ucd = new UpperCaseDocument();
 
@@ -31,8 +32,7 @@ public class TextFields extends JFrame {
 	}
 
 	class T1 implements DocumentListener {
-		public void changedUpdate(DocumentEvent e) {
-		}
+		public void changedUpdate(DocumentEvent e) {}
 
 		public void insertUpdate(DocumentEvent e) {
 			t2.setText(t1.getText());
@@ -83,7 +83,8 @@ class UpperCaseDocument extends PlainDocument {
 		upperCase = flag;
 	}
 
-	public void insertString(int offset, String str, AttributeSet attSet) throws BadLocationException {
+	public void insertString(int offset, String str, AttributeSet attSet)
+			throws BadLocationException {
 		if (upperCase)
 			str = str.toUpperCase();
 		super.insertString(offset, str, attSet);

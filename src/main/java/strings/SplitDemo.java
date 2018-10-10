@@ -1,4 +1,4 @@
-//: strings/SplitDemo.java
+// : strings/SplitDemo.java
 package strings; /* Added by Eclipse.py */
 
 import java.util.regex.*;

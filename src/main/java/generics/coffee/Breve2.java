@@ -1,4 +1,3 @@
 package generics.coffee;
 
-public class Breve2 extends Coffee2 {
-}
+public class Breve2 extends Coffee2 {}

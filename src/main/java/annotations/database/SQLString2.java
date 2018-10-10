@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface SQLString2 {
 	int value() default 0;
-	
+
 	String name() default "";
 
 	Constraints2 constraints() default @Constraints2;

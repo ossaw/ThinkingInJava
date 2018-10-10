@@ -1,4 +1,4 @@
-//: gui/ColorBoxes.java
+// : gui/ColorBoxes.java
 package gui; /* Added by Eclipse.py */
 
 // A visual demonstration of threading.

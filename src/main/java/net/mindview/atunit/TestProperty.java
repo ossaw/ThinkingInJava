@@ -1,4 +1,4 @@
-//: net/mindview/atunit/TestProperty.java
+// : net/mindview/atunit/TestProperty.java
 // The @Unit @TestProperty tag.
 package net.mindview.atunit;
 

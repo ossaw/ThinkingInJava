@@ -8,7 +8,7 @@ public class FixedThreadPool2 {
 		ExecutorService exec = Executors.newFixedThreadPool(2);
 		for (int i = 0; i < 5; i++)
 			exec.execute(new LiftOff2(4));
-		
+
 		exec.shutdown();
 		System.out.println("main thread ...");
 	}

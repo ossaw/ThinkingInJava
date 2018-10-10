@@ -1,4 +1,4 @@
-//: containers/Enumerations.java
+// : containers/Enumerations.java
 package containers; /* Added by Eclipse.py */
 
 // Java 1.0/1.1 Vector and Enumeration.

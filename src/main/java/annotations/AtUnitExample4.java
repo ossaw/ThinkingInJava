@@ -1,4 +1,4 @@
-//: annotations/AtUnitExample4.java
+// : annotations/AtUnitExample4.java
 package annotations;
 
 import java.util.*;
@@ -7,7 +7,8 @@ import net.mindview.util.*;
 import static net.mindview.util.Print.*;
 
 public class AtUnitExample4 {
-	static String theory = "All brontosauruses " + "are thin at one end, much MUCH thicker in the "
+	static String theory = "All brontosauruses "
+			+ "are thin at one end, much MUCH thicker in the "
 			+ "middle, and then thin again at the far end.";
 	private String word;
 	private Random rand = new Random(); // Time-based seed
@@ -75,10 +76,7 @@ public class AtUnitExample4 {
 	}
 } /*
 	 * Output: starting annotations.AtUnitExample4 . scramble1 'All' lAl
-	 * 
 	 * . scramble2 'brontosauruses' tsaeborornussu
-	 * 
 	 * . words 'are'
-	 * 
 	 * OK (3 tests)
 	 */// :~

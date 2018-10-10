@@ -1,4 +1,4 @@
-//: generics/WatercolorSets.java
+// : generics/WatercolorSets.java
 package generics; /* Added by Eclipse.py */
 
 import generics.watercolors.*;

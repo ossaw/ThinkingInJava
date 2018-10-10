@@ -32,7 +32,7 @@ public class LinkedStack2<T> {
 			top = top.next;
 		return result;
 	}
-	
+
 	public static void main(String[] args) {
 		LinkedStack2<String> linkedStack2 = new LinkedStack2<>();
 		String testString = "test stack pop push";
@@ -41,7 +41,7 @@ public class LinkedStack2<T> {
 		String s;
 		while ((s = linkedStack2.pop()) != null)
 			System.out.println(s);
-		
+
 		System.out.println(s);
 	}
 

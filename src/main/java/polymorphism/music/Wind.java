@@ -1,4 +1,4 @@
-//: polymorphism/music/Wind.java
+// : polymorphism/music/Wind.java
 package polymorphism.music;
 
 // Wind objects are instruments

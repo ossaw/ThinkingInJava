@@ -1,4 +1,4 @@
-//: containers/DequeTest.java
+// : containers/DequeTest.java
 package containers; /* Added by Eclipse.py */
 
 import net.mindview.util.*;

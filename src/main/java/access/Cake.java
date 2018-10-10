@@ -1,4 +1,4 @@
-//: access/Cake.java
+// : access/Cake.java
 package access; /* Added by Eclipse.py */
 
 // Accesses a class in a separate compilation unit.

@@ -1,4 +1,4 @@
-//: containers/CollectionDataGeneration.java
+// : containers/CollectionDataGeneration.java
 package containers; /* Added by Eclipse.py */
 
 // Using the Generators defined in the Arrays chapter.
@@ -9,9 +9,10 @@ import net.mindview.util.*;
 public class CollectionDataGeneration {
 	public static void main(String[] args) {
 		System.out.println(new ArrayList<String>(CollectionData.list( // Convenience
-																		// method
+				// method
 				new RandomGenerator.String(9), 10)));
-		System.out.println(new HashSet<Integer>(new CollectionData<Integer>(new RandomGenerator.Integer(), 10)));
+		System.out.println(new HashSet<Integer>(new CollectionData<Integer>(
+				new RandomGenerator.Integer(), 10)));
 	}
 }
 /*

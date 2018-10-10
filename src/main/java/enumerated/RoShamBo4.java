@@ -1,4 +1,4 @@
-//: enumerated/RoShamBo4.java
+// : enumerated/RoShamBo4.java
 package enumerated;
 
 public enum RoShamBo4 implements Competitor<RoShamBo4> {
@@ -18,7 +18,8 @@ public enum RoShamBo4 implements Competitor<RoShamBo4> {
 		}
 	};
 	Outcome compete(RoShamBo4 loser, RoShamBo4 opponent) {
-		return ((opponent == this) ? Outcome.DRAW : ((opponent == loser) ? Outcome.WIN : Outcome.LOSE));
+		return ((opponent == this) ? Outcome.DRAW
+				: ((opponent == loser) ? Outcome.WIN : Outcome.LOSE));
 	}
 
 	public static void main(String[] args) {

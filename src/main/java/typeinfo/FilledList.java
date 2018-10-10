@@ -1,4 +1,4 @@
-//: typeinfo/FilledList.java
+// : typeinfo/FilledList.java
 package typeinfo; /* Added by Eclipse.py */
 
 import java.util.*;
@@ -32,7 +32,8 @@ public class FilledList<T> {
 	}
 
 	public static void main(String[] args) {
-		FilledList<CountedInteger> fl = new FilledList<CountedInteger>(CountedInteger.class);
+		FilledList<CountedInteger> fl = new FilledList<CountedInteger>(
+				CountedInteger.class);
 		System.out.println(fl.create(15));
 	}
 }

@@ -1,4 +1,4 @@
-//: polymorphism/shape/Triangle.java
+// : polymorphism/shape/Triangle.java
 package polymorphism.shape;
 
 import static net.mindview.util.Print.*;

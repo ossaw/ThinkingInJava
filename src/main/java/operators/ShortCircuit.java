@@ -1,4 +1,4 @@
-//: operators/ShortCircuit.java
+// : operators/ShortCircuit.java
 package operators; /* Added by Eclipse.py */
 
 // Demonstrates short-circuiting behavior

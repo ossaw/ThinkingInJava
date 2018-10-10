@@ -9,19 +9,19 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
-class TaskWaitResult2 implements Callable<String>{
+class TaskWaitResult2 implements Callable<String> {
 	private int i;
 
 	public TaskWaitResult2(int i) {
 		this.i = i;
 	}
-	
+
 	@Override
 	public String call() throws Exception {
 		TimeUnit.SECONDS.sleep(2);
 		return "task wait reuslt : " + i;
 	}
-	
+
 }
 
 public class CallableDemo2 {

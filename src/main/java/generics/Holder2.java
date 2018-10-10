@@ -1,4 +1,4 @@
-//: generics/Holder2.java
+// : generics/Holder2.java
 package generics; /* Added by Eclipse.py */
 
 public class Holder2 {

@@ -1,4 +1,4 @@
-//: initialization/AutoboxingVarargs.java
+// : initialization/AutoboxingVarargs.java
 package initialization; /* Added by Eclipse.py */
 
 public class AutoboxingVarargs {

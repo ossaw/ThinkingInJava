@@ -1,4 +1,4 @@
-//: holding/InterfaceVsIterator.java
+// : holding/InterfaceVsIterator.java
 package holding; /* Added by Eclipse.py */
 
 import typeinfo.pets.*;
@@ -23,7 +23,8 @@ public class InterfaceVsIterator {
 		List<Pet> petList = Pets.arrayList(8);
 		Set<Pet> petSet = new HashSet<Pet>(petList);
 		Map<String, Pet> petMap = new LinkedHashMap<String, Pet>();
-		String[] names = ("Ralph, Eric, Robin, Lacey, " + "Britney, Sam, Spot, Fluffy").split(", ");
+		String[] names = ("Ralph, Eric, Robin, Lacey, "
+				+ "Britney, Sam, Spot, Fluffy").split(", ");
 		for (int i = 0; i < names.length; i++)
 			petMap.put(names[i], petList.get(i));
 		display(petList);

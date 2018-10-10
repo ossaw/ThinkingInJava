@@ -1,4 +1,4 @@
-//: enumerated/Competitor.java
+// : enumerated/Competitor.java
 // Switching one enum on another.
 package enumerated;
 

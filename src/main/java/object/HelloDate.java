@@ -1,4 +1,4 @@
-//: object/HelloDate.java
+// : object/HelloDate.java
 package object; /* Added by Eclipse.py */
 
 import java.util.*;
@@ -16,9 +16,9 @@ public class HelloDate {
 	 * Entry point to class & application.
 	 * 
 	 * @param args
-	 *            array of string arguments
+	 *             array of string arguments
 	 * @throws exceptions
-	 *             No exceptions thrown
+	 *                    No exceptions thrown
 	 */
 	public static void main(String[] args) {
 		System.out.println("Hello, it's: ");

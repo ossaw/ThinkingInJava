@@ -1,4 +1,4 @@
-//: concurrency/Fat.java
+// : concurrency/Fat.java
 package concurrency; /* Added by Eclipse.py */
 
 // Objects that are expensive to create.

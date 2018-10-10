@@ -1,4 +1,4 @@
-//: polymorphism/Sandwich.java
+// : polymorphism/Sandwich.java
 // Order of constructor calls.
 package polymorphism;
 

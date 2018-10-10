@@ -1,4 +1,4 @@
-//: polymorphism/StaticPolymorphism.java
+// : polymorphism/StaticPolymorphism.java
 package polymorphism; /* Added by Eclipse.py */
 
 // Static methods are not polymorphic.

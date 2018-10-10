@@ -1,4 +1,4 @@
-//: gui/MonitoredLongRunningCallable.java
+// : gui/MonitoredLongRunningCallable.java
 package gui; /* Added by Eclipse.py */
 
 // Displaying task progress with ProgressMonitors.
@@ -52,15 +52,17 @@ class MonitoredCallable implements Callable<String> {
 };
 
 public class MonitoredLongRunningCallable extends JFrame {
-	private JButton b1 = new JButton("Start Long Running Task"), b2 = new JButton("End Long Running Task"),
-			b3 = new JButton("Get results");
+	private JButton b1 = new JButton("Start Long Running Task"),
+			b2 = new JButton("End Long Running Task"), b3 = new JButton(
+					"Get results");
 	private TaskManager<String, MonitoredCallable> manager = new TaskManager<String, MonitoredCallable>();
 
 	public MonitoredLongRunningCallable() {
 		b1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				MonitoredCallable task = new MonitoredCallable(
-						new ProgressMonitor(MonitoredLongRunningCallable.this, "Long-Running Task", "", 0, 0));
+						new ProgressMonitor(MonitoredLongRunningCallable.this,
+								"Long-Running Task", "", 0, 0));
 				manager.add(task);
 				System.out.println(task + " added to the queue");
 			}

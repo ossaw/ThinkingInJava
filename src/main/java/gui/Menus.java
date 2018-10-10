@@ -1,4 +1,4 @@
-//: gui/Menus.java
+// : gui/Menus.java
 package gui; /* Added by Eclipse.py */
 
 // Submenus, check box menu items, swapping menus,
@@ -10,13 +10,16 @@ import java.awt.event.*;
 import static net.mindview.util.SwingConsole.*;
 
 public class Menus extends JFrame {
-	private String[] flavors = { "Chocolate", "Strawberry", "Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
+	private String[] flavors = { "Chocolate", "Strawberry",
+			"Vanilla Fudge Swirl", "Mint Chip", "Mocha Almond Fudge",
 			"Rum Raisin", "Praline Cream", "Mud Pie" };
 	private JTextField t = new JTextField("No flavor", 30);
 	private JMenuBar mb1 = new JMenuBar();
-	private JMenu f = new JMenu("File"), m = new JMenu("Flavors"), s = new JMenu("Safety");
+	private JMenu f = new JMenu("File"), m = new JMenu("Flavors"),
+			s = new JMenu("Safety");
 	// Alternative approach:
-	private JCheckBoxMenuItem[] safety = { new JCheckBoxMenuItem("Guard"), new JCheckBoxMenuItem("Hide") };
+	private JCheckBoxMenuItem[] safety = { new JCheckBoxMenuItem("Guard"),
+			new JCheckBoxMenuItem("Hide") };
 	private JMenuItem[] file = { new JMenuItem("Open") };
 	// A second menu bar to swap to:
 	private JMenuBar mb2 = new JMenuBar();
@@ -25,7 +28,8 @@ public class Menus extends JFrame {
 			// Adding a menu shortcut (mnemonic) is very
 			// simple, but only JMenuItems can have them
 			// in their constructors:
-			new JMenuItem("Foo", KeyEvent.VK_F), new JMenuItem("Bar", KeyEvent.VK_A),
+			new JMenuItem("Foo", KeyEvent.VK_F), new JMenuItem("Bar",
+					KeyEvent.VK_A),
 			// No shortcut:
 			new JMenuItem("Baz"), };
 	private JButton b = new JButton("Swap Menus");
@@ -89,9 +93,11 @@ public class Menus extends JFrame {
 			JCheckBoxMenuItem target = (JCheckBoxMenuItem) e.getSource();
 			String actionCommand = target.getActionCommand();
 			if (actionCommand.equals("Guard"))
-				t.setText("Guard the Ice Cream! " + "Guarding is " + target.getState());
+				t.setText("Guard the Ice Cream! " + "Guarding is " + target
+						.getState());
 			else if (actionCommand.equals("Hide"))
-				t.setText("Hide the Ice Cream! " + "Is it hidden? " + target.getState());
+				t.setText("Hide the Ice Cream! " + "Is it hidden? " + target
+						.getState());
 		}
 	}
 

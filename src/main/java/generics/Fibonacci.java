@@ -1,4 +1,4 @@
-//: generics/Fibonacci.java
+// : generics/Fibonacci.java
 package generics; /* Added by Eclipse.py */
 
 // Generate a Fibonacci sequence.

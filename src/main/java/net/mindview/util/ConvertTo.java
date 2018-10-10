@@ -1,4 +1,4 @@
-//: net/mindview/util/ConvertTo.java
+// : net/mindview/util/ConvertTo.java
 package net.mindview.util;
 
 public class ConvertTo {

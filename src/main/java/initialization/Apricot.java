@@ -1,4 +1,4 @@
-//: initialization/Apricot.java
+// : initialization/Apricot.java
 package initialization; /* Added by Eclipse.py */
 
 public class Apricot {

@@ -1,4 +1,4 @@
-//: io/ZipCompress.java
+// : io/ZipCompress.java
 package io; /* Added by Eclipse.py */
 
 // Uses Zip compression to compress any

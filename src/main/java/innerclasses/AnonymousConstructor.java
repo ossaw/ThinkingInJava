@@ -1,4 +1,4 @@
-//: innerclasses/AnonymousConstructor.java
+// : innerclasses/AnonymousConstructor.java
 package innerclasses; /* Added by Eclipse.py */
 
 // Creating a constructor for an anonymous inner class.

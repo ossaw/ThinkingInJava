@@ -1,4 +1,4 @@
-//: holding/MultiIterableClass.java
+// : holding/MultiIterableClass.java
 package holding; /* Added by Eclipse.py */
 
 // Adding several Adapter Methods.
@@ -31,7 +31,8 @@ public class MultiIterableClass extends IterableClass {
 	public Iterable<String> randomized() {
 		return new Iterable<String>() {
 			public Iterator<String> iterator() {
-				List<String> shuffled = new ArrayList<String>(Arrays.asList(words));
+				List<String> shuffled = new ArrayList<String>(Arrays.asList(
+						words));
 				Collections.shuffle(shuffled, new Random(47));
 				return shuffled.iterator();
 			}

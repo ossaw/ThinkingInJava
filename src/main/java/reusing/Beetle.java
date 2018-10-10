@@ -1,4 +1,4 @@
-//: reusing/Beetle.java
+// : reusing/Beetle.java
 package reusing; /* Added by Eclipse.py */
 
 // The full process of initialization.

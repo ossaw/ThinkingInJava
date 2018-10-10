@@ -1,4 +1,4 @@
-//: gui/flex/Song.java
+// : gui/flex/Song.java
 package gui.flex;
 
 public class Song implements java.io.Serializable {
@@ -8,10 +8,10 @@ public class Song implements java.io.Serializable {
 	private String albumImageUrl;
 	private String songMediaUrl;
 
-	public Song() {
-	}
+	public Song() {}
 
-	public Song(String name, String artist, String album, String albumImageUrl, String songMediaUrl) {
+	public Song(String name, String artist, String album, String albumImageUrl,
+			String songMediaUrl) {
 		this.name = name;
 		this.artist = artist;
 		this.album = album;

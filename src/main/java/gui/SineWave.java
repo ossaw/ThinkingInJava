@@ -1,4 +1,4 @@
-//: gui/SineWave.java
+// : gui/SineWave.java
 package gui; /* Added by Eclipse.py */
 
 // Drawing with Swing, using a JSlider.

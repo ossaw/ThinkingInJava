@@ -35,7 +35,7 @@ public class ShowMethods2 {
 						print(p.matcher(method.toString()).replaceAll(""));
 						line++;
 					}
-					print();
+				print();
 				for (Constructor<?> ctc : ctcs)
 					if (ctc.toString().indexOf(args[1]) != -1) {
 						print(p.matcher(ctc.toString()).replaceAll(""));

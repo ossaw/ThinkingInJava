@@ -1,4 +1,4 @@
-//: net/mindview/util/CountingMapData.java
+// : net/mindview/util/CountingMapData.java
 // Unlimited-length Map containing sample data.
 package net.mindview.util;
 
@@ -6,7 +6,8 @@ import java.util.*;
 
 public class CountingMapData extends AbstractMap<Integer, String> {
 	private int size;
-	private static String[] chars = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".split(" ");
+	private static String[] chars = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+			.split(" ");
 
 	public CountingMapData(int size) {
 		if (size < 0)
@@ -30,7 +31,8 @@ public class CountingMapData extends AbstractMap<Integer, String> {
 		}
 
 		public String getValue() {
-			return chars[index % chars.length] + Integer.toString(index / chars.length);
+			return chars[index % chars.length] + Integer.toString(index
+					/ chars.length);
 		}
 
 		public String setValue(String value) {

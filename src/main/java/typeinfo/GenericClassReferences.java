@@ -1,4 +1,4 @@
-//: typeinfo/GenericClassReferences.java
+// : typeinfo/GenericClassReferences.java
 package typeinfo; /* Added by Eclipse.py */
 
 public class GenericClassReferences {

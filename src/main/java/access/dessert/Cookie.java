@@ -1,4 +1,4 @@
-//: access/dessert/Cookie.java
+// : access/dessert/Cookie.java
 // Creates a library.
 package access.dessert;
 

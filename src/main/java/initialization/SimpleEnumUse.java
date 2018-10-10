@@ -1,4 +1,4 @@
-//: initialization/SimpleEnumUse.java
+// : initialization/SimpleEnumUse.java
 package initialization; /* Added by Eclipse.py */
 
 public class SimpleEnumUse {

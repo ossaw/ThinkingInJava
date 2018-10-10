@@ -1,4 +1,4 @@
-//: holding/CollectionSequence.java
+// : holding/CollectionSequence.java
 package holding; /* Added by Eclipse.py */
 
 import typeinfo.pets.*;

@@ -1,4 +1,4 @@
-//: arrays/RandomGeneratorsTest.java
+// : arrays/RandomGeneratorsTest.java
 package arrays; /* Added by Eclipse.py */
 
 import net.mindview.util.*;

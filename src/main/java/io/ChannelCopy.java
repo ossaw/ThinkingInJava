@@ -1,4 +1,4 @@
-//: io/ChannelCopy.java
+// : io/ChannelCopy.java
 package io; /* Added by Eclipse.py */
 
 // Copying a file using channels and buffers
@@ -16,7 +16,8 @@ public class ChannelCopy {
 			System.out.println("arguments: sourcefile destfile");
 			System.exit(1);
 		}
-		FileChannel in = new FileInputStream(args[0]).getChannel(), out = new FileOutputStream(args[1]).getChannel();
+		FileChannel in = new FileInputStream(args[0]).getChannel(),
+				out = new FileOutputStream(args[1]).getChannel();
 		ByteBuffer buffer = ByteBuffer.allocate(BSIZE);
 		while (in.read(buffer) != -1) {
 			buffer.flip(); // Prepare for writing

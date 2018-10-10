@@ -1,4 +1,4 @@
-//: containers/RandomBounds.java
+// : containers/RandomBounds.java
 package containers; /* Added by Eclipse.py */
 
 // Does Math.random() produce 0.0 and 1.0?

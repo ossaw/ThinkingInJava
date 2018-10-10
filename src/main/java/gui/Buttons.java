@@ -1,4 +1,4 @@
-//: gui/Buttons.java
+// : gui/Buttons.java
 package gui; /* Added by Eclipse.py */
 
 // Various Swing buttons.
@@ -12,7 +12,8 @@ import static net.mindview.util.SwingConsole.*;
 public class Buttons extends JFrame {
 	private JButton jb = new JButton("JButton");
 	private BasicArrowButton up = new BasicArrowButton(BasicArrowButton.NORTH),
-			down = new BasicArrowButton(BasicArrowButton.SOUTH), right = new BasicArrowButton(BasicArrowButton.EAST),
+			down = new BasicArrowButton(BasicArrowButton.SOUTH),
+			right = new BasicArrowButton(BasicArrowButton.EAST),
 			left = new BasicArrowButton(BasicArrowButton.WEST);
 
 	public Buttons() {

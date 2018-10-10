@@ -1,4 +1,4 @@
-//: containers/References.java
+// : containers/References.java
 package containers; /* Added by Eclipse.py */
 
 // Demonstrates Reference objects
@@ -50,12 +50,15 @@ public class References {
 			System.out.println("Just created: " + wa.getLast());
 			checkQueue();
 		}
-		SoftReference<VeryBig> s = new SoftReference<VeryBig>(new VeryBig("Soft"));
-		WeakReference<VeryBig> w = new WeakReference<VeryBig>(new VeryBig("Weak"));
+		SoftReference<VeryBig> s = new SoftReference<VeryBig>(new VeryBig(
+				"Soft"));
+		WeakReference<VeryBig> w = new WeakReference<VeryBig>(new VeryBig(
+				"Weak"));
 		System.gc();
 		LinkedList<PhantomReference<VeryBig>> pa = new LinkedList<PhantomReference<VeryBig>>();
 		for (int i = 0; i < size; i++) {
-			pa.add(new PhantomReference<VeryBig>(new VeryBig("Phantom " + i), rq));
+			pa.add(new PhantomReference<VeryBig>(new VeryBig("Phantom " + i),
+					rq));
 			System.out.println("Just created: " + pa.getLast());
 			checkQueue();
 		}

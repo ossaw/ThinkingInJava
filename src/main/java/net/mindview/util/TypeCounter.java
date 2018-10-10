@@ -1,4 +1,4 @@
-//: net/mindview/util/TypeCounter.java
+// : net/mindview/util/TypeCounter.java
 // Counts instances of a type family.
 package net.mindview.util;
 
@@ -14,7 +14,8 @@ public class TypeCounter extends HashMap<Class<?>, Integer> {
 	public void count(Object obj) {
 		Class<?> type = obj.getClass();
 		if (!baseType.isAssignableFrom(type))
-			throw new RuntimeException(obj + " incorrect type: " + type + ", should be type or subtype of " + baseType);
+			throw new RuntimeException(obj + " incorrect type: " + type
+					+ ", should be type or subtype of " + baseType);
 		countClass(type);
 	}
 

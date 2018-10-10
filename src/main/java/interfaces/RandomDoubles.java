@@ -1,4 +1,4 @@
-//: interfaces/RandomDoubles.java
+// : interfaces/RandomDoubles.java
 package interfaces; /* Added by Eclipse.py */
 
 import java.util.*;

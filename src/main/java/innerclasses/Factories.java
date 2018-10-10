@@ -1,4 +1,4 @@
-//: innerclasses/Factories.java
+// : innerclasses/Factories.java
 package innerclasses; /* Added by Eclipse.py */
 
 import static net.mindview.util.Print.*;
@@ -14,8 +14,7 @@ interface ServiceFactory {
 }
 
 class Implementation1 implements Service {
-	private Implementation1() {
-	}
+	private Implementation1() {}
 
 	public void method1() {
 		print("Implementation1 method1");
@@ -33,8 +32,7 @@ class Implementation1 implements Service {
 }
 
 class Implementation2 implements Service {
-	private Implementation2() {
-	}
+	private Implementation2() {}
 
 	public void method1() {
 		print("Implementation2 method1");

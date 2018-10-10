@@ -1,13 +1,11 @@
-//: exceptions/Human.java
+// : exceptions/Human.java
 package exceptions; /* Added by Eclipse.py */
 
 // Catching exception hierarchies.
 
-class Annoyance extends Exception {
-}
+class Annoyance extends Exception {}
 
-class Sneeze extends Annoyance {
-}
+class Sneeze extends Annoyance {}
 
 public class Human {
 	public static void main(String[] args) {

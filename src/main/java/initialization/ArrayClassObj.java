@@ -1,4 +1,4 @@
-//: initialization/ArrayClassObj.java
+// : initialization/ArrayClassObj.java
 package initialization; /* Added by Eclipse.py */
 
 // Creating an array of nonprimitive objects.

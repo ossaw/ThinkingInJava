@@ -1,4 +1,4 @@
-//: access/Dinner.java
+// : access/Dinner.java
 package access; /* Added by Eclipse.py */
 
 // Uses the library.

@@ -1,4 +1,4 @@
-//: polymorphism/music3/Music3.java
+// : polymorphism/music3/Music3.java
 // An extensible program.
 package polymorphism.music3;
 
@@ -96,7 +96,8 @@ public class Music3 {
 
 	public static void main(String[] args) {
 		// Upcasting during addition to the array:
-		Instrument[] orchestra = { new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind() };
+		Instrument[] orchestra = { new Wind(), new Percussion(), new Stringed(),
+				new Brass(), new Woodwind() };
 		tuneAll(orchestra);
 	}
 } /*

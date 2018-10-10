@@ -1,4 +1,4 @@
-//: enumerated/RoShamBo1.java
+// : enumerated/RoShamBo1.java
 // Demonstration of multiple dispatching.
 package enumerated;
 
@@ -87,13 +87,13 @@ public class RoShamBo1 {
 
 	public static Item newItem() {
 		switch (rand.nextInt(3)) {
-		default:
-		case 0:
-			return new Scissors();
-		case 1:
-			return new Paper();
-		case 2:
-			return new Rock();
+			default:
+			case 0:
+				return new Scissors();
+			case 1:
+				return new Paper();
+			case 2:
+				return new Rock();
 		}
 	}
 

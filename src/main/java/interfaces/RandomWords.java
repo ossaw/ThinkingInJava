@@ -1,4 +1,4 @@
-//: interfaces/RandomWords.java
+// : interfaces/RandomWords.java
 package interfaces; /* Added by Eclipse.py */
 
 // Implementing an interface to conform to a method.
@@ -8,8 +8,10 @@ import java.util.*;
 
 public class RandomWords implements Readable {
 	private static Random rand = new Random(47);
-	private static final char[] capitals = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
-	private static final char[] lowers = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+	private static final char[] capitals = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+			.toCharArray();
+	private static final char[] lowers = "abcdefghijklmnopqrstuvwxyz"
+			.toCharArray();
 	private static final char[] vowels = "aeiou".toCharArray();
 	private int count;
 

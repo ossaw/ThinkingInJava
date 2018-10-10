@@ -1,4 +1,4 @@
-//: containers/SetPerformance.java
+// : containers/SetPerformance.java
 package containers; /* Added by Eclipse.py */
 
 // Demonstrates performance differences in Sets.

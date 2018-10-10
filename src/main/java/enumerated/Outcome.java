@@ -1,4 +1,4 @@
-//: enumerated/Outcome.java
+// : enumerated/Outcome.java
 package enumerated;
 
 public enum Outcome {

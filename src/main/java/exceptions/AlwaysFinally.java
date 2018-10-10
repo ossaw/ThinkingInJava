@@ -1,12 +1,11 @@
-//: exceptions/AlwaysFinally.java
+// : exceptions/AlwaysFinally.java
 package exceptions; /* Added by Eclipse.py */
 
 // Finally is always executed.
 
 import static net.mindview.util.Print.*;
 
-class FourException extends Exception {
-}
+class FourException extends Exception {}
 
 public class AlwaysFinally {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-//: concurrency/MapComparisons.java
+// : concurrency/MapComparisons.java
 package concurrency; /* Added by Eclipse.py */
 
 // {Args: 1 10 10} (Fast verification check during build)
@@ -50,8 +50,9 @@ abstract class MapTest extends Tester<Map<Integer, Integer>> {
 
 class SynchronizedHashMapTest extends MapTest {
 	Map<Integer, Integer> containerInitializer() {
-		return Collections.synchronizedMap(new HashMap<Integer, Integer>(
-				MapData.map(new CountingGenerator.Integer(), new CountingGenerator.Integer(), containerSize)));
+		return Collections.synchronizedMap(new HashMap<Integer, Integer>(MapData
+				.map(new CountingGenerator.Integer(),
+						new CountingGenerator.Integer(), containerSize)));
 	}
 
 	SynchronizedHashMapTest(int nReaders, int nWriters) {
@@ -61,8 +62,9 @@ class SynchronizedHashMapTest extends MapTest {
 
 class ConcurrentHashMapTest extends MapTest {
 	Map<Integer, Integer> containerInitializer() {
-		return new ConcurrentHashMap<Integer, Integer>(
-				MapData.map(new CountingGenerator.Integer(), new CountingGenerator.Integer(), containerSize));
+		return new ConcurrentHashMap<Integer, Integer>(MapData.map(
+				new CountingGenerator.Integer(),
+				new CountingGenerator.Integer(), containerSize));
 	}
 
 	ConcurrentHashMapTest(int nReaders, int nWriters) {

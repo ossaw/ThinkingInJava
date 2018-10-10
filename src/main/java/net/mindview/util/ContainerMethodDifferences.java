@@ -1,4 +1,4 @@
-//: net/mindview/util/ContainerMethodDifferences.java
+// : net/mindview/util/ContainerMethodDifferences.java
 package net.mindview.util;
 
 import java.lang.reflect.*;
@@ -26,8 +26,10 @@ public class ContainerMethodDifferences {
 	}
 
 	static void difference(Class<?> superset, Class<?> subset) {
-		System.out.print(superset.getSimpleName() + " extends " + subset.getSimpleName() + ", adds: ");
-		Set<String> comp = Sets.difference(methodSet(superset), methodSet(subset));
+		System.out.print(superset.getSimpleName() + " extends " + subset
+				.getSimpleName() + ", adds: ");
+		Set<String> comp = Sets.difference(methodSet(superset), methodSet(
+				subset));
 		comp.removeAll(object); // Don't show 'Object' methods
 		System.out.println(comp);
 		interfaces(superset);

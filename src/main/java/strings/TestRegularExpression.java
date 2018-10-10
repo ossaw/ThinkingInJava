@@ -1,4 +1,4 @@
-//: strings/TestRegularExpression.java
+// : strings/TestRegularExpression.java
 package strings; /* Added by Eclipse.py */
 
 // Allows you to easily try out regular expressions.
@@ -10,7 +10,8 @@ import static net.mindview.util.Print.*;
 public class TestRegularExpression {
 	public static void main(String[] args) {
 		if (args.length < 2) {
-			print("Usage:\njava TestRegularExpression " + "characterSequence regularExpression+");
+			print("Usage:\njava TestRegularExpression "
+					+ "characterSequence regularExpression+");
 			System.exit(0);
 		}
 		print("Input: \"" + args[0] + "\"");
@@ -19,7 +20,8 @@ public class TestRegularExpression {
 			Pattern p = Pattern.compile(arg);
 			Matcher m = p.matcher(args[0]);
 			while (m.find()) {
-				print("Match \"" + m.group() + "\" at positions " + m.start() + "-" + (m.end() - 1));
+				print("Match \"" + m.group() + "\" at positions " + m.start()
+						+ "-" + (m.end() - 1));
 			}
 		}
 	}

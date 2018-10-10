@@ -1,4 +1,4 @@
-//: bangbean/BangBean.java
+// : bangbean/BangBean.java
 // A graphical Bean.
 package bangbean;
 
@@ -61,7 +61,8 @@ public class BangBean extends JPanel implements Serializable {
 
 	// This is a unicast listener, which is
 	// the simplest form of listener management:
-	public void addActionListener(ActionListener l) throws TooManyListenersException {
+	public void addActionListener(ActionListener l)
+			throws TooManyListenersException {
 		if (actionListener != null)
 			throw new TooManyListenersException();
 		actionListener = l;
@@ -77,11 +78,13 @@ public class BangBean extends JPanel implements Serializable {
 			g.setColor(tColor);
 			g.setFont(new Font("TimesRoman", Font.BOLD, fontSize));
 			int width = g.getFontMetrics().stringWidth(text);
-			g.drawString(text, (getSize().width - width) / 2, getSize().height / 2);
+			g.drawString(text, (getSize().width - width) / 2, getSize().height
+					/ 2);
 			g.dispose();
 			// Call the listener's method:
 			if (actionListener != null)
-				actionListener.actionPerformed(new ActionEvent(BangBean.this, ActionEvent.ACTION_PERFORMED, null));
+				actionListener.actionPerformed(new ActionEvent(BangBean.this,
+						ActionEvent.ACTION_PERFORMED, null));
 		}
 	}
 

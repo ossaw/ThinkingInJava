@@ -1,4 +1,4 @@
-//: holding/StackCollision.java
+// : holding/StackCollision.java
 package holding; /* Added by Eclipse.py */
 
 import net.mindview.util.*;

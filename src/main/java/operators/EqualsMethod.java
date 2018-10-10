@@ -1,4 +1,4 @@
-//: operators/EqualsMethod.java
+// : operators/EqualsMethod.java
 package operators; /* Added by Eclipse.py */
 
 public class EqualsMethod {

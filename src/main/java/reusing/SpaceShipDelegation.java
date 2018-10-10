@@ -1,4 +1,4 @@
-//: reusing/SpaceShipDelegation.java
+// : reusing/SpaceShipDelegation.java
 package reusing; /* Added by Eclipse.py */
 
 public class SpaceShipDelegation {
@@ -39,7 +39,8 @@ public class SpaceShipDelegation {
 	}
 
 	public static void main(String[] args) {
-		SpaceShipDelegation protector = new SpaceShipDelegation("NSEA Protector");
+		SpaceShipDelegation protector = new SpaceShipDelegation(
+				"NSEA Protector");
 		protector.forward(100);
 	}
 } /// :~

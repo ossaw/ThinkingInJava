@@ -1,4 +1,4 @@
-//: generics/DynamicProxyMixin.java
+// : generics/DynamicProxyMixin.java
 package generics; /* Added by Eclipse.py */
 
 import java.lang.reflect.*;
@@ -22,7 +22,8 @@ class MixinProxy implements InvocationHandler {
 		}
 	}
 
-	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+	public Object invoke(Object proxy, Method method, Object[] args)
+			throws Throwable {
 		String methodName = method.getName();
 		Object delegate = delegatesByMethod.get(methodName);
 		return method.invoke(delegate, args);
@@ -41,8 +42,9 @@ class MixinProxy implements InvocationHandler {
 
 public class DynamicProxyMixin {
 	public static void main(String[] args) {
-		Object mixin = MixinProxy.newInstance(tuple(new BasicImp(), Basic.class),
-				tuple(new TimeStampedImp(), TimeStamped.class), tuple(new SerialNumberedImp(), SerialNumbered.class));
+		Object mixin = MixinProxy.newInstance(tuple(new BasicImp(),
+				Basic.class), tuple(new TimeStampedImp(), TimeStamped.class),
+				tuple(new SerialNumberedImp(), SerialNumbered.class));
 		Basic b = (Basic) mixin;
 		TimeStamped t = (TimeStamped) mixin;
 		SerialNumbered s = (SerialNumbered) mixin;

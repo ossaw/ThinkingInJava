@@ -1,4 +1,4 @@
-//: initialization/MethodInit2.java
+// : initialization/MethodInit2.java
 package initialization; /* Added by Eclipse.py */
 
 public class MethodInit2 {

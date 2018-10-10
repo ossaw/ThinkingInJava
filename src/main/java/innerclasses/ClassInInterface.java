@@ -1,4 +1,4 @@
-//: innerclasses/ClassInInterface.java
+// : innerclasses/ClassInInterface.java
 package innerclasses; /* Added by Eclipse.py */
 
 // {main: ClassInInterface$Test}

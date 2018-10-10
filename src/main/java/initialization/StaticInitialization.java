@@ -1,4 +1,4 @@
-//: initialization/StaticInitialization.java
+// : initialization/StaticInitialization.java
 package initialization; /* Added by Eclipse.py */
 
 // Specifying initial values in a class definition.

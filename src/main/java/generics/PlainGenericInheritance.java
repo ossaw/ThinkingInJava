@@ -1,4 +1,4 @@
-//: generics/PlainGenericInheritance.java
+// : generics/PlainGenericInheritance.java
 package generics; /* Added by Eclipse.py */
 
 class GenericSetter<T> { // Not self-bounded

@@ -1,4 +1,4 @@
-//: enumerated/RoShamBo6.java
+// : enumerated/RoShamBo6.java
 // Enums using "tables" instead of multiple dispatch.
 package enumerated;
 

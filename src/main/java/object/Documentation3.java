@@ -1,4 +1,4 @@
-//: object/Documentation3.java
+// : object/Documentation3.java
 package object; /* Added by Eclipse.py */
 
 /**
@@ -9,6 +9,5 @@ package object; /* Added by Eclipse.py */
  * <li>Item three
  * </ol>
  */
-public class Documentation3 {
-}
+public class Documentation3 {}
 /// :~

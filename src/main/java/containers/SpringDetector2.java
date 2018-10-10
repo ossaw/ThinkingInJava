@@ -1,4 +1,4 @@
-//: containers/SpringDetector2.java
+// : containers/SpringDetector2.java
 package containers; /* Added by Eclipse.py */
 
 // A working key.

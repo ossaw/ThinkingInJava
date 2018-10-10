@@ -1,4 +1,4 @@
-//: enumerated/OverrideConstantSpecific.java
+// : enumerated/OverrideConstantSpecific.java
 package enumerated; /* Added by Eclipse.py */
 
 import static net.mindview.util.Print.*;

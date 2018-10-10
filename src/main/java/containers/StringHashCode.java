@@ -1,4 +1,4 @@
-//: containers/StringHashCode.java
+// : containers/StringHashCode.java
 package containers; /* Added by Eclipse.py */
 
 public class StringHashCode {

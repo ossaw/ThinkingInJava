@@ -1,4 +1,4 @@
-//: generics/DogsAndRobots.java
+// : generics/DogsAndRobots.java
 package generics; /* Added by Eclipse.py */
 
 // No latent typing in Java
@@ -15,8 +15,7 @@ class PerformingDog extends Dog implements Performs {
 		print("Sitting");
 	}
 
-	public void reproduce() {
-	}
+	public void reproduce() {}
 }
 
 class Robot implements Performs {
@@ -28,8 +27,7 @@ class Robot implements Performs {
 		print("Clank!");
 	}
 
-	public void oilChange() {
-	}
+	public void oilChange() {}
 }
 
 class Communicate {

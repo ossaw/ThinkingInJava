@@ -1,4 +1,4 @@
-//: gui/FileChooserTest.java
+// : gui/FileChooserTest.java
 package gui; /* Added by Eclipse.py */
 
 // Demonstration of File dialog boxes.

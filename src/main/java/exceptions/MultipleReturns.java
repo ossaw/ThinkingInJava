@@ -1,4 +1,4 @@
-//: exceptions/MultipleReturns.java
+// : exceptions/MultipleReturns.java
 package exceptions; /* Added by Eclipse.py */
 
 import static net.mindview.util.Print.*;

@@ -1,12 +1,11 @@
-//: io/MyWorld.java
+// : io/MyWorld.java
 package io; /* Added by Eclipse.py */
 
 import java.io.*;
 import java.util.*;
 import static net.mindview.util.Print.*;
 
-class House implements Serializable {
-}
+class House implements Serializable {}
 
 class Animal implements Serializable {
 	private String name;
@@ -23,7 +22,8 @@ class Animal implements Serializable {
 }
 
 public class MyWorld {
-	public static void main(String[] args) throws IOException, ClassNotFoundException {
+	public static void main(String[] args) throws IOException,
+			ClassNotFoundException {
 		House house = new House();
 		List<Animal> animals = new ArrayList<Animal>();
 		animals.add(new Animal("Bosco the dog", house));
@@ -39,9 +39,12 @@ public class MyWorld {
 		ObjectOutputStream o2 = new ObjectOutputStream(buf2);
 		o2.writeObject(animals);
 		// Now get them back:
-		ObjectInputStream in1 = new ObjectInputStream(new ByteArrayInputStream(buf1.toByteArray()));
-		ObjectInputStream in2 = new ObjectInputStream(new ByteArrayInputStream(buf2.toByteArray()));
-		List animals1 = (List) in1.readObject(), animals2 = (List) in1.readObject(), animals3 = (List) in2.readObject();
+		ObjectInputStream in1 = new ObjectInputStream(new ByteArrayInputStream(
+				buf1.toByteArray()));
+		ObjectInputStream in2 = new ObjectInputStream(new ByteArrayInputStream(
+				buf2.toByteArray()));
+		List animals1 = (List) in1.readObject(), animals2 = (List) in1
+				.readObject(), animals3 = (List) in2.readObject();
 		print("animals1: " + animals1);
 		print("animals2: " + animals2);
 		print("animals3: " + animals3);

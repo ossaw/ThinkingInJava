@@ -1,11 +1,10 @@
-//: access/IceCream.java
+// : access/IceCream.java
 package access; /* Added by Eclipse.py */
 
 // Demonstrates "private" keyword.
 
 class Sundae {
-	private Sundae() {
-	}
+	private Sundae() {}
 
 	static Sundae makeASundae() {
 		return new Sundae();

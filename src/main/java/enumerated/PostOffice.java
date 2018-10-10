@@ -1,4 +1,4 @@
-//: enumerated/PostOffice.java
+// : enumerated/PostOffice.java
 package enumerated; /* Added by Eclipse.py */
 
 // Modeling a post office.
@@ -42,8 +42,10 @@ class Mail {
 	}
 
 	public String details() {
-		return toString() + ", General Delivery: " + generalDelivery + ", Address Scanability: " + scannability
-				+ ", Address Readability: " + readability + ", Address Address: " + address + ", Return address: "
+		return toString() + ", General Delivery: " + generalDelivery
+				+ ", Address Scanability: " + scannability
+				+ ", Address Readability: " + readability
+				+ ", Address Address: " + address + ", Return address: "
 				+ returnAddress;
 	}
 
@@ -86,54 +88,54 @@ public class PostOffice {
 		GENERAL_DELIVERY {
 			boolean handle(Mail m) {
 				switch (m.generalDelivery) {
-				case YES:
-					print("Using general delivery for " + m);
-					return true;
-				default:
-					return false;
+					case YES:
+						print("Using general delivery for " + m);
+						return true;
+					default:
+						return false;
 				}
 			}
 		},
 		MACHINE_SCAN {
 			boolean handle(Mail m) {
 				switch (m.scannability) {
-				case UNSCANNABLE:
-					return false;
-				default:
-					switch (m.address) {
-					case INCORRECT:
+					case UNSCANNABLE:
 						return false;
 					default:
-						print("Delivering " + m + " automatically");
-						return true;
-					}
+						switch (m.address) {
+							case INCORRECT:
+								return false;
+							default:
+								print("Delivering " + m + " automatically");
+								return true;
+						}
 				}
 			}
 		},
 		VISUAL_INSPECTION {
 			boolean handle(Mail m) {
 				switch (m.readability) {
-				case ILLEGIBLE:
-					return false;
-				default:
-					switch (m.address) {
-					case INCORRECT:
+					case ILLEGIBLE:
 						return false;
 					default:
-						print("Delivering " + m + " normally");
-						return true;
-					}
+						switch (m.address) {
+							case INCORRECT:
+								return false;
+							default:
+								print("Delivering " + m + " normally");
+								return true;
+						}
 				}
 			}
 		},
 		RETURN_TO_SENDER {
 			boolean handle(Mail m) {
 				switch (m.returnAddress) {
-				case MISSING:
-					return false;
-				default:
-					print("Returning " + m + " to sender");
-					return true;
+					case MISSING:
+						return false;
+					default:
+						print("Returning " + m + " to sender");
+						return true;
 				}
 			}
 		};
@@ -158,41 +160,31 @@ public class PostOffice {
 	 * Output: Mail 0, General Delivery: NO2, Address Scanability: UNSCANNABLE,
 	 * Address Readability: YES3, Address Address: OK1, Return address: OK1
 	 * Delivering Mail 0 normally
-	 *****
-	 * Mail 1, General Delivery: NO5, Address Scanability: YES3, Address
+	 ***** Mail 1, General Delivery: NO5, Address Scanability: YES3, Address
 	 * Readability: ILLEGIBLE, Address Address: OK5, Return address: OK1
 	 * Delivering Mail 1 automatically
-	 *****
-	 * Mail 2, General Delivery: YES, Address Scanability: YES3, Address
+	 ***** Mail 2, General Delivery: YES, Address Scanability: YES3, Address
 	 * Readability: YES1, Address Address: OK1, Return address: OK5 Using
 	 * general delivery for Mail 2
-	 *****
-	 * Mail 3, General Delivery: NO4, Address Scanability: YES3, Address
+	 ***** Mail 3, General Delivery: NO4, Address Scanability: YES3, Address
 	 * Readability: YES1, Address Address: INCORRECT, Return address: OK4
 	 * Returning Mail 3 to sender
-	 *****
-	 * Mail 4, General Delivery: NO4, Address Scanability: UNSCANNABLE, Address
+	 ***** Mail 4, General Delivery: NO4, Address Scanability: UNSCANNABLE, Address
 	 * Readability: YES1, Address Address: INCORRECT, Return address: OK2
 	 * Returning Mail 4 to sender
-	 *****
-	 * Mail 5, General Delivery: NO3, Address Scanability: YES1, Address
+	 ***** Mail 5, General Delivery: NO3, Address Scanability: YES1, Address
 	 * Readability: ILLEGIBLE, Address Address: OK4, Return address: OK2
 	 * Delivering Mail 5 automatically
-	 *****
-	 * Mail 6, General Delivery: YES, Address Scanability: YES4, Address
+	 ***** Mail 6, General Delivery: YES, Address Scanability: YES4, Address
 	 * Readability: ILLEGIBLE, Address Address: OK4, Return address: OK4 Using
 	 * general delivery for Mail 6
-	 *****
-	 * Mail 7, General Delivery: YES, Address Scanability: YES3, Address
+	 ***** Mail 7, General Delivery: YES, Address Scanability: YES3, Address
 	 * Readability: YES4, Address Address: OK2, Return address: MISSING Using
 	 * general delivery for Mail 7
-	 *****
-	 * Mail 8, General Delivery: NO3, Address Scanability: YES1, Address
+	 ***** Mail 8, General Delivery: NO3, Address Scanability: YES1, Address
 	 * Readability: YES3, Address Address: INCORRECT, Return address: MISSING
 	 * Mail 8 is a dead letter
-	 *****
-	 * Mail 9, General Delivery: NO1, Address Scanability: UNSCANNABLE, Address
+	 ***** Mail 9, General Delivery: NO1, Address Scanability: UNSCANNABLE, Address
 	 * Readability: YES2, Address Address: OK1, Return address: OK4 Delivering
 	 * Mail 9 normally
-	 *****
 	 */// :~

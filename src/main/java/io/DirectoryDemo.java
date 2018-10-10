@@ -1,4 +1,4 @@
-//: io/DirectoryDemo.java
+// : io/DirectoryDemo.java
 package io; /* Added by Eclipse.py */
 
 // Sample use of Directory utilities.

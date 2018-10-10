@@ -1,4 +1,4 @@
-//: concurrency/waxomatic/WaxOMatic.java
+// : concurrency/waxomatic/WaxOMatic.java
 // Basic task cooperation.
 package concurrency.waxomatic;
 

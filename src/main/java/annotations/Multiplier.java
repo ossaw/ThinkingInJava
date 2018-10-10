@@ -1,4 +1,4 @@
-//: annotations/Multiplier.java
+// : annotations/Multiplier.java
 // APT-based annotation processing.
 package annotations;
 

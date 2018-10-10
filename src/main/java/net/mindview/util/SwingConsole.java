@@ -1,4 +1,4 @@
-//: net/mindview/util/SwingConsole.java
+// : net/mindview/util/SwingConsole.java
 // Tool for running Swing demos from the
 // console, both applets and JFrames.
 package net.mindview.util;

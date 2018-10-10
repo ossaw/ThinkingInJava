@@ -1,4 +1,4 @@
-//: concurrency/CarBuilder.java
+// : concurrency/CarBuilder.java
 package concurrency; /* Added by Eclipse.py */
 
 // A complex example of tasks working together.
@@ -37,12 +37,12 @@ class Car {
 	}
 
 	public synchronized String toString() {
-		return "Car " + id + " [" + " engine: " + engine + " driveTrain: " + driveTrain + " wheels: " + wheels + " ]";
+		return "Car " + id + " [" + " engine: " + engine + " driveTrain: "
+				+ driveTrain + " wheels: " + wheels + " ]";
 	}
 }
 
-class CarQueue extends LinkedBlockingQueue<Car> {
-}
+class CarQueue extends LinkedBlockingQueue<Car> {}
 
 class ChassisBuilder implements Runnable {
 	private CarQueue carQueue;
@@ -229,7 +229,8 @@ class RobotPool {
 		notifyAll();
 	}
 
-	public synchronized void hire(Class<? extends Robot> robotType, Assembler d) throws InterruptedException {
+	public synchronized void hire(Class<? extends Robot> robotType, Assembler d)
+			throws InterruptedException {
 		for (Robot r : pool)
 			if (r.getClass().equals(robotType)) {
 				pool.remove(r);

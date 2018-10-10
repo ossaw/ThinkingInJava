@@ -1,4 +1,4 @@
-//: operators/MathOps.java
+// : operators/MathOps.java
 package operators; /* Added by Eclipse.py */
 
 // Demonstrates the mathematical operators.

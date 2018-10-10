@@ -1,4 +1,4 @@
-//: typeinfo/pets/Pet.java
+// : typeinfo/pets/Pet.java
 package typeinfo.pets;
 
 public class Pet extends Individual {

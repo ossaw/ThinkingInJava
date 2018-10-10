@@ -1,4 +1,4 @@
-//: typeinfo/pets/EgyptianMau.java
+// : typeinfo/pets/EgyptianMau.java
 package typeinfo.pets;
 
 public class EgyptianMau extends Cat {

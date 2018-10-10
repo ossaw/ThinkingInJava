@@ -1,4 +1,4 @@
-//: annotations/HashSetTest.java
+// : annotations/HashSetTest.java
 package annotations;
 
 import java.util.*;

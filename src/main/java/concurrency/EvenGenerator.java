@@ -1,4 +1,4 @@
-//: concurrency/EvenGenerator.java
+// : concurrency/EvenGenerator.java
 package concurrency; /* Added by Eclipse.py */
 
 // When threads collide.

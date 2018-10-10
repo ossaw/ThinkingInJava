@@ -1,4 +1,4 @@
-//: interfaces/filters/HighPass.java
+// : interfaces/filters/HighPass.java
 package interfaces.filters;
 
 public class HighPass extends Filter {

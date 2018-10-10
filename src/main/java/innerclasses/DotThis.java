@@ -1,4 +1,4 @@
-//: innerclasses/DotThis.java
+// : innerclasses/DotThis.java
 package innerclasses; /* Added by Eclipse.py */
 
 // Qualifying access to the outer-class object.

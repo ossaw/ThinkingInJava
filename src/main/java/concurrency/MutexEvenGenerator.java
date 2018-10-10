@@ -1,4 +1,4 @@
-//: concurrency/MutexEvenGenerator.java
+// : concurrency/MutexEvenGenerator.java
 package concurrency; /* Added by Eclipse.py */
 
 // Preventing thread collisions with mutexes.

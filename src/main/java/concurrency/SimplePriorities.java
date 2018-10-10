@@ -1,4 +1,4 @@
-//: concurrency/SimplePriorities.java
+// : concurrency/SimplePriorities.java
 package concurrency; /* Added by Eclipse.py */
 
 // Shows the use of thread priorities.

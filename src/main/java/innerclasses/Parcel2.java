@@ -1,4 +1,4 @@
-//: innerclasses/Parcel2.java
+// : innerclasses/Parcel2.java
 package innerclasses; /* Added by Eclipse.py */
 
 // Returning a reference to an inner class.

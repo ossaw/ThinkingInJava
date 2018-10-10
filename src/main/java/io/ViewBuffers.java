@@ -1,4 +1,4 @@
-//: io/ViewBuffers.java
+// : io/ViewBuffers.java
 package io; /* Added by Eclipse.py */
 
 import java.nio.*;
@@ -6,7 +6,8 @@ import static net.mindview.util.Print.*;
 
 public class ViewBuffers {
 	public static void main(String[] args) {
-		ByteBuffer bb = ByteBuffer.wrap(new byte[] { 0, 0, 0, 0, 0, 0, 0, 'a' });
+		ByteBuffer bb = ByteBuffer.wrap(new byte[] { 0, 0, 0, 0, 0, 0, 0,
+				'a' });
 		bb.rewind();
 		printnb("Byte Buffer ");
 		while (bb.hasRemaining())

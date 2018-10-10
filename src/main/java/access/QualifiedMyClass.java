@@ -1,4 +1,4 @@
-//: access/QualifiedMyClass.java
+// : access/QualifiedMyClass.java
 package access; /* Added by Eclipse.py */
 
 public class QualifiedMyClass {

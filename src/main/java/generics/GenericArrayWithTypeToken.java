@@ -1,4 +1,4 @@
-//: generics/GenericArrayWithTypeToken.java
+// : generics/GenericArrayWithTypeToken.java
 package generics; /* Added by Eclipse.py */
 
 import java.lang.reflect.*;
@@ -25,7 +25,8 @@ public class GenericArrayWithTypeToken<T> {
 	}
 
 	public static void main(String[] args) {
-		GenericArrayWithTypeToken<Integer> gai = new GenericArrayWithTypeToken<Integer>(Integer.class, 10);
+		GenericArrayWithTypeToken<Integer> gai = new GenericArrayWithTypeToken<Integer>(
+				Integer.class, 10);
 		// This now works:
 		Integer[] ia = gai.rep();
 	}

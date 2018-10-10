@@ -9,7 +9,7 @@ public class Pool2<T> {
 	private Semaphore available;
 	private List<T> list = new ArrayList<>();
 	private volatile boolean[] checkOut;
-	
+
 	public Pool2(Class<T> classObject, int size) {
 		this.size = size;
 		available = new Semaphore(size, true);
@@ -23,7 +23,7 @@ public class Pool2<T> {
 				e.printStackTrace();
 			}
 	}
-	
+
 	public void checkIn(T t) {
 		if (releaseItem(t))
 			available.release();
@@ -43,11 +43,11 @@ public class Pool2<T> {
 			if (!checkOut[i]) {
 				T t = list.get(i);
 				checkOut[i] = true;
-				return t; 
+				return t;
 			}
 		return null;
 	}
-	
+
 	private boolean releaseItem(T t) {
 		int i = list.indexOf(t);
 		if (i == -1)
@@ -58,5 +58,5 @@ public class Pool2<T> {
 		}
 		return false;
 	}
-	
+
 }

@@ -1,4 +1,4 @@
-//: enumerated/menu/Meal.java
+// : enumerated/menu/Meal.java
 package enumerated.menu;
 
 public class Meal {

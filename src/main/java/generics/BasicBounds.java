@@ -1,4 +1,4 @@
-//: generics/BasicBounds.java
+// : generics/BasicBounds.java
 package generics; /* Added by Eclipse.py */
 
 interface HasColor {

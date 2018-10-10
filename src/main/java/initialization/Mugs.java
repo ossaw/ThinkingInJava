@@ -1,4 +1,4 @@
-//: initialization/Mugs.java
+// : initialization/Mugs.java
 package initialization; /* Added by Eclipse.py */
 
 // Java "Instance Initialization."

@@ -1,4 +1,4 @@
-//: reusing/Bath.java
+// : reusing/Bath.java
 package reusing; /* Added by Eclipse.py */
 
 // Constructor initialization with composition.
@@ -40,8 +40,9 @@ public class Bath {
 	public String toString() {
 		if (s4 == null) // Delayed initialization:
 			s4 = "Joy";
-		return "s1 = " + s1 + "\n" + "s2 = " + s2 + "\n" + "s3 = " + s3 + "\n" + "s4 = " + s4 + "\n" + "i = " + i + "\n"
-				+ "toy = " + toy + "\n" + "castille = " + castille;
+		return "s1 = " + s1 + "\n" + "s2 = " + s2 + "\n" + "s3 = " + s3 + "\n"
+				+ "s4 = " + s4 + "\n" + "i = " + i + "\n" + "toy = " + toy
+				+ "\n" + "castille = " + castille;
 	}
 
 	public static void main(String[] args) {

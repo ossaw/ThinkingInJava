@@ -1,4 +1,4 @@
-//: control/CommaOperator.java
+// : control/CommaOperator.java
 package control; /* Added by Eclipse.py */
 
 public class CommaOperator {

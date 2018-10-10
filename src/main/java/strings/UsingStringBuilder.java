@@ -1,4 +1,4 @@
-//: strings/UsingStringBuilder.java
+// : strings/UsingStringBuilder.java
 package strings; /* Added by Eclipse.py */
 
 import java.util.*;

@@ -1,4 +1,4 @@
-//: innerclasses/Parcel5.java
+// : innerclasses/Parcel5.java
 package innerclasses; /* Added by Eclipse.py */
 
 // Nesting a class within a method.

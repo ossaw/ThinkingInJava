@@ -1,4 +1,4 @@
-//: containers/MapPerformance.java
+// : containers/MapPerformance.java
 package containers; /* Added by Eclipse.py */
 
 // Demonstrates performance differences in Maps.

@@ -1,4 +1,4 @@
-//: strings/JGrep.java
+// : strings/JGrep.java
 package strings; /* Added by Eclipse.py */
 
 // A very simple version of the "grep" program.
@@ -20,7 +20,8 @@ public class JGrep {
 		for (String line : new TextFile(args[0])) {
 			m.reset(line);
 			while (m.find())
-				System.out.println(index++ + ": " + m.group() + ": " + m.start());
+				System.out.println(index++ + ": " + m.group() + ": " + m
+						.start());
 		}
 	}
 } /*

@@ -1,4 +1,4 @@
-//: containers/LinkedHashMapDemo.java
+// : containers/LinkedHashMapDemo.java
 package containers; /* Added by Eclipse.py */
 
 // What you can do with a LinkedHashMap.
@@ -9,7 +9,8 @@ import static net.mindview.util.Print.*;
 
 public class LinkedHashMapDemo {
 	public static void main(String[] args) {
-		LinkedHashMap<Integer, String> linkedMap = new LinkedHashMap<Integer, String>(new CountingMapData(9));
+		LinkedHashMap<Integer, String> linkedMap = new LinkedHashMap<Integer, String>(
+				new CountingMapData(9));
 		print(linkedMap);
 		// Least-recently-used order:
 		linkedMap = new LinkedHashMap<Integer, String>(16, 0.75f, true);

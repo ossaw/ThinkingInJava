@@ -1,4 +1,4 @@
-//: strings/BetterRead.java
+// : strings/BetterRead.java
 package strings; /* Added by Eclipse.py */
 
 import java.util.*;

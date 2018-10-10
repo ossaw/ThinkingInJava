@@ -1,4 +1,4 @@
-//: initialization/InitialValues.java
+// : initialization/InitialValues.java
 package initialization; /* Added by Eclipse.py */
 
 // Shows default initial values.

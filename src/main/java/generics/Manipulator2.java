@@ -1,4 +1,4 @@
-//: generics/Manipulator2.java
+// : generics/Manipulator2.java
 package generics; /* Added by Eclipse.py */
 
 class Manipulator2<T extends HasF> {

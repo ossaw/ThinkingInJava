@@ -40,7 +40,8 @@ public class TableCreator2 {
 						columnName = field.getName().toUpperCase();
 					else
 						columnName = st2.name();
-					columnDefs.add(columnName + " INT" + getContrains(st2.constraints()));
+					columnDefs.add(columnName + " INT" + getContrains(st2
+							.constraints()));
 				}
 
 				if (annos[0] instanceof SQLString2) {
@@ -54,7 +55,8 @@ public class TableCreator2 {
 							+ getContrains(st2.constraints()));
 				}
 			}
-			StringBuilder sb = new StringBuilder("CREATE TABLE " + tableName + "(");
+			StringBuilder sb = new StringBuilder("CREATE TABLE " + tableName
+					+ "(");
 			for (String columnName : columnDefs) {
 				sb.append("\n\t").append(columnName).append(",");
 			}

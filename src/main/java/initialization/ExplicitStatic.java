@@ -1,4 +1,4 @@
-//: initialization/ExplicitStatic.java
+// : initialization/ExplicitStatic.java
 package initialization; /* Added by Eclipse.py */
 
 // Explicit static initialization with the "static" clause.

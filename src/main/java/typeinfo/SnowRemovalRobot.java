@@ -1,4 +1,4 @@
-//: typeinfo/SnowRemovalRobot.java
+// : typeinfo/SnowRemovalRobot.java
 package typeinfo; /* Added by Eclipse.py */
 
 import java.util.*;

@@ -1,4 +1,4 @@
-//: containers/QueueBehavior.java
+// : containers/QueueBehavior.java
 package containers; /* Added by Eclipse.py */
 
 // Compares the behavior of some of the queues
@@ -19,7 +19,8 @@ public class QueueBehavior {
 	}
 
 	static class Gen implements Generator<String> {
-		String[] s = ("one two three four five six seven " + "eight nine ten").split(" ");
+		String[] s = ("one two three four five six seven " + "eight nine ten")
+				.split(" ");
 		int i;
 
 		public String next() {

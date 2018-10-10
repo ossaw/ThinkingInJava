@@ -1,4 +1,4 @@
-//: typeinfo/toys/GenericToyTest.java
+// : typeinfo/toys/GenericToyTest.java
 // Testing class Class.
 package typeinfo.toys;
 

@@ -1,4 +1,4 @@
-//: io/GetData.java
+// : io/GetData.java
 package io; /* Added by Eclipse.py */
 
 // Getting different representations from a ByteBuffer

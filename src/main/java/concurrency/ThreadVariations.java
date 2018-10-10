@@ -1,4 +1,4 @@
-//: concurrency/ThreadVariations.java
+// : concurrency/ThreadVariations.java
 package concurrency; /* Added by Eclipse.py */
 
 // Creating threads with inner classes.

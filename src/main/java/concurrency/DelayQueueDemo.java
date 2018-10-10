@@ -1,4 +1,4 @@
-//: concurrency/DelayQueueDemo.java
+// : concurrency/DelayQueueDemo.java
 package concurrency; /* Added by Eclipse.py */
 
 import java.util.concurrent.*;

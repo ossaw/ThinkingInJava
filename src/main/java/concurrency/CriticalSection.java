@@ -1,4 +1,4 @@
-//: concurrency/CriticalSection.java
+// : concurrency/CriticalSection.java
 // Synchronizing blocks instead of entire methods. Also
 // demonstrates protection of a non-thread-safe class
 // with a thread-safe one.
@@ -59,7 +59,8 @@ class Pair { // Not thread-safe
 abstract class PairManager {
 	AtomicInteger checkCounter = new AtomicInteger(0);
 	protected Pair p = new Pair();
-	private List<Pair> storage = Collections.synchronizedList(new ArrayList<Pair>());
+	private List<Pair> storage = Collections.synchronizedList(
+			new ArrayList<Pair>());
 
 	public synchronized Pair getPair() {
 		// Make a copy to keep the original safe:
@@ -113,7 +114,8 @@ class PairManipulator implements Runnable {
 	}
 
 	public String toString() {
-		return "Pair: " + pm.getPair() + " checkCounter = " + pm.checkCounter.get();
+		return "Pair: " + pm.getPair() + " checkCounter = " + pm.checkCounter
+				.get();
 	}
 }
 
@@ -136,8 +138,10 @@ public class CriticalSection {
 	// Test the two different approaches:
 	static void testApproaches(PairManager pman1, PairManager pman2) {
 		ExecutorService exec = Executors.newCachedThreadPool();
-		PairManipulator pm1 = new PairManipulator(pman1), pm2 = new PairManipulator(pman2);
-		PairChecker pcheck1 = new PairChecker(pman1), pcheck2 = new PairChecker(pman2);
+		PairManipulator pm1 = new PairManipulator(pman1),
+				pm2 = new PairManipulator(pman2);
+		PairChecker pcheck1 = new PairChecker(pman1), pcheck2 = new PairChecker(
+				pman2);
 		exec.execute(pm1);
 		exec.execute(pm2);
 		exec.execute(pcheck1);

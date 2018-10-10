@@ -1,4 +1,4 @@
-//: net/mindview/util/RandomGenerator.java
+// : net/mindview/util/RandomGenerator.java
 // Generators that produce random values.
 package net.mindview.util;
 
@@ -21,7 +21,8 @@ public class RandomGenerator {
 
 	public static class Character implements Generator<java.lang.Character> {
 		public java.lang.Character next() {
-			return CountingGenerator.chars[r.nextInt(CountingGenerator.chars.length)];
+			return CountingGenerator.chars[r.nextInt(
+					CountingGenerator.chars.length)];
 		}
 	}
 
@@ -31,8 +32,7 @@ public class RandomGenerator {
 			cg = new Character();
 		} // Instance initializer
 
-		public String() {
-		}
+		public String() {}
 
 		public String(int length) {
 			super(length);
@@ -48,8 +48,7 @@ public class RandomGenerator {
 	public static class Integer implements Generator<java.lang.Integer> {
 		private int mod = 10000;
 
-		public Integer() {
-		}
+		public Integer() {}
 
 		public Integer(int modulo) {
 			mod = modulo;
@@ -63,8 +62,7 @@ public class RandomGenerator {
 	public static class Long implements Generator<java.lang.Long> {
 		private int mod = 10000;
 
-		public Long() {
-		}
+		public Long() {}
 
 		public Long(int modulo) {
 			mod = modulo;

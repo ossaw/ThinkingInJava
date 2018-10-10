@@ -1,4 +1,4 @@
-//: concurrency/SyncObject.java
+// : concurrency/SyncObject.java
 package concurrency; /* Added by Eclipse.py */
 
 // Synchronizing on another object.

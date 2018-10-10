@@ -1,4 +1,4 @@
-//: gui/Dialogs.java
+// : gui/Dialogs.java
 package gui; /* Added by Eclipse.py */
 
 // Creating and using Dialog Boxes.

@@ -1,4 +1,4 @@
-//: gui/HTMLButton.java
+// : gui/HTMLButton.java
 package gui; /* Added by Eclipse.py */
 
 // Putting HTML text on Swing components.
@@ -9,7 +9,8 @@ import java.awt.event.*;
 import static net.mindview.util.SwingConsole.*;
 
 public class HTMLButton extends JFrame {
-	private JButton b = new JButton("<html><b><font size=+2>" + "<center>Hello!<br><i>Press me now!");
+	private JButton b = new JButton("<html><b><font size=+2>"
+			+ "<center>Hello!<br><i>Press me now!");
 
 	public HTMLButton() {
 		b.addActionListener(new ActionListener() {

@@ -1,4 +1,4 @@
-//: generics/SuperTypeWildcards.java
+// : generics/SuperTypeWildcards.java
 package generics; /* Added by Eclipse.py */
 
 import java.util.*;

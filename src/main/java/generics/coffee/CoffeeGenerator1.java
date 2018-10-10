@@ -9,7 +9,8 @@ public class CoffeeGenerator1<T> implements Generator<T>, Iterable<T> {
 	private Random random = new Random(47);
 	private int size;
 	@SuppressWarnings("unchecked")
-	private Class<T>[] types = new Class[] { Latte.class, Mocha.class, Cappuccino.class, Americano.class, Breve.class };
+	private Class<T>[] types = new Class[] { Latte.class, Mocha.class,
+			Cappuccino.class, Americano.class, Breve.class };
 
 	public CoffeeGenerator1(int size) {
 		this.size = size;
@@ -45,14 +46,12 @@ public class CoffeeGenerator1<T> implements Generator<T>, Iterable<T> {
 		}
 
 		@Override
-		public void remove() {
-			Iterator.super.remove();
-		}
+		public void remove() {}
 
 	}
 
 	public static void main(String[] args) {
-		
+
 	}
 
 }

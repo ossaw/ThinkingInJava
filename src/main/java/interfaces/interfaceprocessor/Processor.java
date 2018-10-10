@@ -1,4 +1,4 @@
-//: interfaces/interfaceprocessor/Processor.java
+// : interfaces/interfaceprocessor/Processor.java
 package interfaces.interfaceprocessor;
 
 public interface Processor {

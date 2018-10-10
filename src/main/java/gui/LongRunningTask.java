@@ -1,4 +1,4 @@
-//: gui/LongRunningTask.java
+// : gui/LongRunningTask.java
 package gui; /* Added by Eclipse.py */
 
 // A badly designed program.
@@ -10,7 +10,8 @@ import java.util.concurrent.*;
 import static net.mindview.util.SwingConsole.*;
 
 public class LongRunningTask extends JFrame {
-	private JButton b1 = new JButton("Start Long Running Task"), b2 = new JButton("End Long Running Task");
+	private JButton b1 = new JButton("Start Long Running Task"),
+			b2 = new JButton("End Long Running Task");
 
 	public LongRunningTask() {
 		b1.addActionListener(new ActionListener() {

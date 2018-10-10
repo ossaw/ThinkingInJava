@@ -1,4 +1,4 @@
-//: concurrency/DaemonsDontRunFinally.java
+// : concurrency/DaemonsDontRunFinally.java
 package concurrency; /* Added by Eclipse.py */
 
 // Daemon threads don't run the finally clause

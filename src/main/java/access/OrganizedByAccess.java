@@ -1,4 +1,4 @@
-//: access/OrganizedByAccess.java
+// : access/OrganizedByAccess.java
 package access; /* Added by Eclipse.py */
 
 public class OrganizedByAccess {

@@ -1,4 +1,4 @@
-//: generics/coffee/CoffeeGenerator.java
+// : generics/coffee/CoffeeGenerator.java
 // Generate different types of Coffee:
 package generics.coffee;
 
@@ -6,12 +6,11 @@ import java.util.*;
 import net.mindview.util.*;
 
 public class CoffeeGenerator implements Generator<Coffee>, Iterable<Coffee> {
-	private Class<?>[] types = { Latte.class, Mocha.class, Cappuccino.class, Americano.class,
-			Breve.class };
+	private Class<?>[] types = { Latte.class, Mocha.class, Cappuccino.class,
+			Americano.class, Breve.class };
 	private static Random rand = new Random(47);
 
-	public CoffeeGenerator() {
-	}
+	public CoffeeGenerator() {}
 
 	// For iteration:
 	private int size = 0;

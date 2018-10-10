@@ -1,4 +1,4 @@
-//: gui/BeanDumper.java
+// : gui/BeanDumper.java
 package gui; /* Added by Eclipse.py */
 
 // Introspecting a Bean.
@@ -31,7 +31,8 @@ public class BeanDumper extends JFrame {
 			Class<?> p = d.getPropertyType();
 			if (p == null)
 				continue;
-			print("Property type:\n  " + p.getName() + "Property name:\n  " + d.getName());
+			print("Property type:\n  " + p.getName() + "Property name:\n  " + d
+					.getName());
 			Method readMethod = d.getReadMethod();
 			if (readMethod != null)
 				print("Read method:\n  " + readMethod);

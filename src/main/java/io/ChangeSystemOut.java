@@ -1,4 +1,4 @@
-//: io/ChangeSystemOut.java
+// : io/ChangeSystemOut.java
 package io; /* Added by Eclipse.py */
 
 // Turn System.out into a PrintWriter.

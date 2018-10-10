@@ -1,4 +1,4 @@
-//: operators/AutoInc.java
+// : operators/AutoInc.java
 package operators; /* Added by Eclipse.py */
 
 // Demonstrates the ++ and -- operators.

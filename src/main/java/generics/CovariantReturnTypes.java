@@ -1,11 +1,9 @@
-//: generics/CovariantReturnTypes.java
+// : generics/CovariantReturnTypes.java
 package generics; /* Added by Eclipse.py */
 
-class Base {
-}
+class Base {}
 
-class Derived extends Base {
-}
+class Derived extends Base {}
 
 interface OrdinaryGetter {
 	Base get();

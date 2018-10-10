@@ -1,16 +1,14 @@
-//: innerclasses/MultiNestingAccess.java
+// : innerclasses/MultiNestingAccess.java
 package innerclasses; /* Added by Eclipse.py */
 
 // Nested classes can access all members of all
 // levels of the classes they are nested within.
 
 class MNA {
-	private void f() {
-	}
+	private void f() {}
 
 	class A {
-		private void g() {
-		}
+		private void g() {}
 
 		public class B {
 			void h() {

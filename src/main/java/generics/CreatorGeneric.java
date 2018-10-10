@@ -1,4 +1,4 @@
-//: generics/CreatorGeneric.java
+// : generics/CreatorGeneric.java
 package generics; /* Added by Eclipse.py */
 
 abstract class GenericWithCreate<T> {
@@ -11,8 +11,7 @@ abstract class GenericWithCreate<T> {
 	abstract T create();
 }
 
-class X {
-}
+class X {}
 
 class Creator extends GenericWithCreate<X> {
 	X create() {

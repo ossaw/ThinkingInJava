@@ -69,7 +69,7 @@ public class Interrupting3 {
 		TimeUnit.MICROSECONDS.sleep(100);
 		future.cancel(true);
 	}
-	
+
 	public static void main(String[] args) throws InterruptedException {
 		test(new SleepBlocked3());
 		test(new IOBlocked3(System.in));

@@ -1,4 +1,4 @@
-//: initialization/InitialValues2.java
+// : initialization/InitialValues2.java
 package initialization; /* Added by Eclipse.py */
 
 // Providing explicit initial values.

@@ -1,4 +1,4 @@
-//: exceptions/LoggingExceptions2.java
+// : exceptions/LoggingExceptions2.java
 package exceptions; /* Added by Eclipse.py */
 
 // Logging caught exceptions.

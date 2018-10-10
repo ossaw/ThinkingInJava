@@ -1,4 +1,4 @@
-//: net/mindview/simple/List.java
+// : net/mindview/simple/List.java
 // Creating a package.
 package net.mindview.simple;
 

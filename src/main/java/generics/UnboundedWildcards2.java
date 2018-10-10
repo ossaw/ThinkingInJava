@@ -1,4 +1,4 @@
-//: generics/UnboundedWildcards2.java
+// : generics/UnboundedWildcards2.java
 package generics; /* Added by Eclipse.py */
 
 import java.util.*;

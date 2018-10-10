@@ -1,4 +1,4 @@
-//: annotations/SimulatingNull.java
+// : annotations/SimulatingNull.java
 package annotations; /* Added by Eclipse.py */
 
 import java.lang.annotation.*;

@@ -1,4 +1,4 @@
-//: exceptions/DynamicFields.java
+// : exceptions/DynamicFields.java
 package exceptions; /* Added by Eclipse.py */
 
 // A Class that dynamically adds fields to itself.
@@ -6,8 +6,7 @@ package exceptions; /* Added by Eclipse.py */
 
 import static net.mindview.util.Print.*;
 
-class DynamicFieldsException extends Exception {
-}
+class DynamicFieldsException extends Exception {}
 
 public class DynamicFields {
 	private Object[][] fields;
@@ -64,7 +63,8 @@ public class DynamicFields {
 		return fields[getFieldNumber(id)][1];
 	}
 
-	public Object setField(String id, Object value) throws DynamicFieldsException {
+	public Object setField(String id, Object value)
+			throws DynamicFieldsException {
 		if (value == null) {
 			// Most exceptions don't have a "cause" constructor.
 			// In these cases you must use initCause(),
@@ -108,11 +108,8 @@ public class DynamicFields {
 	}
 } /*
 	 * Output: null: null null: null null: null
-	 * 
 	 * d: A value for d number: 47 number2: 48
-	 * 
 	 * df: d: A new value for d number: 47 number2: 48 number3: 11
-	 * 
 	 * df.getField("d") : A new value for d DynamicFieldsException at
 	 * DynamicFields.setField(DynamicFields.java:64) at
 	 * DynamicFields.main(DynamicFields.java:94) Caused by:

@@ -1,9 +1,8 @@
-//: exceptions/FullConstructors.java
+// : exceptions/FullConstructors.java
 package exceptions; /* Added by Eclipse.py */
 
 class MyException extends Exception {
-	public MyException() {
-	}
+	public MyException() {}
 
 	public MyException(String msg) {
 		super(msg);

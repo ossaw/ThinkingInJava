@@ -1,4 +1,4 @@
-//: innerclasses/Parcel11.java
+// : innerclasses/Parcel11.java
 package innerclasses; /* Added by Eclipse.py */
 
 // Nested classes (static inner classes).
@@ -24,14 +24,12 @@ public class Parcel11 {
 		}
 
 		// Nested classes can contain other static elements:
-		public static void f() {
-		}
+		public static void f() {}
 
 		static int x = 10;
 
 		static class AnotherLevel {
-			public static void f() {
-			}
+			public static void f() {}
 
 			static int x = 10;
 		}

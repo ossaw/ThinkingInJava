@@ -1,12 +1,10 @@
-//: initialization/NoSynthesis.java
+// : initialization/NoSynthesis.java
 package initialization; /* Added by Eclipse.py */
 
 class Bird2 {
-	Bird2(int i) {
-	}
+	Bird2(int i) {}
 
-	Bird2(double d) {
-	}
+	Bird2(double d) {}
 }
 
 public class NoSynthesis {

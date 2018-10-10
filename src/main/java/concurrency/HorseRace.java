@@ -1,4 +1,4 @@
-//: concurrency/HorseRace.java
+// : concurrency/HorseRace.java
 package concurrency; /* Added by Eclipse.py */
 
 // Using CyclicBarriers.

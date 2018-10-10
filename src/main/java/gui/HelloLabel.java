@@ -1,4 +1,4 @@
-//: gui/HelloLabel.java
+// : gui/HelloLabel.java
 package gui; /* Added by Eclipse.py */
 
 import javax.swing.*;

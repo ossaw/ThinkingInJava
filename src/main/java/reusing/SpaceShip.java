@@ -1,4 +1,4 @@
-//: reusing/SpaceShip.java
+// : reusing/SpaceShip.java
 package reusing; /* Added by Eclipse.py */
 
 public class SpaceShip extends SpaceShipControls {

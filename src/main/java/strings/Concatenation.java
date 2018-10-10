@@ -1,4 +1,4 @@
-//: strings/Concatenation.java
+// : strings/Concatenation.java
 package strings; /* Added by Eclipse.py */
 
 public class Concatenation {

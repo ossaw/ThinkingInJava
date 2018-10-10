@@ -1,4 +1,4 @@
-//: containers/Utilities.java
+// : containers/Utilities.java
 package containers; /* Added by Eclipse.py */
 
 // Simple demonstrations of the Collections utilities.
@@ -7,18 +7,23 @@ import java.util.*;
 import static net.mindview.util.Print.*;
 
 public class Utilities {
-	static List<String> list = Arrays.asList("one Two three Four five six one".split(" "));
+	static List<String> list = Arrays.asList("one Two three Four five six one"
+			.split(" "));
 
 	public static void main(String[] args) {
 		print(list);
-		print("'list' disjoint (Four)?: " + Collections.disjoint(list, Collections.singletonList("Four")));
+		print("'list' disjoint (Four)?: " + Collections.disjoint(list,
+				Collections.singletonList("Four")));
 		print("max: " + Collections.max(list));
 		print("min: " + Collections.min(list));
-		print("max w/ comparator: " + Collections.max(list, String.CASE_INSENSITIVE_ORDER));
-		print("min w/ comparator: " + Collections.min(list, String.CASE_INSENSITIVE_ORDER));
+		print("max w/ comparator: " + Collections.max(list,
+				String.CASE_INSENSITIVE_ORDER));
+		print("min w/ comparator: " + Collections.min(list,
+				String.CASE_INSENSITIVE_ORDER));
 		List<String> sublist = Arrays.asList("Four five six".split(" "));
 		print("indexOfSubList: " + Collections.indexOfSubList(list, sublist));
-		print("lastIndexOfSubList: " + Collections.lastIndexOfSubList(list, sublist));
+		print("lastIndexOfSubList: " + Collections.lastIndexOfSubList(list,
+				sublist));
 		Collections.replaceAll(list, "one", "Yo");
 		print("replaceAll: " + list);
 		Collections.reverse(list);

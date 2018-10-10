@@ -1,4 +1,4 @@
-//: exceptions/LoggingExceptions.java
+// : exceptions/LoggingExceptions.java
 package exceptions; /* Added by Eclipse.py */
 
 // An exception that reports through a Logger.
@@ -33,10 +33,8 @@ public class LoggingExceptions {
 	 * Output: (85% match) Aug 30, 2005 4:02:31 PM LoggingException <init>
 	 * SEVERE: LoggingException at
 	 * LoggingExceptions.main(LoggingExceptions.java:19)
-	 * 
 	 * Caught LoggingException Aug 30, 2005 4:02:31 PM LoggingException <init>
 	 * SEVERE: LoggingException at
 	 * LoggingExceptions.main(LoggingExceptions.java:24)
-	 * 
 	 * Caught LoggingException
 	 */// :~

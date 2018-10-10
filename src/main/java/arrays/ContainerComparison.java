@@ -1,4 +1,4 @@
-//: arrays/ContainerComparison.java
+// : arrays/ContainerComparison.java
 package arrays; /* Added by Eclipse.py */
 
 import java.util.*;
@@ -31,7 +31,8 @@ public class ContainerComparison {
 		print(Arrays.toString(integers));
 		print(integers[4]);
 
-		List<Integer> intList = new ArrayList<Integer>(Arrays.asList(0, 1, 2, 3, 4, 5));
+		List<Integer> intList = new ArrayList<Integer>(Arrays.asList(0, 1, 2, 3,
+				4, 5));
 		intList.add(97);
 		print(intList);
 		print(intList.get(4));

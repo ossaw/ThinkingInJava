@@ -1,4 +1,4 @@
-//: concurrency/SynchronizedEvenGenerator.java
+// : concurrency/SynchronizedEvenGenerator.java
 package concurrency; /* Added by Eclipse.py */
 
 // Simplifying mutexes with the synchronized keyword.

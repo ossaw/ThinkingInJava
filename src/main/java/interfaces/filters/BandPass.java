@@ -1,4 +1,4 @@
-//: interfaces/filters/BandPass.java
+// : interfaces/filters/BandPass.java
 package interfaces.filters;
 
 public class BandPass extends Filter {

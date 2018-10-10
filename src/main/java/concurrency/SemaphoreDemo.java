@@ -1,4 +1,4 @@
-//: concurrency/SemaphoreDemo.java
+// : concurrency/SemaphoreDemo.java
 package concurrency; /* Added by Eclipse.py */
 
 // Testing the Pool class

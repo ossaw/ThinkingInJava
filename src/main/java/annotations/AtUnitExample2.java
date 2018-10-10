@@ -1,4 +1,4 @@
-//: annotations/AtUnitExample2.java
+// : annotations/AtUnitExample2.java
 // Assertions and exceptions can be used in @Tests.
 package annotations;
 
@@ -46,9 +46,7 @@ public class AtUnitExample2 {
 	 * java.lang.AssertionError: What a surprise! (failed) . exceptionExample
 	 * java.io.FileNotFoundException: nofile.txt (The system cannot find the
 	 * file specified) (failed) . assertAndReturn This is methodTwo
-	 * 
 	 * (4 tests)
-	 * 
 	 * >>> 2 FAILURES <<< annotations.AtUnitExample2: assertFailureExample
 	 * annotations.AtUnitExample2: exceptionExample
 	 */// :~

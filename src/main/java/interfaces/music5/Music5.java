@@ -1,4 +1,4 @@
-//: interfaces/music5/Music5.java
+// : interfaces/music5/Music5.java
 // Interfaces.
 package interfaces.music5;
 
@@ -85,7 +85,8 @@ public class Music5 {
 
 	public static void main(String[] args) {
 		// Upcasting during addition to the array:
-		Instrument[] orchestra = { new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind() };
+		Instrument[] orchestra = { new Wind(), new Percussion(), new Stringed(),
+				new Brass(), new Woodwind() };
 		tuneAll(orchestra);
 	}
 }

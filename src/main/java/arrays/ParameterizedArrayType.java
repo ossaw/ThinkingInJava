@@ -1,4 +1,4 @@
-//: arrays/ParameterizedArrayType.java
+// : arrays/ParameterizedArrayType.java
 package arrays; /* Added by Eclipse.py */
 
 import java.util.Arrays;
@@ -28,5 +28,5 @@ public class ParameterizedArrayType {
 		System.out.println(Arrays.toString(ints2));
 		System.out.println(Arrays.toString(doubles2));
 	}
-} 
+}
 /// :~

@@ -1,4 +1,4 @@
-//: reusing/FinalOverridingIllusion.java
+// : reusing/FinalOverridingIllusion.java
 package reusing; /* Added by Eclipse.py */
 
 // It only looks like you can override

@@ -1,4 +1,4 @@
-//: generics/ArrayOfGeneric.java
+// : generics/ArrayOfGeneric.java
 package generics; /* Added by Eclipse.py */
 
 public class ArrayOfGeneric {

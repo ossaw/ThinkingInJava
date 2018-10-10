@@ -1,4 +1,4 @@
-//: concurrency/Restaurant.java
+// : concurrency/Restaurant.java
 package concurrency; /* Added by Eclipse.py */
 
 // The producer-consumer approach to task cooperation.

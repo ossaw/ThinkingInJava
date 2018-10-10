@@ -1,4 +1,4 @@
-//: exceptions/NeverCaught.java
+// : exceptions/NeverCaught.java
 package exceptions; /* Added by Eclipse.py */
 
 // Ignoring RuntimeExceptions.

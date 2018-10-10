@@ -1,17 +1,13 @@
-//: generics/CovariantArrays.java
+// : generics/CovariantArrays.java
 package generics; /* Added by Eclipse.py */
 
-class Fruit {
-}
+class Fruit {}
 
-class Apple extends Fruit {
-}
+class Apple extends Fruit {}
 
-class Jonathan extends Apple {
-}
+class Jonathan extends Apple {}
 
-class Orange extends Fruit {
-}
+class Orange extends Fruit {}
 
 public class CovariantArrays {
 	public static void main(String[] args) {

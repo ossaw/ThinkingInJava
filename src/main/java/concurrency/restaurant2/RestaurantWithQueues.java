@@ -1,4 +1,4 @@
-//: concurrency/restaurant2/RestaurantWithQueues.java
+// : concurrency/restaurant2/RestaurantWithQueues.java
 // {Args: 5}
 package concurrency.restaurant2;
 
@@ -34,8 +34,8 @@ class Order { // (A data-transfer object)
 	}
 
 	public String toString() {
-		return "Order: " + id + " item: " + food + " for: " + customer + " served by: "
-				+ waitPerson;
+		return "Order: " + id + " item: " + food + " for: " + customer
+				+ " served by: " + waitPerson;
 	}
 }
 
@@ -126,8 +126,8 @@ class WaitPerson implements Runnable {
 			while (!Thread.interrupted()) {
 				// Blocks until a course is ready
 				Plate plate = filledOrders.take();
-				print(this + "received " + plate + " delivering to "
-						+ plate.getOrder().getCustomer());
+				print(this + "received " + plate + " delivering to " + plate
+						.getOrder().getCustomer());
 				plate.getOrder().getCustomer().deliver(plate);
 			}
 		} catch (InterruptedException e) {
@@ -199,7 +199,8 @@ class Restaurant implements Runnable {
 		try {
 			while (!Thread.interrupted()) {
 				// A new customer arrives; assign a WaitPerson:
-				WaitPerson wp = waitPersons.get(rand.nextInt(waitPersons.size()));
+				WaitPerson wp = waitPersons.get(rand.nextInt(waitPersons
+						.size()));
 				Customer c = new Customer(wp);
 				exec.execute(c);
 				TimeUnit.MILLISECONDS.sleep(100);

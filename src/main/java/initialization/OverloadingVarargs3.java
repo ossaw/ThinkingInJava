@@ -1,4 +1,4 @@
-//: initialization/OverloadingVarargs3.java
+// : initialization/OverloadingVarargs3.java
 package initialization; /* Added by Eclipse.py */
 
 public class OverloadingVarargs3 {

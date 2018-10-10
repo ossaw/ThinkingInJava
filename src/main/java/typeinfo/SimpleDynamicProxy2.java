@@ -30,7 +30,8 @@ class ProxyObject3 implements InvocationHandler {
 	}
 
 	@Override
-	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+	public Object invoke(Object proxy, Method method, Object[] args)
+			throws Throwable {
 		System.out.println(proxy.getClass().getName());
 
 		if (args != null)
@@ -51,8 +52,10 @@ public class SimpleDynamicProxy2 {
 
 	public static void main(String[] args) {
 		// consumer(new RealObject3());
-		Interface3 interface3 = (Interface3) Proxy.newProxyInstance(Interface3.class.getClassLoader(),
-				new Class[] { Interface3.class }, new ProxyObject3(new RealObject3()));
+		Interface3 interface3 = (Interface3) Proxy.newProxyInstance(
+				Interface3.class.getClassLoader(), new Class[] {
+						Interface3.class }, new ProxyObject3(
+								new RealObject3()));
 
 		consumer(interface3);
 	}

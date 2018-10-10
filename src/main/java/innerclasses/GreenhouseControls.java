@@ -1,4 +1,4 @@
-//: innerclasses/GreenhouseControls.java
+// : innerclasses/GreenhouseControls.java
 package innerclasses; /* Added by Eclipse.py */
 
 // This produces a specific application of the

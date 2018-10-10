@@ -1,4 +1,4 @@
-//: initialization/Flower.java
+// : initialization/Flower.java
 package initialization; /* Added by Eclipse.py */
 
 // Calling constructors with "this"

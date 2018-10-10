@@ -1,4 +1,4 @@
-//: enumerated/SecurityCategory.java
+// : enumerated/SecurityCategory.java
 package enumerated; /* Added by Eclipse.py */
 
 // More succinct subcategorization of enums.

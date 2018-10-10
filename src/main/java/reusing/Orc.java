@@ -1,4 +1,4 @@
-//: reusing/Orc.java
+// : reusing/Orc.java
 package reusing; /* Added by Eclipse.py */
 
 // The protected keyword.

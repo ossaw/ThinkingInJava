@@ -1,4 +1,4 @@
-//: net/mindview/atunit/Test.java
+// : net/mindview/atunit/Test.java
 // The @Test tag.
 package net.mindview.atunit;
 

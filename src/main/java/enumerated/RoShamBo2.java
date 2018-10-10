@@ -1,4 +1,4 @@
-//: enumerated/RoShamBo2.java
+// : enumerated/RoShamBo2.java
 // Switching one enum on another.
 package enumerated;
 
@@ -16,13 +16,13 @@ public enum RoShamBo2 implements Competitor<RoShamBo2> {
 
 	public Outcome compete(RoShamBo2 it) {
 		switch (it) {
-		default:
-		case PAPER:
-			return vPAPER;
-		case SCISSORS:
-			return vSCISSORS;
-		case ROCK:
-			return vROCK;
+			default:
+			case PAPER:
+				return vPAPER;
+			case SCISSORS:
+				return vSCISSORS;
+			case ROCK:
+				return vROCK;
 		}
 	}
 

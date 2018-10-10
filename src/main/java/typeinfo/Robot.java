@@ -1,4 +1,4 @@
-//: typeinfo/Robot.java
+// : typeinfo/Robot.java
 package typeinfo; /* Added by Eclipse.py */
 
 import java.util.*;

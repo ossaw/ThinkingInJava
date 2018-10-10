@@ -46,7 +46,7 @@ public class ThreadLocalVariableHolder2 {
 	public static Integer get() {
 		return value.get();
 	}
-	
+
 	public static void main(String[] args) throws InterruptedException {
 		ExecutorService exec = Executors.newCachedThreadPool();
 		for (int i = 0; i < 5; i++)

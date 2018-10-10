@@ -1,40 +1,32 @@
-//: reusing/Car.java
+// : reusing/Car.java
 package reusing; /* Added by Eclipse.py */
 
 // Composition with public objects.
 
 class Engine {
-	public void start() {
-	}
+	public void start() {}
 
-	public void rev() {
-	}
+	public void rev() {}
 
-	public void stop() {
-	}
+	public void stop() {}
 }
 
 class Wheel {
-	public void inflate(int psi) {
-	}
+	public void inflate(int psi) {}
 }
 
 class Window {
-	public void rollup() {
-	}
+	public void rollup() {}
 
-	public void rolldown() {
-	}
+	public void rolldown() {}
 }
 
 class Door {
 	public Window window = new Window();
 
-	public void open() {
-	}
+	public void open() {}
 
-	public void close() {
-	}
+	public void close() {}
 }
 
 public class Car {

@@ -1,4 +1,4 @@
-//: enumerated/CarWash.java
+// : enumerated/CarWash.java
 package enumerated; /* Added by Eclipse.py */
 
 import java.util.*;

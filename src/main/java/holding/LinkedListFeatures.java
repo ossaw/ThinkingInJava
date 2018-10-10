@@ -1,4 +1,4 @@
-//: holding/LinkedListFeatures.java
+// : holding/LinkedListFeatures.java
 package holding; /* Added by Eclipse.py */
 
 import typeinfo.pets.*;

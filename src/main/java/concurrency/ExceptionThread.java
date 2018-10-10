@@ -1,4 +1,4 @@
-//: concurrency/ExceptionThread.java
+// : concurrency/ExceptionThread.java
 package concurrency; /* Added by Eclipse.py */
 
 // {ThrowsException}

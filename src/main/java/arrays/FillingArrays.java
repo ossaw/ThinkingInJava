@@ -1,4 +1,4 @@
-//: arrays/FillingArrays.java
+// : arrays/FillingArrays.java
 package arrays; /* Added by Eclipse.py */
 
 // Using Arrays.fill()

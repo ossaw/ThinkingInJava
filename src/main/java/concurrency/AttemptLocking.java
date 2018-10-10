@@ -1,4 +1,4 @@
-//: concurrency/AttemptLocking.java
+// : concurrency/AttemptLocking.java
 package concurrency; /* Added by Eclipse.py */
 
 // Locks in the concurrent library allow you

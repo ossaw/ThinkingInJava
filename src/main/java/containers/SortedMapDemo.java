@@ -1,4 +1,4 @@
-//: containers/SortedMapDemo.java
+// : containers/SortedMapDemo.java
 package containers; /* Added by Eclipse.py */
 
 // What you can do with a TreeMap.
@@ -9,7 +9,8 @@ import static net.mindview.util.Print.*;
 
 public class SortedMapDemo {
 	public static void main(String[] args) {
-		TreeMap<Integer, String> sortedMap = new TreeMap<Integer, String>(new CountingMapData(10));
+		TreeMap<Integer, String> sortedMap = new TreeMap<Integer, String>(
+				new CountingMapData(10));
 		print(sortedMap);
 		Integer low = sortedMap.firstKey();
 		Integer high = sortedMap.lastKey();

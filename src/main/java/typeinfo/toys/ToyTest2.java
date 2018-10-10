@@ -1,25 +1,19 @@
 package typeinfo.toys;
 
-interface H {
-}
+interface H {}
 
-interface W {
-}
+interface W {}
 
-interface S {
-}
+interface S {}
 
 class Toy2 {
-	public Toy2() {
-	}
+	public Toy2() {}
 
-	public Toy2(int i) {
-	}
+	public Toy2(int i) {}
 }
 
 class FancyToy2 extends Toy2 implements H, W, S {
-	public FancyToy2() {
-	}
+	public FancyToy2() {}
 
 	public FancyToy2(int i) {
 		super(i);
@@ -33,7 +27,7 @@ public class ToyTest2 {
 		System.out.println("Class canonical name: " + c.getCanonicalName());
 		System.out.println();
 	}
-	
+
 	public static void main(String[] args) {
 		Class<?> c = null;
 		try {

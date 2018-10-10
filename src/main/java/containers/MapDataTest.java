@@ -1,4 +1,4 @@
-//: containers/MapDataTest.java
+// : containers/MapDataTest.java
 package containers; /* Added by Eclipse.py */
 
 import java.util.*;
@@ -36,7 +36,8 @@ public class MapDataTest {
 		// Pair Generator:
 		print(MapData.map(new Letters(), 11));
 		// Two separate generators:
-		print(MapData.map(new CountingGenerator.Character(), new RandomGenerator.String(3), 8));
+		print(MapData.map(new CountingGenerator.Character(),
+				new RandomGenerator.String(3), 8));
 		// A key Generator and a single value:
 		print(MapData.map(new CountingGenerator.Character(), "Value", 6));
 		// An Iterable and a value Generator:

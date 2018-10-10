@@ -1,4 +1,4 @@
-//: initialization/EnumOrder.java
+// : initialization/EnumOrder.java
 package initialization; /* Added by Eclipse.py */
 
 public class EnumOrder {

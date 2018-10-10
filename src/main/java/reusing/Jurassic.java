@@ -1,18 +1,16 @@
-//: reusing/Jurassic.java
+// : reusing/Jurassic.java
 package reusing; /* Added by Eclipse.py */
 
 // Making an entire class final.
 
-class SmallBrain {
-}
+class SmallBrain {}
 
 final class Dinosaur {
 	int i = 7;
 	int j = 1;
 	SmallBrain x = new SmallBrain();
 
-	void f() {
-	}
+	void f() {}
 }
 
 // ! class Further extends Dinosaur {}

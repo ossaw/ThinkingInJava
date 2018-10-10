@@ -1,4 +1,4 @@
-//: polymorphism/PolyConstructors.java
+// : polymorphism/PolyConstructors.java
 package polymorphism; /* Added by Eclipse.py */
 
 // Constructors and polymorphism

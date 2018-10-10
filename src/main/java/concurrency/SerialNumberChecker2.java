@@ -47,7 +47,8 @@ public class SerialNumberChecker2 {
 					while (true) {
 						int nsn = SerialNumberGenerator.nextSerialNumber();
 						if (cs2.cointain(nsn)) {
-							System.out.println("cs2 already contain " + nsn + " ...");
+							System.out.println("cs2 already contain " + nsn
+									+ " ...");
 							System.exit(0);
 						}
 						cs2.add(nsn);

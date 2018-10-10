@@ -1,4 +1,4 @@
-//: initialization/Spiciness.java
+// : initialization/Spiciness.java
 package initialization; /* Added by Eclipse.py */
 
 public enum Spiciness {

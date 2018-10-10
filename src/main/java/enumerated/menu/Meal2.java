@@ -1,11 +1,11 @@
-//: enumerated/menu/Meal2.java
+// : enumerated/menu/Meal2.java
 package enumerated.menu;
 
 import net.mindview.util.*;
 
 public enum Meal2 {
-	APPETIZER(Food.Appetizer.class), MAINCOURSE(Food.MainCourse.class), DESSERT(Food.Dessert.class), COFFEE(
-			Food.Coffee.class);
+	APPETIZER(Food.Appetizer.class), MAINCOURSE(Food.MainCourse.class), DESSERT(
+			Food.Dessert.class), COFFEE(Food.Coffee.class);
 	private Food[] values;
 
 	private Meal2(Class<? extends Food> kind) {
@@ -26,7 +26,8 @@ public enum Meal2 {
 		}
 
 		enum Coffee implements Food {
-			BLACK_COFFEE, DECAF_COFFEE, ESPRESSO, LATTE, CAPPUCCINO, TEA, HERB_TEA;
+			BLACK_COFFEE, DECAF_COFFEE, ESPRESSO, LATTE, CAPPUCCINO, TEA,
+			HERB_TEA;
 		}
 	}
 

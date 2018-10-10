@@ -1,4 +1,4 @@
-//: typeinfo/WildcardClassReferences.java
+// : typeinfo/WildcardClassReferences.java
 package typeinfo; /* Added by Eclipse.py */
 
 public class WildcardClassReferences {

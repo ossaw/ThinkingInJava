@@ -1,4 +1,4 @@
-//: interfaces/interfaceprocessor/StringProcessor.java
+// : interfaces/interfaceprocessor/StringProcessor.java
 package interfaces.interfaceprocessor;
 
 import java.util.*;

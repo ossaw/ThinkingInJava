@@ -1,4 +1,4 @@
-//: concurrency/PipedIO.java
+// : concurrency/PipedIO.java
 package concurrency; /* Added by Eclipse.py */
 
 // Using pipes for inter-task I/O

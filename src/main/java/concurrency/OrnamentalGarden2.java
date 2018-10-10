@@ -10,11 +10,11 @@ import java.util.concurrent.TimeUnit;
 
 class Count2 {
 	private int count = 0;
-	
+
 	public synchronized void increament() {
 		count++;
 	}
-	
+
 	public synchronized int getCount() {
 		return count;
 	}
@@ -32,20 +32,20 @@ class Entrance2 implements Runnable {
 		this.id = id;
 		entrance2s.add(this);
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Entrance: " + id + " number: " + number;
 	}
-	
+
 	public synchronized static void cancel() {
 		cancel = true;
 	}
-	
+
 	public int getNumber() {
 		return number;
 	}
-	
+
 	// 此防范仅由主线程调用计算，可暂不加锁。
 	public static int getSumNumber() {
 		int sum = 0;
@@ -80,13 +80,13 @@ public class OrnamentalGarden2 {
 		ExecutorService exec = Executors.newCachedThreadPool();
 		for (int i = 0; i < 5; i++)
 			exec.execute(new Entrance2(i));
-		
+
 		TimeUnit.SECONDS.sleep(1);
 		Entrance2.cancel();
 		exec.shutdown();
 		if (!exec.awaitTermination(250, TimeUnit.MILLISECONDS))
 			print("Some tasks were not terminated!");
-		
+
 		System.out.println("TOTAL COUNT :" + Entrance2.getCount());
 		System.out.println("ENTRACE TOTAL NUMBER :" + Entrance2.getSumNumber());
 	}

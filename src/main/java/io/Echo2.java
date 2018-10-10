@@ -7,7 +7,8 @@ import java.io.InputStreamReader;
 public class Echo2 {
 	public static void main(String[] args) throws IOException {
 		// 按字节输入
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(
+				System.in));
 		String s;
 		try {
 			while ((s = br.readLine()) != null && s.length() != 0)

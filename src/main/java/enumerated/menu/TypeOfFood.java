@@ -1,4 +1,4 @@
-//: enumerated/menu/TypeOfFood.java
+// : enumerated/menu/TypeOfFood.java
 package enumerated.menu;
 
 import static enumerated.menu.Food.*;

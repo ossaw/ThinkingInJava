@@ -12,7 +12,7 @@ import java.util.TreeSet;
 
 public class TextFile2 extends ArrayList<String> {
 	private static final long serialVersionUID = 996316007660725506L;
-	
+
 	public TextFile2(String text) {
 		this(text, "\n");
 	}
@@ -22,11 +22,12 @@ public class TextFile2 extends ArrayList<String> {
 		if ("".equals(get(0)))
 			remove(0);
 	}
-	
+
 	public static String read(String fileName) {
 		StringBuffer sb = new StringBuffer();
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(new File(fileName).getAbsoluteFile()));
+			BufferedReader br = new BufferedReader(new FileReader(new File(
+					fileName).getAbsoluteFile()));
 			String s;
 			try {
 				while ((s = br.readLine()) != null)
@@ -37,13 +38,14 @@ public class TextFile2 extends ArrayList<String> {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 		return sb.toString();
 	}
-	
+
 	public static void write(String fileName, String text) {
 		try {
-			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(fileName).getAbsoluteFile()));
+			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(
+					fileName).getAbsoluteFile()));
 			try {
 				bw.write(text);
 				bw.flush();
@@ -54,14 +56,15 @@ public class TextFile2 extends ArrayList<String> {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void write(String fileName) {
 		try {
-			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(fileName).getAbsoluteFile()));
+			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(
+					fileName).getAbsoluteFile()));
 			try {
 				for (String s : this)
 					bw.write(s);
-					bw.close();
+				bw.close();
 			} finally {
 				bw.close();
 			}
@@ -69,9 +72,10 @@ public class TextFile2 extends ArrayList<String> {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void main(String[] args) {
-		String fileString = read("src/main/java/net/mindview/util/TextFile2.java");
+		String fileString = read(
+				"src/main/java/net/mindview/util/TextFile2.java");
 		write("src/main/java/net/mindview/util/test3.txt", fileString);
 		TextFile2 tf2 = new TextFile2(fileString);
 		tf2.write("src/main/java/net/mindview/util/test4.txt");

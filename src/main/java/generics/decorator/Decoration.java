@@ -1,4 +1,4 @@
-//: generics/decorator/Decoration.java
+// : generics/decorator/Decoration.java
 package generics.decorator;
 
 import java.util.*;

@@ -1,4 +1,4 @@
-//: io/OSExecuteDemo.java
+// : io/OSExecuteDemo.java
 package io; /* Added by Eclipse.py */
 
 // Demonstrates standard I/O redirection.

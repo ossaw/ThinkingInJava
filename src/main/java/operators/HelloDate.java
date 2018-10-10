@@ -1,4 +1,4 @@
-//: operators/HelloDate.java
+// : operators/HelloDate.java
 package operators; /* Added by Eclipse.py */
 
 import java.util.*;

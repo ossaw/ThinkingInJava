@@ -1,10 +1,11 @@
-//: enumerated/Input.java
+// : enumerated/Input.java
 package enumerated;
 
 import java.util.*;
 
 public enum Input {
-	NICKEL(5), DIME(10), QUARTER(25), DOLLAR(100), TOOTHPASTE(200), CHIPS(75), SODA(100), SOAP(50), ABORT_TRANSACTION {
+	NICKEL(5), DIME(10), QUARTER(25), DOLLAR(100), TOOTHPASTE(200), CHIPS(75),
+	SODA(100), SOAP(50), ABORT_TRANSACTION {
 		public int amount() { // Disallow
 			throw new RuntimeException("ABORT.amount()");
 		}
@@ -20,8 +21,7 @@ public enum Input {
 		this.value = value;
 	}
 
-	Input() {
-	}
+	Input() {}
 
 	int amount() {
 		return value;

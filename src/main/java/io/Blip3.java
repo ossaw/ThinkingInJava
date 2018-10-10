@@ -1,4 +1,4 @@
-//: io/Blip3.java
+// : io/Blip3.java
 package io; /* Added by Eclipse.py */
 
 // Reconstructing an externalizable object.
@@ -33,23 +33,27 @@ public class Blip3 implements Externalizable {
 		out.writeInt(i);
 	}
 
-	public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+	public void readExternal(ObjectInput in) throws IOException,
+			ClassNotFoundException {
 		print("Blip3.readExternal");
 		// You must do this:
 		s = (String) in.readObject();
 		i = in.readInt();
 	}
 
-	public static void main(String[] args) throws IOException, ClassNotFoundException {
+	public static void main(String[] args) throws IOException,
+			ClassNotFoundException {
 		print("Constructing objects:");
 		Blip3 b3 = new Blip3("A String ", 47);
 		print(b3);
-		ObjectOutputStream o = new ObjectOutputStream(new FileOutputStream("Blip3.out"));
+		ObjectOutputStream o = new ObjectOutputStream(new FileOutputStream(
+				"Blip3.out"));
 		print("Saving object:");
 		o.writeObject(b3);
 		o.close();
 		// Now get it back:
-		ObjectInputStream in = new ObjectInputStream(new FileInputStream("Blip3.out"));
+		ObjectInputStream in = new ObjectInputStream(new FileInputStream(
+				"Blip3.out"));
 		print("Recovering b3:");
 		b3 = (Blip3) in.readObject();
 		print(b3);

@@ -1,4 +1,4 @@
-//: holding/ApplesAndOrangesWithoutGenerics.java
+// : holding/ApplesAndOrangesWithoutGenerics.java
 package holding; /* Added by Eclipse.py */
 
 // Simple container example (produces compiler warnings).
@@ -15,8 +15,7 @@ class Apple {
 	}
 }
 
-class Orange {
-}
+class Orange {}
 
 public class ApplesAndOrangesWithoutGenerics {
 	@SuppressWarnings("unchecked")

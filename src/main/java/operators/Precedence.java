@@ -1,4 +1,4 @@
-//: operators/Precedence.java
+// : operators/Precedence.java
 package operators; /* Added by Eclipse.py */
 
 public class Precedence {

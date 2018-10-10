@@ -1,4 +1,4 @@
-//: typeinfo/BoundedClassReferences.java
+// : typeinfo/BoundedClassReferences.java
 package typeinfo; /* Added by Eclipse.py */
 
 public class BoundedClassReferences {

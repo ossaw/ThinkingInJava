@@ -1,4 +1,4 @@
-//: net/mindview/util/Hex.java
+// : net/mindview/util/Hex.java
 package net.mindview.util;
 
 import java.io.*;

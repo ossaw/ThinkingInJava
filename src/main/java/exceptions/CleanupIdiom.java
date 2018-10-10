@@ -1,4 +1,4 @@
-//: exceptions/CleanupIdiom.java
+// : exceptions/CleanupIdiom.java
 package exceptions; /* Added by Eclipse.py */
 
 // Each disposable object must be followed by a try-finally
@@ -12,13 +12,11 @@ class NeedsCleanup { // Construction can't fail
 	}
 }
 
-class ConstructionException extends Exception {
-}
+class ConstructionException extends Exception {}
 
 class NeedsCleanup2 extends NeedsCleanup {
 	// Construction can fail:
-	public NeedsCleanup2() throws ConstructionException {
-	}
+	public NeedsCleanup2() throws ConstructionException {}
 }
 
 public class CleanupIdiom {

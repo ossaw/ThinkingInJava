@@ -1,4 +1,4 @@
-//: operators/Exponents.java
+// : operators/Exponents.java
 package operators; /* Added by Eclipse.py */
 
 // "e" means "10 to the power."

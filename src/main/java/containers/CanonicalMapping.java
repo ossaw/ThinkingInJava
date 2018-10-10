@@ -1,4 +1,4 @@
-//: containers/CanonicalMapping.java
+// : containers/CanonicalMapping.java
 package containers; /* Added by Eclipse.py */
 
 // Demonstrates WeakHashMap.
@@ -25,7 +25,8 @@ class Element {
 	}
 
 	protected void finalize() {
-		System.out.println("Finalizing " + getClass().getSimpleName() + " " + ident);
+		System.out.println("Finalizing " + getClass().getSimpleName() + " "
+				+ ident);
 	}
 }
 

@@ -1,4 +1,4 @@
-//: io/DirList.java
+// : io/DirList.java
 package io; /* Added by Eclipse.py */
 
 // Display a directory listing using regular expressions.

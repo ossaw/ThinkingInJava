@@ -14,7 +14,8 @@ public class CountingGenerator2 {
 
 	public static class Character implements Generator<java.lang.Character> {
 		int index = -1;
-		char[] chars = ("abcdefghijklmnopqrstuvwxyz" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ").toCharArray();
+		char[] chars = ("abcdefghijklmnopqrstuvwxyz"
+				+ "ABCDEFGHIJKLMNOPQRSTUVWXYZ").toCharArray();
 
 		@Override
 		public java.lang.Character next() {

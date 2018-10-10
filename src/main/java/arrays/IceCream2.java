@@ -5,7 +5,8 @@ import java.util.Random;
 
 public class IceCream2 {
 	private static Random random = new Random(47);
-	private static final String[] FLAVORS = new String[] { "A", "B", "C", "D", "E", "F", "G", "H" };
+	private static final String[] FLAVORS = new String[] { "A", "B", "C", "D",
+			"E", "F", "G", "H" };
 
 	private static String[] flavorSet(int n) {
 		if (n > FLAVORS.length)
@@ -22,7 +23,7 @@ public class IceCream2 {
 		}
 		return result;
 	}
-	
+
 	public static void main(String[] args) {
 		for (int i = 0; i < 7; i++)
 			System.out.println(Arrays.toString(flavorSet(3)));

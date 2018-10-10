@@ -1,4 +1,4 @@
-//: gui/Progress.java
+// : gui/Progress.java
 package gui; /* Added by Eclipse.py */
 
 // Using sliders, progress bars and progress monitors.
@@ -11,7 +11,8 @@ import static net.mindview.util.SwingConsole.*;
 
 public class Progress extends JFrame {
 	private JProgressBar pb = new JProgressBar();
-	private ProgressMonitor pm = new ProgressMonitor(this, "Monitoring Progress", "Test", 0, 100);
+	private ProgressMonitor pm = new ProgressMonitor(this,
+			"Monitoring Progress", "Test", 0, 100);
 	private JSlider sb = new JSlider(JSlider.HORIZONTAL, 0, 100, 60);
 
 	public Progress() {

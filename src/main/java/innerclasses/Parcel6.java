@@ -1,4 +1,4 @@
-//: innerclasses/Parcel6.java
+// : innerclasses/Parcel6.java
 package innerclasses; /* Added by Eclipse.py */
 
 // Nesting a class within a scope.

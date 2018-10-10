@@ -1,4 +1,4 @@
-//: strings/Turtle.java
+// : strings/Turtle.java
 package strings; /* Added by Eclipse.py */
 
 import java.io.*;

@@ -1,4 +1,4 @@
-//: holding/AdapterMethodIdiom.java
+// : holding/AdapterMethodIdiom.java
 package holding; /* Added by Eclipse.py */
 
 // The "Adapter Method" idiom allows you to use foreach
@@ -36,8 +36,8 @@ class ReversibleArrayList<T> extends ArrayList<T> {
 
 public class AdapterMethodIdiom {
 	public static void main(String[] args) {
-		ReversibleArrayList<String> ral = new ReversibleArrayList<String>(
-				Arrays.asList("To be or not to be".split(" ")));
+		ReversibleArrayList<String> ral = new ReversibleArrayList<String>(Arrays
+				.asList("To be or not to be".split(" ")));
 		// Grabs the ordinary iterator via iterator():
 		for (String s : ral)
 			System.out.print(s + " ");

@@ -1,4 +1,4 @@
-//: concurrency/IntGenerator.java
+// : concurrency/IntGenerator.java
 package concurrency; /* Added by Eclipse.py */
 
 public abstract class IntGenerator {

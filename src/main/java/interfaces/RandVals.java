@@ -1,4 +1,4 @@
-//: interfaces/RandVals.java
+// : interfaces/RandVals.java
 package interfaces; /* Added by Eclipse.py */
 
 // Initializing interface fields with

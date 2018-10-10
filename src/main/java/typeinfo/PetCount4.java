@@ -1,4 +1,4 @@
-//: typeinfo/PetCount4.java
+// : typeinfo/PetCount4.java
 package typeinfo; /* Added by Eclipse.py */
 
 import typeinfo.pets.*;

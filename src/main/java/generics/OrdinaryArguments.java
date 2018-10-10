@@ -1,4 +1,4 @@
-//: generics/OrdinaryArguments.java
+// : generics/OrdinaryArguments.java
 package generics; /* Added by Eclipse.py */
 
 class OrdinarySetter {

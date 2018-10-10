@@ -1,4 +1,4 @@
-//: typeinfo/PetCount.java
+// : typeinfo/PetCount.java
 package typeinfo; /* Added by Eclipse.py */
 
 // Using instanceof.

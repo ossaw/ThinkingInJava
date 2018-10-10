@@ -1,4 +1,4 @@
-//: interfaces/interfaceprocessor/Apply.java
+// : interfaces/interfaceprocessor/Apply.java
 package interfaces.interfaceprocessor;
 
 import static net.mindview.util.Print.*;

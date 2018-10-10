@@ -1,4 +1,4 @@
-//: enumerated/NotClasses.java
+// : enumerated/NotClasses.java
 package enumerated; /* Added by Eclipse.py */
 
 // {Exec: javap -c LikeClasses}
@@ -29,8 +29,6 @@ public class NotClasses {
 } /*
 	 * Output: Compiled from "NotClasses.java" abstract class LikeClasses
 	 * extends java.lang.Enum{ public static final LikeClasses WINKEN;
-	 * 
 	 * public static final LikeClasses BLINKEN;
-	 * 
 	 * public static final LikeClasses NOD; ...
 	 */// :~

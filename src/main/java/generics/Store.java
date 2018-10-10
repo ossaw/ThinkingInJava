@@ -1,4 +1,4 @@
-//: generics/Store.java
+// : generics/Store.java
 package generics; /* Added by Eclipse.py */
 
 // Building up a complex model using generic containers.
@@ -30,7 +30,8 @@ class Product {
 		private Random rand = new Random(47);
 
 		public Product next() {
-			return new Product(rand.nextInt(1000), "Test", Math.round(rand.nextDouble() * 1000.0) + 0.99);
+			return new Product(rand.nextInt(1000), "Test", Math.round(rand
+					.nextDouble() * 1000.0) + 0.99);
 		}
 	};
 }
@@ -48,11 +49,9 @@ class Aisle extends ArrayList<Shelf> {
 	}
 }
 
-class CheckoutStand {
-}
+class CheckoutStand {}
 
-class Office {
-}
+class Office {}
 
 public class Store extends ArrayList<Aisle> {
 	private ArrayList<CheckoutStand> checkouts = new ArrayList<CheckoutStand>();

@@ -1,4 +1,4 @@
-//: interfaces/filters/LowPass.java
+// : interfaces/filters/LowPass.java
 package interfaces.filters;
 
 public class LowPass extends Filter {

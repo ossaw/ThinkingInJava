@@ -1,4 +1,4 @@
-//: generics/Functional.java
+// : generics/Functional.java
 package generics; /* Added by Eclipse.py */
 
 import java.math.*;
@@ -50,7 +50,8 @@ public class Functional {
 
 	// Creates a list of results by calling a
 	// function object for each object in the list:
-	public static <R, T> List<R> transform(Iterable<T> seq, UnaryFunction<R, T> func) {
+	public static <R, T> List<R> transform(Iterable<T> seq,
+			UnaryFunction<R, T> func) {
 		List<R> result = new ArrayList<R>();
 		for (T t : seq)
 			result.add(func.function(t));
@@ -102,13 +103,15 @@ public class Functional {
 
 	// We can even make a UnaryFunction with an "ulp"
 	// (Units in the last place):
-	static class BigDecimalUlp implements UnaryFunction<BigDecimal, BigDecimal> {
+	static class BigDecimalUlp implements
+			UnaryFunction<BigDecimal, BigDecimal> {
 		public BigDecimal function(BigDecimal x) {
 			return x.ulp();
 		}
 	}
 
-	static class GreaterThan<T extends Comparable<T>> implements UnaryPredicate<T> {
+	static class GreaterThan<T extends Comparable<T>> implements
+			UnaryPredicate<T> {
 		private T bound;
 
 		public GreaterThan(T bound) {
@@ -146,10 +149,12 @@ public class Functional {
 
 		print(forEach(li, new MultiplyingIntegerCollector()).result());
 
-		print(forEach(filter(li, new GreaterThan<Integer>(4)), new MultiplyingIntegerCollector()).result());
+		print(forEach(filter(li, new GreaterThan<Integer>(4)),
+				new MultiplyingIntegerCollector()).result());
 
 		MathContext mc = new MathContext(7);
-		List<BigDecimal> lbd = Arrays.asList(new BigDecimal(1.1, mc), new BigDecimal(2.2, mc), new BigDecimal(3.3, mc),
+		List<BigDecimal> lbd = Arrays.asList(new BigDecimal(1.1, mc),
+				new BigDecimal(2.2, mc), new BigDecimal(3.3, mc),
 				new BigDecimal(4.4, mc));
 		BigDecimal rbd = reduce(lbd, new BigDecimalAdder());
 		print(rbd);
@@ -170,8 +175,8 @@ public class Functional {
 		// The sum of this list of primes is also prime:
 		print(rbi.isProbablePrime(5));
 
-		List<AtomicLong> lal = Arrays.asList(new AtomicLong(11), new AtomicLong(47), new AtomicLong(74),
-				new AtomicLong(133));
+		List<AtomicLong> lal = Arrays.asList(new AtomicLong(11), new AtomicLong(
+				47), new AtomicLong(74), new AtomicLong(133));
 		AtomicLong ral = reduce(lal, new AtomicLongAdder());
 		print(ral);
 

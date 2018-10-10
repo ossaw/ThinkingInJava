@@ -1,4 +1,4 @@
-//: enumerated/Reflection.java
+// : enumerated/Reflection.java
 package enumerated; /* Added by Eclipse.py */
 
 // Analyzing enums using reflection.
@@ -30,7 +30,8 @@ public class Reflection {
 	public static void main(String[] args) {
 		Set<String> exploreMethods = analyze(Explore.class);
 		Set<String> enumMethods = analyze(Enum.class);
-		print("Explore.containsAll(Enum)? " + exploreMethods.containsAll(enumMethods));
+		print("Explore.containsAll(Enum)? " + exploreMethods.containsAll(
+				enumMethods));
 		printnb("Explore.removeAll(Enum): ");
 		exploreMethods.removeAll(enumMethods);
 		print(exploreMethods);

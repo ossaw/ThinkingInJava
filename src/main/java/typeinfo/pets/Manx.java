@@ -1,4 +1,4 @@
-//: typeinfo/pets/Manx.java
+// : typeinfo/pets/Manx.java
 package typeinfo.pets;
 
 public class Manx extends Cat {

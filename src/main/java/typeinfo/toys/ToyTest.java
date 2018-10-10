@@ -1,26 +1,21 @@
-//: typeinfo/toys/ToyTest.java
+// : typeinfo/toys/ToyTest.java
 // Testing class Class.
 package typeinfo.toys;
 
 import static net.mindview.util.Print.print;
 
-interface HasBatteries {
-}
+interface HasBatteries {}
 
-interface Waterproof {
-}
+interface Waterproof {}
 
-interface Shoots {
-}
+interface Shoots {}
 
 class Toy {
 	// Comment out the following default constructor
 	// to see NoSuchMethodError from (*1*)
-	Toy() {
-	}
+	Toy() {}
 
-	Toy(int i) {
-	}
+	Toy(int i) {}
 }
 
 class FancyToy extends Toy implements HasBatteries, Waterproof, Shoots {
@@ -31,7 +26,8 @@ class FancyToy extends Toy implements HasBatteries, Waterproof, Shoots {
 
 public class ToyTest {
 	static void printInfo(Class<?> cc) {
-		print("Class name: " + cc.getName() + " is interface? [" + cc.isInterface() + "]");
+		print("Class name: " + cc.getName() + " is interface? [" + cc
+				.isInterface() + "]");
 		print("Simple name: " + cc.getSimpleName());
 		print("Canonical name : " + cc.getCanonicalName());
 		print();

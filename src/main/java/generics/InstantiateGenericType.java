@@ -1,4 +1,4 @@
-//: generics/InstantiateGenericType.java
+// : generics/InstantiateGenericType.java
 package generics; /* Added by Eclipse.py */
 
 import static net.mindview.util.Print.*;
@@ -15,15 +15,16 @@ class ClassAsFactory<T> {
 	}
 }
 
-class Employee {
-}
+class Employee {}
 
 public class InstantiateGenericType {
 	public static void main(String[] args) {
-		ClassAsFactory<Employee> fe = new ClassAsFactory<Employee>(Employee.class);
+		ClassAsFactory<Employee> fe = new ClassAsFactory<Employee>(
+				Employee.class);
 		print("ClassAsFactory<Employee> succeeded");
 		try {
-			ClassAsFactory<Integer> fi = new ClassAsFactory<Integer>(Integer.class);
+			ClassAsFactory<Integer> fi = new ClassAsFactory<Integer>(
+					Integer.class);
 		} catch (Exception e) {
 			print("ClassAsFactory<Integer> failed");
 		}

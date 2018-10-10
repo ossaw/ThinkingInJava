@@ -1,4 +1,4 @@
-//: holding/SimpleCollection.java
+// : holding/SimpleCollection.java
 package holding; /* Added by Eclipse.py */
 
 import java.util.*;

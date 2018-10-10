@@ -1,4 +1,4 @@
-//: initialization/TerminationCondition.java
+// : initialization/TerminationCondition.java
 package initialization; /* Added by Eclipse.py */
 
 // Using finalize() to detect an object that

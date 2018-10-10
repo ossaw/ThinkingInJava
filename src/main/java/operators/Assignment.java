@@ -1,4 +1,4 @@
-//: operators/Assignment.java
+// : operators/Assignment.java
 package operators; /* Added by Eclipse.py */
 
 // Assignment with objects is a bit tricky.

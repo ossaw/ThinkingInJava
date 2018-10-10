@@ -1,4 +1,4 @@
-//: concurrency/SerialNumberGenerator.java
+// : concurrency/SerialNumberGenerator.java
 package concurrency; /* Added by Eclipse.py */
 
 public class SerialNumberGenerator {

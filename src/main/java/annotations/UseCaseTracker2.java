@@ -11,7 +11,8 @@ public class UseCaseTracker2 {
 		for (Method m : type.getDeclaredMethods()) {
 			UseCase2 useCase2 = m.getAnnotation(UseCase2.class);
 			if (useCase2 != null) {
-				System.out.println("id = " + useCase2.id() + " and desc = " + useCase2.desc());
+				System.out.println("id = " + useCase2.id() + " and desc = "
+						+ useCase2.desc());
 				// useCase2.id()需要初始化为Integer
 				list.remove(new Integer(useCase2.id()));
 			}

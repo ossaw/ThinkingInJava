@@ -1,4 +1,4 @@
-//: io/DirList2.java
+// : io/DirList2.java
 package io; /* Added by Eclipse.py */
 
 // Uses anonymous inner classes.

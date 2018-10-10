@@ -1,7 +1,8 @@
 package typeinfo.toys;
 
 public class GenericToyTest2 {
-	public static void main(String[] args) throws InstantiationException, IllegalAccessException {
+	public static void main(String[] args) throws InstantiationException,
+			IllegalAccessException {
 		Class<FancyToy2> fClass = FancyToy2.class;
 		Class<? super FancyToy2> sClass = fClass.getSuperclass();
 		// compile error

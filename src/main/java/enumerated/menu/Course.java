@@ -1,11 +1,11 @@
-//: enumerated/menu/Course.java
+// : enumerated/menu/Course.java
 package enumerated.menu;
 
 import net.mindview.util.*;
 
 public enum Course {
-	APPETIZER(Food.Appetizer.class), MAINCOURSE(Food.MainCourse.class), DESSERT(Food.Dessert.class), COFFEE(
-			Food.Coffee.class);
+	APPETIZER(Food.Appetizer.class), MAINCOURSE(Food.MainCourse.class), DESSERT(
+			Food.Dessert.class), COFFEE(Food.Coffee.class);
 	private Food[] values;
 
 	private Course(Class<? extends Food> kind) {

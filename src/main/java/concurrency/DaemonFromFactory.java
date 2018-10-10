@@ -1,4 +1,4 @@
-//: concurrency/DaemonFromFactory.java
+// : concurrency/DaemonFromFactory.java
 package concurrency; /* Added by Eclipse.py */
 
 // Using a Thread Factory to create daemons.
@@ -20,7 +20,8 @@ public class DaemonFromFactory implements Runnable {
 	}
 
 	public static void main(String[] args) throws Exception {
-		ExecutorService exec = Executors.newCachedThreadPool(new DaemonThreadFactory());
+		ExecutorService exec = Executors.newCachedThreadPool(
+				new DaemonThreadFactory());
 		for (int i = 0; i < 10; i++)
 			exec.execute(new DaemonFromFactory());
 		print("All daemons started");

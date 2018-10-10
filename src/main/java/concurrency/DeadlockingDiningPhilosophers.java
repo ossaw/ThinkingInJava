@@ -1,4 +1,4 @@
-//: concurrency/DeadlockingDiningPhilosophers.java
+// : concurrency/DeadlockingDiningPhilosophers.java
 package concurrency; /* Added by Eclipse.py */
 
 import java.io.IOException;
@@ -9,7 +9,8 @@ import java.io.IOException;
 import java.util.concurrent.*;
 
 public class DeadlockingDiningPhilosophers {
-	public static void main(String[] args) throws InterruptedException, IOException {
+	public static void main(String[] args) throws InterruptedException,
+			IOException {
 		int ponder = 10;
 		if (args.length > 0)
 			ponder = Integer.parseInt(args[0]);
@@ -22,7 +23,8 @@ public class DeadlockingDiningPhilosophers {
 			sticks[i] = new Chopstick();
 		for (int i = 0; i < size; i++)
 			// sticks[i], sticks[(i + 1) 保证哲学家循环取左右的筷子
-			exec.execute(new Philosopher(sticks[i], sticks[(i + 1) % size], i, ponder));
+			exec.execute(new Philosopher(sticks[i], sticks[(i + 1) % size], i,
+					ponder));
 		if (args.length == 3 && args[2].equals("timeout"))
 			TimeUnit.SECONDS.sleep(5);
 		else {

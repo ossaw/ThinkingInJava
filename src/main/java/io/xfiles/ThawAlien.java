@@ -1,4 +1,4 @@
-//: io/xfiles/ThawAlien.java
+// : io/xfiles/ThawAlien.java
 package io.xfiles; /* Added by Eclipse.py */
 
 // Try to recover a serialized file without the
@@ -9,7 +9,8 @@ import java.io.*;
 
 public class ThawAlien {
 	public static void main(String[] args) throws Exception {
-		ObjectInputStream in = new ObjectInputStream(new FileInputStream(new File("..", "X.file")));
+		ObjectInputStream in = new ObjectInputStream(new FileInputStream(
+				new File("..", "X.file")));
 		Object mystery = in.readObject();
 		System.out.println(mystery.getClass());
 	}

@@ -1,4 +1,4 @@
-//: arrays/CompType.java
+// : arrays/CompType.java
 package arrays; /* Added by Eclipse.py */
 
 // Implementing Comparable in a class.

@@ -1,4 +1,4 @@
-//: generics/GenericMethods.java
+// : generics/GenericMethods.java
 package generics; /* Added by Eclipse.py */
 
 public class GenericMethods {

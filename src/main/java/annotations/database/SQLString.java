@@ -1,4 +1,4 @@
-//: annotations/database/SQLString.java
+// : annotations/database/SQLString.java
 package annotations.database;
 
 import java.lang.annotation.*;

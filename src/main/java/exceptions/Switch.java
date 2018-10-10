@@ -1,4 +1,4 @@
-//: exceptions/Switch.java
+// : exceptions/Switch.java
 package exceptions; /* Added by Eclipse.py */
 
 import static net.mindview.util.Print.*;

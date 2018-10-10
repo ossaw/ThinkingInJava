@@ -1,4 +1,4 @@
-//: exceptions/OnOffSwitch.java
+// : exceptions/OnOffSwitch.java
 package exceptions; /* Added by Eclipse.py */
 
 // Why use finally?
@@ -6,8 +6,7 @@ package exceptions; /* Added by Eclipse.py */
 public class OnOffSwitch {
 	private static Switch sw = new Switch();
 
-	public static void f() throws OnOffException1, OnOffException2 {
-	}
+	public static void f() throws OnOffException1, OnOffException2 {}
 
 	public static void main(String[] args) {
 		try {

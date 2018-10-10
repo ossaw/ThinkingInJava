@@ -1,4 +1,4 @@
-//: operators/PassObject.java
+// : operators/PassObject.java
 package operators; /* Added by Eclipse.py */
 
 // Passing objects to methods may not be

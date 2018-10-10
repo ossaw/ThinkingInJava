@@ -1,4 +1,4 @@
-//: bangbean/BangBeanTest.java
+// : bangbean/BangBeanTest.java
 // {Timeout: 5} Abort after 5 seconds when testing
 package bangbean;
 

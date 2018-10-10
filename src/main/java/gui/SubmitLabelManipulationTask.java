@@ -1,4 +1,4 @@
-//: gui/SubmitLabelManipulationTask.java
+// : gui/SubmitLabelManipulationTask.java
 package gui; /* Added by Eclipse.py */
 
 import javax.swing.*;

@@ -1,4 +1,4 @@
-//: generics/Apply.java
+// : generics/Apply.java
 package generics; /* Added by Eclipse.py */
 
 // {main: ApplyTest}
@@ -8,7 +8,8 @@ import java.util.*;
 import static net.mindview.util.Print.*;
 
 public class Apply {
-	public static <T, S extends Iterable<? extends T>> void apply(S seq, Method f, Object... args) {
+	public static <T, S extends Iterable<? extends T>> void apply(S seq,
+			Method f, Object... args) {
 		try {
 			for (T t : seq)
 				f.invoke(t, args);
@@ -29,8 +30,7 @@ class Shape {
 	}
 }
 
-class Square extends Shape {
-}
+class Square extends Shape {}
 
 class FilledList<T> extends ArrayList<T> {
 	public FilledList(Class<? extends T> type, int size) {
@@ -57,8 +57,10 @@ class ApplyTest {
 		Apply.apply(squares, Shape.class.getMethod("rotate"));
 		Apply.apply(squares, Shape.class.getMethod("resize", int.class), 5);
 
-		Apply.apply(new FilledList<Shape>(Shape.class, 10), Shape.class.getMethod("rotate"));
-		Apply.apply(new FilledList<Shape>(Square.class, 10), Shape.class.getMethod("rotate"));
+		Apply.apply(new FilledList<Shape>(Shape.class, 10), Shape.class
+				.getMethod("rotate"));
+		Apply.apply(new FilledList<Shape>(Square.class, 10), Shape.class
+				.getMethod("rotate"));
 
 		SimpleQueue<Shape> shapeQ = new SimpleQueue<Shape>();
 		for (int i = 0; i < 5; i++) {

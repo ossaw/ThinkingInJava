@@ -1,4 +1,4 @@
-//: containers/Bits.java
+// : containers/Bits.java
 package containers; /* Added by Eclipse.py */
 
 // Demonstration of BitSet.

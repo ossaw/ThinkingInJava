@@ -1,12 +1,11 @@
-//: frogbean/Frog.java
+// : frogbean/Frog.java
 // A trivial JavaBean.
 package frogbean;
 
 import java.awt.*;
 import java.awt.event.*;
 
-class Spots {
-}
+class Spots {}
 
 public class Frog {
 	private int jumps;

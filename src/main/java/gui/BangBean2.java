@@ -1,4 +1,4 @@
-//: gui/BangBean2.java
+// : gui/BangBean2.java
 package gui; /* Added by Eclipse.py */
 
 // You should write your Beans this way so they
@@ -74,7 +74,8 @@ public class BangBean2 extends JPanel implements Serializable {
 
 	// Notice this isn't synchronized:
 	public void notifyListeners() {
-		ActionEvent a = new ActionEvent(BangBean2.this, ActionEvent.ACTION_PERFORMED, null);
+		ActionEvent a = new ActionEvent(BangBean2.this,
+				ActionEvent.ACTION_PERFORMED, null);
 		ArrayList<ActionListener> lv = null;
 		// Make a shallow copy of the List in case
 		// someone adds a listener while we're
@@ -93,7 +94,8 @@ public class BangBean2 extends JPanel implements Serializable {
 			g.setColor(tColor);
 			g.setFont(new Font("TimesRoman", Font.BOLD, fontSize));
 			int width = g.getFontMetrics().stringWidth(text);
-			g.drawString(text, (getSize().width - width) / 2, getSize().height / 2);
+			g.drawString(text, (getSize().width - width) / 2, getSize().height
+					/ 2);
 			g.dispose();
 			notifyListeners();
 		}

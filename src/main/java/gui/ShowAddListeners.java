@@ -1,4 +1,4 @@
-//: gui/ShowAddListeners.java
+// : gui/ShowAddListeners.java
 package gui; /* Added by Eclipse.py */
 
 // Display the "addXXXListener" methods of any Swing class.
@@ -13,7 +13,8 @@ import static net.mindview.util.SwingConsole.*;
 public class ShowAddListeners extends JFrame {
 	private JTextField name = new JTextField(25);
 	private JTextArea results = new JTextArea(40, 65);
-	private static Pattern addListener = Pattern.compile("(add\\w+?Listener\\(.*?\\))");
+	private static Pattern addListener = Pattern.compile(
+			"(add\\w+?Listener\\(.*?\\))");
 	private static Pattern qualifier = Pattern.compile("\\w+\\.");
 
 	class NameL implements ActionListener {
@@ -35,7 +36,8 @@ public class ShowAddListeners extends JFrame {
 			for (Method m : methods) {
 				Matcher matcher = addListener.matcher(m.toString());
 				if (matcher.find())
-					results.append(qualifier.matcher(matcher.group(1)).replaceAll("") + "\n");
+					results.append(qualifier.matcher(matcher.group(1))
+							.replaceAll("") + "\n");
 			}
 		}
 	}

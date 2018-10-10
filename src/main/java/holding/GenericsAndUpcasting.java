@@ -1,19 +1,15 @@
-//: holding/GenericsAndUpcasting.java
+// : holding/GenericsAndUpcasting.java
 package holding; /* Added by Eclipse.py */
 
 import java.util.*;
 
-class GrannySmith extends Apple {
-}
+class GrannySmith extends Apple {}
 
-class Gala extends Apple {
-}
+class Gala extends Apple {}
 
-class Fuji extends Apple {
-}
+class Fuji extends Apple {}
 
-class Braeburn extends Apple {
-}
+class Braeburn extends Apple {}
 
 public class GenericsAndUpcasting {
 	public static void main(String[] args) {

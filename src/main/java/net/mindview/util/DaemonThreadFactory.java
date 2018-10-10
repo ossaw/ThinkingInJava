@@ -1,4 +1,4 @@
-//: net/mindview/util/DaemonThreadFactory.java
+// : net/mindview/util/DaemonThreadFactory.java
 package net.mindview.util;
 
 import java.util.concurrent.*;

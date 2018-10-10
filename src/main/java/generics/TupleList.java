@@ -1,4 +1,4 @@
-//: generics/TupleList.java
+// : generics/TupleList.java
 package generics; /* Added by Eclipse.py */
 
 // Combining generic types to make complex generic types.

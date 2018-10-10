@@ -1,4 +1,4 @@
-//: concurrency/SimpleDaemons.java
+// : concurrency/SimpleDaemons.java
 package concurrency; /* Added by Eclipse.py */
 
 // Daemon threads don't prevent the program from ending.

@@ -8,10 +8,12 @@ import java.io.PrintWriter;
 import java.io.StringReader;
 
 public class BasicFileOutput2 {
-	static String fileName = "D:\\Workspaces\\Eclipse\\thinking-In-Java-master\\src\\main\\java\\io\\BasicFileOutput2.java"; 
+	static String fileName = "D:\\Workspaces\\Eclipse\\thinking-In-Java-master\\src\\main\\java\\io\\BasicFileOutput2.java";
 	static String fileOut = "D:\\Workspaces\\Eclipse\\thinking-In-Java-master\\src\\main\\java\\io\\BasicFileOutput.out";
+
 	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new StringReader(BufferedInputFile.read(fileName)));
+		BufferedReader br = new BufferedReader(new StringReader(
+				BufferedInputFile.read(fileName)));
 		br = new BufferedReader(new FileReader(fileName));
 		PrintWriter pw = new PrintWriter(new File(fileOut));
 		String s;

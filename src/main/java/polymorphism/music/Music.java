@@ -1,4 +1,4 @@
-//: polymorphism/music/Music.java
+// : polymorphism/music/Music.java
 // Inheritance & upcasting.
 package polymorphism.music;
 

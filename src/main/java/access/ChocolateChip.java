@@ -1,4 +1,4 @@
-//: access/ChocolateChip.java
+// : access/ChocolateChip.java
 package access; /* Added by Eclipse.py */
 
 import java.text.SimpleDateFormat;

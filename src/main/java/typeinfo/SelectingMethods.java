@@ -1,4 +1,4 @@
-//: typeinfo/SelectingMethods.java
+// : typeinfo/SelectingMethods.java
 package typeinfo; /* Added by Eclipse.py */
 
 // Looking for particular methods in a dynamic proxy.
@@ -13,7 +13,8 @@ class MethodSelector implements InvocationHandler {
 		this.proxied = proxied;
 	}
 
-	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+	public Object invoke(Object proxy, Method method, Object[] args)
+			throws Throwable {
 		if (method.getName().equals("interesting"))
 			print("Proxy detected the interesting method");
 		return method.invoke(proxied, args);
@@ -50,8 +51,10 @@ class Implementation implements SomeMethods {
 
 class SelectingMethods {
 	public static void main(String[] args) {
-		SomeMethods proxy = (SomeMethods) Proxy.newProxyInstance(SomeMethods.class.getClassLoader(),
-				new Class[] { SomeMethods.class }, new MethodSelector(new Implementation()));
+		SomeMethods proxy = (SomeMethods) Proxy.newProxyInstance(
+				SomeMethods.class.getClassLoader(), new Class[] {
+						SomeMethods.class }, new MethodSelector(
+								new Implementation()));
 		proxy.boring1();
 		proxy.boring2();
 		proxy.interesting("bonobo");

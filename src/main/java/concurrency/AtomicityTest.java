@@ -1,4 +1,4 @@
-//: concurrency/AtomicityTest.java
+// : concurrency/AtomicityTest.java
 package concurrency; /* Added by Eclipse.py */
 
 import java.util.concurrent.*;

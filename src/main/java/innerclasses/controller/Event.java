@@ -1,4 +1,4 @@
-//: innerclasses/controller/Event.java
+// : innerclasses/controller/Event.java
 // The common methods for any control event.
 package innerclasses.controller;
 

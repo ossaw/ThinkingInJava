@@ -40,7 +40,7 @@ public class LinkedStack4<T> {
 		LinkedStack4<String> ls4 = new LinkedStack4<>();
 		for (String s : test.split(" "))
 			ls4.push(s);
-		
+
 		String s;
 		while ((s = ls4.pop()) != null)
 			System.out.println(s);

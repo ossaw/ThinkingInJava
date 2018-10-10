@@ -1,4 +1,4 @@
-//: generics/Wildcards.java
+// : generics/Wildcards.java
 package generics; /* Added by Eclipse.py */
 
 // Exploring the meaning of wildcards.
@@ -108,7 +108,7 @@ public class Wildcards {
 		// applied to (Holder,Long)
 		Long r10 = wildSubtype(qualified, lng);
 		// OK, but can only return Object:
-		Object r11 = wildSubtype(unbounded, lng);
+		Object r11 = null; // wildSubtype(unbounded, lng);
 		Long r12 = wildSubtype(bounded, lng);
 
 		// wildSupertype(raw, lng); // Warnings:

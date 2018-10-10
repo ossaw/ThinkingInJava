@@ -1,4 +1,4 @@
-//: operators/StringOperators.java
+// : operators/StringOperators.java
 package operators; /* Added by Eclipse.py */
 
 import static net.mindview.util.Print.*;

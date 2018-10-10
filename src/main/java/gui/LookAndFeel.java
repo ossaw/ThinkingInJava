@@ -1,4 +1,4 @@
-//: gui/LookAndFeel.java
+// : gui/LookAndFeel.java
 package gui; /* Added by Eclipse.py */
 
 // Selecting different looks & feels.
@@ -9,9 +9,12 @@ import java.awt.*;
 import static net.mindview.util.SwingConsole.*;
 
 public class LookAndFeel extends JFrame {
-	private String[] choices = "Eeny Meeny Minnie Mickey Moe Larry Curly".split(" ");
-	private Component[] samples = { new JButton("JButton"), new JTextField("JTextField"), new JLabel("JLabel"),
-			new JCheckBox("JCheckBox"), new JRadioButton("Radio"), new JComboBox(choices), new JList(choices), };
+	private String[] choices = "Eeny Meeny Minnie Mickey Moe Larry Curly".split(
+			" ");
+	private Component[] samples = { new JButton("JButton"), new JTextField(
+			"JTextField"), new JLabel("JLabel"), new JCheckBox("JCheckBox"),
+			new JRadioButton("Radio"), new JComboBox(choices), new JList(
+					choices), };
 
 	public LookAndFeel() {
 		super("Look And Feel");
@@ -30,19 +33,22 @@ public class LookAndFeel extends JFrame {
 			usageError();
 		if (args[0].equals("cross")) {
 			try {
-				UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+				UIManager.setLookAndFeel(UIManager
+						.getCrossPlatformLookAndFeelClassName());
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		} else if (args[0].equals("system")) {
 			try {
-				UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+				UIManager.setLookAndFeel(UIManager
+						.getSystemLookAndFeelClassName());
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		} else if (args[0].equals("motif")) {
 			try {
-				UIManager.setLookAndFeel("com.sun.java." + "swing.plaf.motif.MotifLookAndFeel");
+				UIManager.setLookAndFeel("com.sun.java."
+						+ "swing.plaf.motif.MotifLookAndFeel");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

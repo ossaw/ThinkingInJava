@@ -1,4 +1,4 @@
-//: net/mindview/util/CollectionData.java
+// : net/mindview/util/CollectionData.java
 // A Collection filled with data using a generator object.
 package net.mindview.util;
 

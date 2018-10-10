@@ -1,4 +1,4 @@
-//: operators/Equivalence.java
+// : operators/Equivalence.java
 package operators; /* Added by Eclipse.py */
 
 public class Equivalence {

@@ -1,4 +1,4 @@
-//: generics/TupleTest2.java
+// : generics/TupleTest2.java
 package generics; /* Added by Eclipse.py */
 
 import net.mindview.util.*;

@@ -1,4 +1,4 @@
-//: innerclasses/BigEgg2.java
+// : innerclasses/BigEgg2.java
 package innerclasses; /* Added by Eclipse.py */
 
 // Proper inheritance of an inner class.

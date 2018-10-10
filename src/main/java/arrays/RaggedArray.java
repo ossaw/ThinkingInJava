@@ -1,4 +1,4 @@
-//: arrays/RaggedArray.java
+// : arrays/RaggedArray.java
 package arrays; /* Added by Eclipse.py */
 
 import java.util.*;

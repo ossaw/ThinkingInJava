@@ -1,4 +1,4 @@
-//: polymorphism/PrivateOverride.java
+// : polymorphism/PrivateOverride.java
 // Trying to override a private method.
 package polymorphism;
 

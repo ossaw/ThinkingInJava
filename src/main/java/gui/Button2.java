@@ -1,4 +1,4 @@
-//: gui/Button2.java
+// : gui/Button2.java
 package gui; /* Added by Eclipse.py */
 
 // Responding to button presses.

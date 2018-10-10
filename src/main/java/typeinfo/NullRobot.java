@@ -1,4 +1,4 @@
-//: typeinfo/NullRobot.java
+// : typeinfo/NullRobot.java
 package typeinfo; /* Added by Eclipse.py */
 
 // Using a dynamic proxy to create a Null Object.
@@ -29,19 +29,22 @@ class NullRobotProxyHandler implements InvocationHandler {
 		}
 	}
 
-	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+	public Object invoke(Object proxy, Method method, Object[] args)
+			throws Throwable {
 		return method.invoke(proxied, args);
 	}
 }
 
 public class NullRobot {
 	public static Robot newNullRobot(Class<? extends Robot> type) {
-		return (Robot) Proxy.newProxyInstance(NullRobot.class.getClassLoader(), new Class[] { Null.class, Robot.class },
+		return (Robot) Proxy.newProxyInstance(NullRobot.class.getClassLoader(),
+				new Class[] { Null.class, Robot.class },
 				new NullRobotProxyHandler(type));
 	}
 
 	public static void main(String[] args) {
-		Robot[] bots = { new SnowRemovalRobot("SnowBee"), newNullRobot(SnowRemovalRobot.class) };
+		Robot[] bots = { new SnowRemovalRobot("SnowBee"), newNullRobot(
+				SnowRemovalRobot.class) };
 		for (Robot bot : bots)
 			Robot.Test.test(bot);
 	}

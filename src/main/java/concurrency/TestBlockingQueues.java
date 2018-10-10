@@ -1,4 +1,4 @@
-//: concurrency/TestBlockingQueues.java
+// : concurrency/TestBlockingQueues.java
 package concurrency; /* Added by Eclipse.py */
 
 // {RunByHand}

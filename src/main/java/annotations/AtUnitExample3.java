@@ -1,4 +1,4 @@
-//: annotations/AtUnitExample3.java
+// : annotations/AtUnitExample3.java
 package annotations;
 
 import net.mindview.atunit.*;
@@ -50,6 +50,5 @@ public class AtUnitExample3 {
 } /*
 	 * Output: annotations.AtUnitExample3 . initialization . methodOneTest . m2
 	 * This is methodTwo
-	 * 
 	 * OK (3 tests)
 	 */// :~

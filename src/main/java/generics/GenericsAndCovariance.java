@@ -1,4 +1,4 @@
-//: generics/GenericsAndCovariance.java
+// : generics/GenericsAndCovariance.java
 package generics; /* Added by Eclipse.py */
 
 import java.util.*;

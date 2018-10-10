@@ -1,4 +1,4 @@
-//: generics/Fill2.java
+// : generics/Fill2.java
 package generics; /* Added by Eclipse.py */
 
 // Using adapters to simulate latent typing.
@@ -15,7 +15,8 @@ interface Addable<T> {
 
 public class Fill2 {
 	// Classtoken version:
-	public static <T> void fill(Addable<T> addable, Class<? extends T> classToken, int size) {
+	public static <T> void fill(Addable<T> addable,
+			Class<? extends T> classToken, int size) {
 		for (int i = 0; i < size; i++)
 			try {
 				addable.add(classToken.newInstance());
@@ -25,7 +26,8 @@ public class Fill2 {
 	}
 
 	// Generator version:
-	public static <T> void fill(Addable<T> addable, Generator<T> generator, int size) {
+	public static <T> void fill(Addable<T> addable, Generator<T> generator,
+			int size) {
 		for (int i = 0; i < size; i++)
 			addable.add(generator.next());
 	}
@@ -64,7 +66,8 @@ class Fill2Test {
 	public static void main(String[] args) {
 		// Adapt a Collection:
 		List<Coffee> carrier = new ArrayList<Coffee>();
-		Fill2.fill(new AddableCollectionAdapter<Coffee>(carrier), Coffee.class, 3);
+		Fill2.fill(new AddableCollectionAdapter<Coffee>(carrier), Coffee.class,
+				3);
 		// Helper method captures the type:
 		Fill2.fill(Adapter.collectionAdapter(carrier), Latte.class, 2);
 		for (Coffee c : carrier)

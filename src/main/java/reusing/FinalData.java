@@ -1,4 +1,4 @@
-//: reusing/FinalData.java
+// : reusing/FinalData.java
 package reusing; /* Added by Eclipse.py */
 
 // The effect of final on fields.

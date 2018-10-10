@@ -1,4 +1,4 @@
-//: generics/GenericWriting.java
+// : generics/GenericWriting.java
 package generics; /* Added by Eclipse.py */
 
 import java.util.*;

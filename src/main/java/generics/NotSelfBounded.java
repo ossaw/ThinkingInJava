@@ -1,4 +1,4 @@
-//: generics/NotSelfBounded.java
+// : generics/NotSelfBounded.java
 package generics; /* Added by Eclipse.py */
 
 public class NotSelfBounded<T> {
@@ -14,11 +14,9 @@ public class NotSelfBounded<T> {
 	}
 }
 
-class A2 extends NotSelfBounded<A2> {
-}
+class A2 extends NotSelfBounded<A2> {}
 
-class B2 extends NotSelfBounded<A2> {
-}
+class B2 extends NotSelfBounded<A2> {}
 
 class C2 extends NotSelfBounded<C2> {
 	C2 setAndGet(C2 arg) {
@@ -27,9 +25,7 @@ class C2 extends NotSelfBounded<C2> {
 	}
 }
 
-class D2 {
-}
+class D2 {}
 
 // Now this is OK:
-class E2 extends NotSelfBounded<D2> {
-} /// :~
+class E2 extends NotSelfBounded<D2> {} /// :~

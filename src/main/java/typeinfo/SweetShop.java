@@ -1,4 +1,4 @@
-//: typeinfo/SweetShop.java
+// : typeinfo/SweetShop.java
 package typeinfo; /* Added by Eclipse.py */
 
 // Examination of the way the class loader works.

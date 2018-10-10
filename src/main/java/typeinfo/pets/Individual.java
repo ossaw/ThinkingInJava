@@ -1,4 +1,4 @@
-//: typeinfo/pets/Individual.java
+// : typeinfo/pets/Individual.java
 package typeinfo.pets;
 
 public class Individual implements Comparable<Individual> {
@@ -11,8 +11,7 @@ public class Individual implements Comparable<Individual> {
 	}
 
 	// 'name' is optional:
-	public Individual() {
-	}
+	public Individual() {}
 
 	public String toString() {
 		return getClass().getSimpleName() + (name == null ? "" : " " + name);

@@ -1,4 +1,4 @@
-//: typeinfo/PetCount3.java
+// : typeinfo/PetCount3.java
 package typeinfo; /* Added by Eclipse.py */
 
 // Using isInstance()
@@ -9,7 +9,8 @@ import net.mindview.util.*;
 import static net.mindview.util.Print.*;
 
 public class PetCount3 {
-	static class PetCounter extends LinkedHashMap<Class<? extends Pet>, Integer> {
+	static class PetCounter extends
+			LinkedHashMap<Class<? extends Pet>, Integer> {
 		public PetCounter() {
 			super(MapData.map(LiteralPetCreator.allTypes, 0));
 		}

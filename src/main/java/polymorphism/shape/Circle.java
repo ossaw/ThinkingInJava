@@ -1,4 +1,4 @@
-//: polymorphism/shape/Circle.java
+// : polymorphism/shape/Circle.java
 package polymorphism.shape;
 
 import static net.mindview.util.Print.*;

@@ -1,4 +1,4 @@
-//: concurrency/Interrupting2.java
+// : concurrency/Interrupting2.java
 package concurrency; /* Added by Eclipse.py */
 
 // Interrupting a task blocked with a ReentrantLock.

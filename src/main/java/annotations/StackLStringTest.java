@@ -1,4 +1,4 @@
-//: annotations/StackLStringTest.java
+// : annotations/StackLStringTest.java
 // Applying @Unit to generics.
 package annotations;
 

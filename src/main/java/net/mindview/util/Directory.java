@@ -1,4 +1,4 @@
-//: net/mindview/util/Directory.java
+// : net/mindview/util/Directory.java
 // Produce a sequence of File objects that match a
 // regular expression in either a local directory,
 // or by walking a directory tree.
@@ -39,7 +39,8 @@ public final class Directory {
 		}
 
 		public String toString() {
-			return "dirs: " + PPrint.pformat(dirs) + "\n\nfiles: " + PPrint.pformat(files);
+			return "dirs: " + PPrint.pformat(dirs) + "\n\nfiles: " + PPrint
+					.pformat(files);
 		}
 	}
 

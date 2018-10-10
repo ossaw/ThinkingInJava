@@ -5,14 +5,14 @@ import java.util.Random;
 
 import net.mindview.util.Generator2;
 
-public class CoffeeGenerator2 implements Generator2<Coffee2>, Iterable<Coffee2> {
-	private Class<?>[] types = new Class<?>[] { Latte2.class, Cappuccino2.class, Americano2.class,
-			Mocha2.class, Breve2.class };
+public class CoffeeGenerator2 implements Generator2<Coffee2>,
+		Iterable<Coffee2> {
+	private Class<?>[] types = new Class<?>[] { Latte2.class, Cappuccino2.class,
+			Americano2.class, Mocha2.class, Breve2.class };
 	private static Random random = new Random(47);
 	private int size;
 
-	public CoffeeGenerator2() {
-	}
+	public CoffeeGenerator2() {}
 
 	public CoffeeGenerator2(int size) {
 		this.size = size;

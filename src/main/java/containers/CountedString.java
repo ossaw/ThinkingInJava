@@ -1,4 +1,4 @@
-//: containers/CountedString.java
+// : containers/CountedString.java
 package containers; /* Added by Eclipse.py */
 
 // Creating a good hashCode().
@@ -36,7 +36,8 @@ public class CountedString {
 	}
 
 	public boolean equals(Object o) {
-		return o instanceof CountedString && s.equals(((CountedString) o).s) && id == ((CountedString) o).id;
+		return o instanceof CountedString && s.equals(((CountedString) o).s)
+				&& id == ((CountedString) o).id;
 	}
 
 	public static void main(String[] args) {

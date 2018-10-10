@@ -126,7 +126,8 @@ class TellerManager3 implements Runnable {
 	private PriorityQueue<Teller3> pq = new PriorityQueue<>();
 	private Queue<Teller3> doSomethingElseQueue = new LinkedList<>();
 
-	public TellerManager3(ExecutorService exec, int adjustTime, CustomerQueue3 cq3) {
+	public TellerManager3(ExecutorService exec, int adjustTime,
+			CustomerQueue3 cq3) {
 		this.adjustTime = adjustTime;
 		this.exec = exec;
 		this.cq3 = cq3;
@@ -182,8 +183,8 @@ public class BankTellerSimulation3 {
 	static final int SIZE = 50;
 	static final int ADJUST_TIME = 1000;
 
-	public static void main(String[] args)
-			throws NumberFormatException, InterruptedException, IOException {
+	public static void main(String[] args) throws NumberFormatException,
+			InterruptedException, IOException {
 		ExecutorService exec = Executors.newCachedThreadPool();
 		CustomerQueue3 cq3 = new CustomerQueue3(SIZE);
 		CustomerGenerator3 cg3 = new CustomerGenerator3(cq3);

@@ -1,4 +1,4 @@
-//: generics/ListMaker.java
+// : generics/ListMaker.java
 package generics; /* Added by Eclipse.py */
 
 import java.util.*;

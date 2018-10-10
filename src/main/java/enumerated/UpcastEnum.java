@@ -1,4 +1,4 @@
-//: enumerated/UpcastEnum.java
+// : enumerated/UpcastEnum.java
 package enumerated; /* Added by Eclipse.py */
 
 // No values() method if you upcast an enum

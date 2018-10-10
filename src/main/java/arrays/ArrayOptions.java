@@ -1,4 +1,4 @@
-//: arrays/ArrayOptions.java
+// : arrays/ArrayOptions.java
 package arrays; /* Added by Eclipse.py */
 
 // Initialization & re-assignment of arrays.
@@ -22,7 +22,8 @@ public class ArrayOptions {
 		BerylliumSphere[] d = { new BerylliumSphere(), new BerylliumSphere(),
 				new BerylliumSphere() };
 		// Dynamic aggregate initialization:
-		a = new BerylliumSphere[] { new BerylliumSphere(), new BerylliumSphere(), };
+		a = new BerylliumSphere[] { new BerylliumSphere(),
+				new BerylliumSphere(), };
 		// (Trailing comma is optional in both cases)
 		print("a.length = " + a.length);
 		print("b.length = " + b.length);

@@ -1,4 +1,4 @@
-//: gui/TextArea.java
+// : gui/TextArea.java
 package gui; /* Added by Eclipse.py */
 
 // Using the JTextArea control.

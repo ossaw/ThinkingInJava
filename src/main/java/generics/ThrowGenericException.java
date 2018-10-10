@@ -1,4 +1,4 @@
-//: generics/ThrowGenericException.java
+// : generics/ThrowGenericException.java
 package generics; /* Added by Eclipse.py */
 
 import java.util.*;
@@ -16,8 +16,7 @@ class ProcessRunner<T, E extends Exception> extends ArrayList<Processor<T, E>> {
 	}
 }
 
-class Failure1 extends Exception {
-}
+class Failure1 extends Exception {}
 
 class Processor1 implements Processor<String, Failure1> {
 	static int count = 3;
@@ -32,8 +31,7 @@ class Processor1 implements Processor<String, Failure1> {
 	}
 }
 
-class Failure2 extends Exception {
-}
+class Failure2 extends Exception {}
 
 class Processor2 implements Processor<Integer, Failure2> {
 	static int count = 2;

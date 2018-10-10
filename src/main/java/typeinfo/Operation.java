@@ -1,4 +1,4 @@
-//: typeinfo/Operation.java
+// : typeinfo/Operation.java
 package typeinfo; /* Added by Eclipse.py */
 
 public interface Operation {

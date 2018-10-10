@@ -1,4 +1,4 @@
-//: typeinfo/pets/Person.java
+// : typeinfo/pets/Person.java
 package typeinfo.pets;
 
 public class Person extends Individual {

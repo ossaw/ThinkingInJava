@@ -1,4 +1,4 @@
-//: polymorphism/shape/Square.java
+// : polymorphism/shape/Square.java
 package polymorphism.shape;
 
 import static net.mindview.util.Print.*;

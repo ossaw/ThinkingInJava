@@ -1,4 +1,4 @@
-//: innerclasses/Games.java
+// : innerclasses/Games.java
 package innerclasses; /* Added by Eclipse.py */
 
 // Using anonymous inner classes with the Game framework.
@@ -14,8 +14,7 @@ interface GameFactory {
 }
 
 class Checkers implements Game {
-	private Checkers() {
-	}
+	private Checkers() {}
 
 	private int moves = 0;
 	private static final int MOVES = 3;
@@ -33,8 +32,7 @@ class Checkers implements Game {
 }
 
 class Chess implements Game {
-	private Chess() {
-	}
+	private Chess() {}
 
 	private int moves = 0;
 	private static final int MOVES = 4;

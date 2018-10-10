@@ -1,4 +1,4 @@
-//: concurrency/ToastOMatic.java
+// : concurrency/ToastOMatic.java
 package concurrency; /* Added by Eclipse.py */
 
 // A toaster that uses queues.
@@ -40,8 +40,7 @@ class Toast {
 	}
 }
 
-class ToastQueue extends LinkedBlockingQueue<Toast> {
-}
+class ToastQueue extends LinkedBlockingQueue<Toast> {}
 
 class Toaster implements Runnable {
 	private ToastQueue toastQueue;
@@ -135,7 +134,8 @@ class Eater implements Runnable {
 				Toast t = finishedQueue.take();
 				// Verify that the toast is coming in order,
 				// and that all pieces are getting jammed:
-				if (t.getId() != counter++ || t.getStatus() != Toast.Status.JAMMED) {
+				if (t.getId() != counter++ || t
+						.getStatus() != Toast.Status.JAMMED) {
 					print(">>>> Error: " + t);
 					System.exit(1);
 				} else
@@ -150,7 +150,9 @@ class Eater implements Runnable {
 
 public class ToastOMatic {
 	public static void main(String[] args) throws Exception {
-		ToastQueue dryQueue = new ToastQueue(), butteredQueue = new ToastQueue(), finishedQueue = new ToastQueue();
+		ToastQueue dryQueue = new ToastQueue(),
+				butteredQueue = new ToastQueue(),
+				finishedQueue = new ToastQueue();
 		ExecutorService exec = Executors.newCachedThreadPool();
 		exec.execute(new Toaster(dryQueue));
 		exec.execute(new Butterer(dryQueue, butteredQueue));

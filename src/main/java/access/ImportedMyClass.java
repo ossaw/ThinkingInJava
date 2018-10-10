@@ -1,4 +1,4 @@
-//: access/ImportedMyClass.java
+// : access/ImportedMyClass.java
 package access; /* Added by Eclipse.py */
 
 import access.mypackage.*;

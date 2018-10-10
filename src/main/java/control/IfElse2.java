@@ -1,4 +1,4 @@
-//: control/IfElse2.java
+// : control/IfElse2.java
 package control; /* Added by Eclipse.py */
 
 import static net.mindview.util.Print.*;

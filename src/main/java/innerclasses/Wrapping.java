@@ -1,4 +1,4 @@
-//: innerclasses/Wrapping.java
+// : innerclasses/Wrapping.java
 package innerclasses; /* Added by Eclipse.py */
 
 public class Wrapping {

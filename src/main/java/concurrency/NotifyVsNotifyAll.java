@@ -1,4 +1,4 @@
-//: concurrency/NotifyVsNotifyAll.java
+// : concurrency/NotifyVsNotifyAll.java
 package concurrency; /* Added by Eclipse.py */
 
 import java.util.concurrent.*;

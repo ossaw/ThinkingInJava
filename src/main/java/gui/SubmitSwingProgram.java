@@ -1,4 +1,4 @@
-//: gui/SubmitSwingProgram.java
+// : gui/SubmitSwingProgram.java
 package gui; /* Added by Eclipse.py */
 
 import javax.swing.*;

@@ -1,4 +1,4 @@
-//: initialization/ArrayNew.java
+// : initialization/ArrayNew.java
 package initialization; /* Added by Eclipse.py */
 
 // Creating arrays with new.

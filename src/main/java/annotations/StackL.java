@@ -1,4 +1,4 @@
-//: annotations/StackL.java
+// : annotations/StackL.java
 // A stack built on a linkedList.
 package annotations;
 

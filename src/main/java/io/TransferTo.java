@@ -1,4 +1,4 @@
-//: io/TransferTo.java
+// : io/TransferTo.java
 package io; /* Added by Eclipse.py */
 
 // Using transferTo() between channels
@@ -13,7 +13,8 @@ public class TransferTo {
 			System.out.println("arguments: sourcefile destfile");
 			System.exit(1);
 		}
-		FileChannel in = new FileInputStream(args[0]).getChannel(), out = new FileOutputStream(args[1]).getChannel();
+		FileChannel in = new FileInputStream(args[0]).getChannel(),
+				out = new FileOutputStream(args[1]).getChannel();
 		in.transferTo(0, in.size(), out);
 		// Or:
 		// out.transferFrom(in, 0, in.size());

@@ -1,4 +1,4 @@
-//: generics/Fill.java
+// : generics/Fill.java
 package generics; /* Added by Eclipse.py */
 
 // Generalizing the FilledList idea
@@ -11,7 +11,8 @@ import java.util.*;
 // Collection. We cannot generalize using generics in
 // this case.
 public class Fill {
-	public static <T> void fill(Collection<T> collection, Class<? extends T> classToken, int size) {
+	public static <T> void fill(Collection<T> collection,
+			Class<? extends T> classToken, int size) {
 		for (int i = 0; i < size; i++)
 			// Assumes default constructor:
 			try {
@@ -31,8 +32,7 @@ class Contract {
 	}
 }
 
-class TitleTransfer extends Contract {
-}
+class TitleTransfer extends Contract {}
 
 class FillTest {
 	public static void main(String[] args) {

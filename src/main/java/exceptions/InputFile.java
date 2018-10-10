@@ -1,4 +1,4 @@
-//: exceptions/InputFile.java
+// : exceptions/InputFile.java
 package exceptions; /* Added by Eclipse.py */
 
 // Paying attention to exceptions in constructors.

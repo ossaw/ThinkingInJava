@@ -1,4 +1,4 @@
-//: containers/CollectionMethods.java
+// : containers/CollectionMethods.java
 package containers; /* Added by Eclipse.py */
 
 // Things you can do with all Collections.

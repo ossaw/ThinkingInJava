@@ -1,4 +1,4 @@
-//: typeinfo/Position.java
+// : typeinfo/Position.java
 package typeinfo; /* Added by Eclipse.py */
 
 class Position {

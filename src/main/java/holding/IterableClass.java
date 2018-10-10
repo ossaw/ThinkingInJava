@@ -1,4 +1,4 @@
-//: holding/IterableClass.java
+// : holding/IterableClass.java
 package holding; /* Added by Eclipse.py */
 
 // Anything Iterable works with foreach.
@@ -6,7 +6,8 @@ package holding; /* Added by Eclipse.py */
 import java.util.*;
 
 public class IterableClass implements Iterable<String> {
-	protected String[] words = ("And that is how " + "we know the Earth to be banana-shaped.").split(" ");
+	protected String[] words = ("And that is how "
+			+ "we know the Earth to be banana-shaped.").split(" ");
 
 	public Iterator<String> iterator() {
 		return new Iterator<String>() {

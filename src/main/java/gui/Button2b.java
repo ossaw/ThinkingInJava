@@ -1,4 +1,4 @@
-//: gui/Button2b.java
+// : gui/Button2b.java
 package gui; /* Added by Eclipse.py */
 
 // Using anonymous inner classes.

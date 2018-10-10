@@ -1,4 +1,4 @@
-//: net/mindview/util/OSExecute.java
+// : net/mindview/util/OSExecute.java
 // Run an operating system command
 // and send the output to the console.
 package net.mindview.util;
@@ -10,11 +10,13 @@ public class OSExecute {
 		boolean err = false;
 		try {
 			Process process = new ProcessBuilder(command.split(" ")).start();
-			BufferedReader results = new BufferedReader(new InputStreamReader(process.getInputStream()));
+			BufferedReader results = new BufferedReader(new InputStreamReader(
+					process.getInputStream()));
 			String s;
 			while ((s = results.readLine()) != null)
 				System.out.println(s);
-			BufferedReader errors = new BufferedReader(new InputStreamReader(process.getErrorStream(), "utf-8"));
+			BufferedReader errors = new BufferedReader(new InputStreamReader(
+					process.getErrorStream(), "utf-8"));
 			// Report errors and return nonzero value
 			// to calling process if there are problems:
 			while ((s = errors.readLine()) != null) {
@@ -28,7 +30,7 @@ public class OSExecute {
 				command("CMD /C " + command);
 			else
 				e.printStackTrace();
-				// throw new RuntimeException(e);
+			// throw new RuntimeException(e);
 		}
 		if (err)
 			throw new OSExecuteException("Errors executing " + command);
