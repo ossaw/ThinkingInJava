@@ -2,7 +2,7 @@
 package generics; /* Added by Eclipse.py */
 
 public interface Performs {
-	void speak();
+    void speak();
 
-	void sit();
+    void sit();
 } /// :~

@@ -4,12 +4,12 @@ package concurrency; /* Added by Eclipse.py */
 import java.util.concurrent.*;
 
 public class SingleThreadExecutor {
-	public static void main(String[] args) {
-		ExecutorService exec = Executors.newSingleThreadExecutor();
-		for (int i = 0; i < 5; i++)
-			exec.execute(new LiftOff());
-		exec.shutdown();
-	}
+    public static void main(String[] args) {
+        ExecutorService exec = Executors.newSingleThreadExecutor();
+        for (int i = 0; i < 5; i++)
+            exec.execute(new LiftOff());
+        exec.shutdown();
+    }
 }
 /*
  * Output: #0(9), #0(8), #0(7), #0(6), #0(5), #0(4), #0(3), #0(2), #0(1),

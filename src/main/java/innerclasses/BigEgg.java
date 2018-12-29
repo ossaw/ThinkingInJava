@@ -6,30 +6,30 @@ package innerclasses; /* Added by Eclipse.py */
 import static net.mindview.util.Print.*;
 
 class Egg {
-	private Yolk y;
+    private Yolk y;
 
-	protected class Yolk {
-		public Yolk() {
-			print("Egg.Yolk()");
-		}
-	}
+    protected class Yolk {
+        public Yolk() {
+            print("Egg.Yolk()");
+        }
+    }
 
-	public Egg() {
-		print("New Egg()");
-		y = new Yolk();
-	}
+    public Egg() {
+        print("New Egg()");
+        y = new Yolk();
+    }
 }
 
 public class BigEgg extends Egg {
-	public class Yolk {
-		public Yolk() {
-			print("BigEgg.Yolk()");
-		}
-	}
+    public class Yolk {
+        public Yolk() {
+            print("BigEgg.Yolk()");
+        }
+    }
 
-	public static void main(String[] args) {
-		new BigEgg();
-	}
+    public static void main(String[] args) {
+        new BigEgg();
+    }
 } /*
-	 * Output: New Egg() Egg.Yolk()
-	 */// :~
+   * Output: New Egg() Egg.Yolk()
+   */// :~

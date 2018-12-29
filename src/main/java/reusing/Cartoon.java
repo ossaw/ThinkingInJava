@@ -6,25 +6,25 @@ package reusing; /* Added by Eclipse.py */
 import static net.mindview.util.Print.*;
 
 class Art {
-	Art() {
-		print("Art constructor");
-	}
+    Art() {
+        print("Art constructor");
+    }
 }
 
 class Drawing extends Art {
-	Drawing() {
-		print("Drawing constructor");
-	}
+    Drawing() {
+        print("Drawing constructor");
+    }
 }
 
 public class Cartoon extends Drawing {
-	public Cartoon() {
-		print("Cartoon constructor");
-	}
+    public Cartoon() {
+        print("Cartoon constructor");
+    }
 
-	public static void main(String[] args) {
-		Cartoon x = new Cartoon();
-	}
+    public static void main(String[] args) {
+        Cartoon x = new Cartoon();
+    }
 } /*
-	 * Output: Art constructor Drawing constructor Cartoon constructor
-	 */// :~
+   * Output: Art constructor Drawing constructor Cartoon constructor
+   */// :~

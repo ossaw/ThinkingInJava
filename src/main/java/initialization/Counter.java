@@ -2,10 +2,10 @@
 package initialization; /* Added by Eclipse.py */
 
 public class Counter {
-	int i;
+    int i;
 
-	Counter() {
-		i = 7;
-	}
-	// ...
+    Counter() {
+        i = 7;
+    }
+    // ...
 } /// :~

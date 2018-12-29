@@ -2,7 +2,7 @@
 package typeinfo; /* Added by Eclipse.py */
 
 public interface Operation {
-	String description();
+    String description();
 
-	void command();
+    void command();
 } /// :~

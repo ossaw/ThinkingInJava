@@ -6,9 +6,9 @@ package io; /* Added by Eclipse.py */
 import net.mindview.util.*;
 
 public class OSExecuteDemo {
-	public static void main(String[] args) {
-		OSExecute.command("javap target/classes/io/OSExecuteDemo");
-	}
+    public static void main(String[] args) {
+        OSExecute.command("javap target/classes/io/OSExecuteDemo");
+    }
 }
 /*
  * Output: Compiled from "OSExecuteDemo.java" public class OSExecuteDemo extends

@@ -11,9 +11,9 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface UseCase2 {
 
-	// 注解方法不支持包装类型
-	public int id();
+    // 注解方法不支持包装类型
+    public int id();
 
-	public String desc() default "no desc";
+    public String desc() default "no desc";
 
 }

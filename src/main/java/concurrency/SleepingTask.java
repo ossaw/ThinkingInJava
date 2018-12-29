@@ -7,40 +7,40 @@ import java.util.concurrent.*;
 
 // 线程睡眠时不会影响其他线程执行
 public class SleepingTask extends LiftOff {
-	public void run() {
-		try {
-			while (countDown-- > 0) {
-				System.out.print(status());
-				// Old-style:
-				// Thread.sleep(100);
-				// Java SE5/6-style:
-				TimeUnit.MILLISECONDS.sleep(1000);
-			}
-		} catch (InterruptedException e) {
-			System.err.println("Interrupted");
-		}
-	}
+    public void run() {
+        try {
+            while (countDown-- > 0) {
+                System.out.print(status());
+                // Old-style:
+                // Thread.sleep(100);
+                // Java SE5/6-style:
+                TimeUnit.MILLISECONDS.sleep(1000);
+            }
+        } catch (InterruptedException e) {
+            System.err.println("Interrupted");
+        }
+    }
 
-	@Override
-	public String status() {
-		return "*" + id + "(" + (countDown > 0 ? countDown : "sleeping task!")
-				+ "), ";
-	}
+    @Override
+    public String status() {
+        return "*" + id + "(" + (countDown > 0 ? countDown : "sleeping task!")
+                + "), ";
+    }
 
-	public SleepingTask() {}
+    public SleepingTask() {}
 
-	public SleepingTask(int countDown) {
-		this.countDown = countDown;
-	}
+    public SleepingTask(int countDown) {
+        this.countDown = countDown;
+    }
 
-	public static void main(String[] args) {
-		ExecutorService exec = Executors.newCachedThreadPool();
-		for (int i = 0; i < 2; i++)
-			exec.execute(new SleepingTask(2));
-		for (int i = 0; i < 2; i++)
-			exec.execute(new LiftOff(2));
-		exec.shutdown();
-	}
+    public static void main(String[] args) {
+        ExecutorService exec = Executors.newCachedThreadPool();
+        for (int i = 0; i < 2; i++)
+            exec.execute(new SleepingTask(2));
+        for (int i = 0; i < 2; i++)
+            exec.execute(new LiftOff(2));
+        exec.shutdown();
+    }
 }
 /*
  * Output: #0(9), #1(9), #2(9), #3(9), #4(9), #0(8), #1(8), #2(8), #3(8), #4(8),

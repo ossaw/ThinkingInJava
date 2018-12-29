@@ -7,30 +7,30 @@ import jdk.nashorn.internal.runtime.ListAdapter;
 import net.mindview.util.*;
 
 class Government implements Generator<String> {
-	String[] foundation = ("strange women lying in ponds "
-			+ "distributing swords is no basis for a system of " + "government")
-					.split(" ");
-	private int index;
+    String[] foundation = ("strange women lying in ponds "
+            + "distributing swords is no basis for a system of " + "government")
+                    .split(" ");
+    private int index;
 
-	public String next() {
-		return foundation[index++];
-	}
+    public String next() {
+        return foundation[index++];
+    }
 }
 
 public class CollectionDataTest {
-	public static void main(String[] args) {
-		Set<String> set = new LinkedHashSet<String>(new CollectionData<String>(
-				new Government(), 15));
-		List<String> list = new ArrayList<String>(new CollectionData<String>(
-				new Government(), 15));
-		System.out.println(list);
-		System.out.println(set);
-		// Using the convenience method:
-		set.addAll(CollectionData.list(new Government(), 15));
-		System.out.println(set);
-		list.addAll(CollectionData.list(new Government(), 15));
-		System.out.println(list);
-	}
+    public static void main(String[] args) {
+        Set<String> set = new LinkedHashSet<String>(new CollectionData<String>(
+                new Government(), 15));
+        List<String> list = new ArrayList<String>(new CollectionData<String>(
+                new Government(), 15));
+        System.out.println(list);
+        System.out.println(set);
+        // Using the convenience method:
+        set.addAll(CollectionData.list(new Government(), 15));
+        System.out.println(set);
+        list.addAll(CollectionData.list(new Government(), 15));
+        System.out.println(list);
+    }
 }
 /*
  * Output: [strange, women, lying, in, ponds, distributing, swords, is, no,

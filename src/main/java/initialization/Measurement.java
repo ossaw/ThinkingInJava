@@ -4,6 +4,6 @@ package initialization; /* Added by Eclipse.py */
 class Depth {}
 
 public class Measurement {
-	Depth d = new Depth();
-	// ...
+    Depth d = new Depth();
+    // ...
 } /// :~

@@ -2,10 +2,10 @@
 package initialization; /* Added by Eclipse.py */
 
 public class Apricot {
-	void pick() {
-		/* ... */ }
+    void pick() {
+        /* ... */ }
 
-	void pit() {
-		pick();
-		/* ... */ }
+    void pit() {
+        pick();
+        /* ... */ }
 } /// :~

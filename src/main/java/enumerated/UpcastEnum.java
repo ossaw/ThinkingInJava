@@ -4,17 +4,17 @@ package enumerated; /* Added by Eclipse.py */
 // No values() method if you upcast an enum
 
 enum Search {
-	HITHER, YON
+    HITHER, YON
 }
 
 public class UpcastEnum {
-	public static void main(String[] args) {
-		Search[] vals = Search.values();
-		Enum e = Search.HITHER; // Upcast
-		// e.values(); // No values() in Enum
-		for (Enum en : e.getClass().getEnumConstants())
-			System.out.println(en);
-	}
+    public static void main(String[] args) {
+        Search[] vals = Search.values();
+        Enum e = Search.HITHER; // Upcast
+        // e.values(); // No values() in Enum
+        for (Enum en : e.getClass().getEnumConstants())
+            System.out.println(en);
+    }
 } /*
-	 * Output: HITHER YON
-	 */// :~
+   * Output: HITHER YON
+   */// :~

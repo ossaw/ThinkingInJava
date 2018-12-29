@@ -10,9 +10,9 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface SQLString2 {
-	int value() default 0;
+    int value() default 0;
 
-	String name() default "";
+    String name() default "";
 
-	Constraints2 constraints() default @Constraints2;
+    Constraints2 constraints() default @Constraints2;
 }

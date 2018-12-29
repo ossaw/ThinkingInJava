@@ -4,12 +4,12 @@ package concurrency; /* Added by Eclipse.py */
 import java.util.concurrent.*;
 
 public class CachedThreadPool {
-	public static void main(String[] args) {
-		ExecutorService exec = Executors.newCachedThreadPool();
-		for (int i = 0; i < 5; i++)
-			exec.execute(new LiftOff());
-		exec.shutdown();
-	}
+    public static void main(String[] args) {
+        ExecutorService exec = Executors.newCachedThreadPool();
+        for (int i = 0; i < 5; i++)
+            exec.execute(new LiftOff());
+        exec.shutdown();
+    }
 }
 /*
  * Output: (Sample) #0(9), #0(8), #1(9), #2(9), #3(9), #4(9), #0(7), #1(8),
