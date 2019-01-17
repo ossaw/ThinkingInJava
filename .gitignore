@@ -37,3 +37,13 @@ ehthumbs.db
 Thumbs.db
 /target/
 /bin/
+.idea/.name
+.idea/compiler.xml
+.idea/smartfox_info.xml
+.idea/workspace.xml
+
+.idea/inspectionProfiles/Project_Default.xml
+thinkinginjava.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
